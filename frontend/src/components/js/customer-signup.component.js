@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import '../css/authentication.css';
 
 export default class CustomerSignUp extends Component {
     render() {

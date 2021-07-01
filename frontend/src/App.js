@@ -16,8 +16,7 @@ function App() {
   return (<Router>
     <Navbar />
     
-      <div className="auth-wrapper">
-        <div className="auth-inner">
+      
           <Switch>
             <Route exact path='/' component={Home} />
             <Route exact path='/home' component={Home} />
@@ -26,8 +25,7 @@ function App() {
             <Route path="/sign-in" component={Login} />
             <Route path="/sign-up" component={SignUp} />
           </Switch>
-        </div>
-      </div>
+      
    </Router>
   );
 }
