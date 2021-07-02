@@ -10,39 +10,40 @@ function Cards() {
           <ul className='cards__items'>
             <CardItem
               src='images/Wild.jpg'
-              text=''
+              text='Despite its small size Sri Lanka boasts of one of the highest rates of biological endemism in the world whether in plants or animals and is included among the top five biodiversity hotspots in the world'
               label='Wild'
               path='/'
             />
             <CardItem
               src='images/Heritage.jpg'
-              text=''
+              text='With a history expanding over 3000years, Sri Lanka holds some of world’s ancient cities including Anuradhapura, Polonnaruwa and Digamadulla'
               label='Heritage'
               path='/'
             />
-          </ul>
-          <ul className='cards__items'>
+          
           <CardItem
               src='images/Scenic.jpg'
-              text=''
+              text='Despite being a relatively small island, Sri Lanka is endowed with a diverse collection of landscapes, climates and natural features'
               label='Scenic'
               path='/'
             />
+            </ul>
+          <ul className='cards__items'>
             <CardItem
               src='images/Thrills.jpg'
-              text=''
+              text='With varying climates and Geography packed into a small island Sri Lanka offers a range of adventures from the top of the mountains to the depths of the oceans'
               label='Thrills'
               path='/'
             />
             <CardItem
               src='images/Festival.jpg'
-              text=''
+              text='With a population composed with many a races and religions, Sri Lanka is never short of festivals and celebrations'
               label='Festival'
               path='/'
             />
             <CardItem
               src='../../images/Pristine.jpg'
-              text=''
+              text='With nearly 1600 km of of palm fringed Coastline baked to perfection surrounding the country Sri Lanka is the ideal destination for beach bums worldwide'
               label='Pristine'
               path='/'
             />
