@@ -1,11 +1,19 @@
 import React, { Component } from "react";
+import ReactPlayer from "react-player";
 import '../../../css/home/card item page.css';
 
 class Wild extends Component{
     render(){
         return(
 <div>
+    <div class="card-wrapper">
+        <div class="card-inner">
     <h2>Wild</h2>
+    <div class="video">
+    <ReactPlayer
+url="https://www.youtube.com/watch?v=sfSkECdIGXU&ab_channel=SriLankaTourism"
+/>
+</div>
     <p>Despite its small size Sri Lanka boasts of one of the highest rates of biological endemism in the world whether in plants or animals and is included among the top five biodiversity hotspots in the world. 
         Of the ninety-one species of mammals found in Sri Lanka Asian elephants, sloth bear, leopards, sambar and wild buffaloes engages the majority of the attention of wildlife enthusiast. 
         Yet the rarest mammals of Sri Lanka are the red slender Loris, Toque Macaque, and Purple-faced Langur, who according to IUCN clarifications are endangered due to habitat loss.</p>
@@ -18,7 +26,10 @@ class Wild extends Component{
        
     <p>Although less celebrated, Sri Lanka has one of the richest diversity of amphibians in the world, containing over 106 species of amphibians of over 90 of which are endemic. 
         The country has long claimed to have the highest amphibian species density in the world with a high concentration in the Sinharaja rainforest.</p>
+    </div>
+    </div>
 </div>
+
         );
     }
 }

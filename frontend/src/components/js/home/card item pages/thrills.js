@@ -1,11 +1,19 @@
 import React, { Component } from "react";
+import ReactPlayer from "react-player";
 import '../../../css/home/card item page.css';
 
 class Thrills extends Component{
     render(){
         return(
    <div>
+     <div class="card-wrapper">
+    <div class="card-inner">  
    <h2>Thrills</h2>
+   <div class="video">
+   <ReactPlayer
+url="https://www.youtube.com/watch?v=bR5KGYldYtc&ab_channel=SriLankaTourism"
+/>  
+   </div>
    <p>With varying climates and Geography packed into a small island Sri Lanka offers a range of adventures from the top of the mountains to the depths of the oceans.</p>
    
    <p> Other than taking a dip in the oceans or snorkelling, scuba diving and surfing are the most popular beach sports in the country. 
@@ -20,6 +28,8 @@ class Thrills extends Component{
       the tallest in the country.</p>
       
     <p>With many an adventures packed within few miles of each other Sri Lanka is an adventure itself waiting to happen.</p>
+    </div>
+    </div>
    </div>
         );
         }    

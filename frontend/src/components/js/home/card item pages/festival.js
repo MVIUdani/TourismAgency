@@ -1,11 +1,19 @@
 import React, { Component } from "react";
+import ReactPlayer from "react-player";
 import '../../../css/home/card item page.css';
 
 class Festival extends Component{
     render(){
         return(
    <div>
+    <div class="card-wrapper">
+    <div class="card-inner">  
    <h2>Festival</h2>
+   <div class="video">
+   <ReactPlayer
+    url="https://www.youtube.com/watch?v=HkUnU8pnRYc&ab_channel=SriLankaTourism"
+   />
+   </div>
    <p>With a population composed with many a races and religions, Sri Lanka is never short of festivals and celebrations. 
       Every month brings a celebration either religious or cultural importance, making Sri Lanka one of the countries with highest number of celebrations and holidays.</p>
 
@@ -17,6 +25,9 @@ class Festival extends Component{
 
     <p>In August are the Esala festivals in Kandy and Kataragama. The Kataragama Esala Festival is a multi-religious festival where devotes use fire walking and extreme self-penance to shows their piety to Lord Kataragama. 
         The Kandy Esala Perahera or the Dalanda Perahera is the largest cultural parade in the world and showcases the best of Sri Lankan dancing and music and the best of the domesticated tuskers in the country.</p> 
+   
+   </div> 
+   </div> 
    </div>
         );
         }    

@@ -1,11 +1,19 @@
 import React, { Component } from "react";
+import ReactPlayer from "react-player";
 import '../../../css/home/card item page.css';
 
 class Scenic extends Component{
     render(){
         return(
    <div>
+       <div class="card-wrapper">
+    <div class="card-inner">  
    <h2>Scenic</h2>
+   <div class="video">
+   <ReactPlayer
+url="https://www.youtube.com/watch?v=pmIuyIpm5ZQ&ab_channel=SriLankaTourism"
+/> 
+   </div>
    <p>Despite being a relatively small island, Sri Lanka is endowed with a diverse collection of landscapes, climates and natural features. 
        Sri Lanka’s infamous beaches have been enticing visitors for many years. However, the rest of the island harbours many more idyllic vistas.</p>
 
@@ -18,6 +26,8 @@ class Scenic extends Component{
         Chains of islands are scattered off the shoreline, with their own unique habitats, waiting to be explored.</p>
 
     <p>The east of the island is home to lush paddy fields, spectacular sunrises, and a quieter more rural pace of life. Colourful places of worship, national parks, ports and harbours, and pristine clear waters offer a mellow experience to any weary traveller.</p>   
+    </div>
+    </div>
    </div>
         );
         }    

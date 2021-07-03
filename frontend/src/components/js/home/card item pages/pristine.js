@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import ReactPlayer from "react-player";
 import '../../../css/home/card item page.css';
 
 class Pristine extends Component{
@@ -6,6 +7,13 @@ class Pristine extends Component{
         return(
    <div>
    <h2>Pristine</h2>
+   <div class="video">
+   <ReactPlayer
+url="https://www.youtube.com/watch?v=FjSX4Eqtbjk&ab_channel=SriLankaTourism"
+/>  
+   </div>
+   <div class="card-wrapper">
+    <div class="card-inner">  
    <p>With nearly 1600 km of of palm fringed Coastline baked to perfection surrounding the country Sri Lanka is the ideal destination for beach bums worldwide.  
        May it be windsurfing, kayaking, yachting, water skiing, scuba diving or jut lazing around for the perfect tan, Sri Lanka offers it all.</p>
     
@@ -20,6 +28,8 @@ class Pristine extends Component{
 
     <p>On the Western corner of the country to the north of Colombo is the Negambo lagoon. Its beaches, an old favourite with local and foreign visitors and lagoon famed for lobster harvesting. 
         Despite having a ring of sandy beaches surrounding the country, Galle Face Green, a half a kilometre stretch between Galle Road and Indian Ocean is the playground of the Colombians.</p>
+        </div>
+    </div>
    </div>
         );
         }    
