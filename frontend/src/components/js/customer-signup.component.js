@@ -4,6 +4,8 @@ import '../css/authentication.css';
 export default class CustomerSignUp extends Component {
     render() {
         return (
+        <div className="auth-wrapper">
+        <div className="auth-inner">
             <form>
                 <h3>Sign Up</h3>
 
@@ -32,6 +34,8 @@ export default class CustomerSignUp extends Component {
                     Already registered <a href="#">login?</a>
                 </p>
             </form>
+            </div>
+            </div>
         );
     }
 }
