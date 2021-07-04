@@ -14,7 +14,7 @@ export default class Aboutus extends Component {
 
     <center>Our Services for,</center>
     <br></br>
-      <div className="B">
+      <div className="Main">
           
               <i><h4>Customer</h4></i>
               <i><h4>Hotel</h4></i>
