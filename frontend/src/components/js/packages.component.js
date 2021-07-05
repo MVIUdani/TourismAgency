@@ -10,10 +10,10 @@ export default class Packages extends Component {
 
         
           <div className='C'>
-           <img className="Photo" src='temple.jpg' alt="" width="240" height="210"></img>
+           <img className="Photo" src='temple.jpg' alt="" width="245" height="210"></img>
             <div className="C-part">
 
-            <img className="Photo" src='two.jpg' alt="" width="225" height="230"></img>
+            <img className="Photo" src='two.jpg' alt="" width="235" height="220"></img>
             </div>
           </div>
 
