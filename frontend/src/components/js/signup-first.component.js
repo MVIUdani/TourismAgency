@@ -3,6 +3,7 @@ import '../css/signup.css';
 
 export default class SignUp extends Component {
 
+
     render() {
         return (
             <div className="Z">
