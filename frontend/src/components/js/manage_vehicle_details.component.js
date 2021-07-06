@@ -29,7 +29,37 @@ export default class Vehicle extends Component {
 </form>
 </div>
 
+/*  
+          <div className="auth-wrapper">
+        <div className="auth-inner">
+            <form>
+                <h3>Please fill your vehicles details</h3>
 
+                <div className="form-group">
+                    <label>Vehicle Type</label>
+                    <input type="text" className="form-control" placeholder="vehicle type" />
+                </div>
+
+                <div className="form-group">
+                    <label>Vehicle color</label>
+                    <input type="text" className="form-control" placeholder="Vehicle color" />
+                </div>
+
+                <div className="form-group">
+                    <label>Number of seats</label>
+                    <input type="int" className="form-control" placeholder="Number of seats" />
+                </div>
+                <hr></hr>
+                <button type="submit" className="btn btn-primary btn-block">Submit</button>
+               
+                
+            </form>
+            </div>
+            </div> 
+             css file is vehicle.css
+            
+            
+            */
 
               
 );
