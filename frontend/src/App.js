@@ -29,9 +29,6 @@ import Thrills from './components/js/home/card item pages/thrills';
 import Wild from './components/js/home/card item pages/wild';
 
 import Payment from './components/js/customer/payment';
-import Vehicle from './components/js/manage_vehicle_details.component';
-import Transport from './components/js/transport_owner_profile.component';
-
 
 function App() {
   return (<Router>
@@ -59,8 +56,7 @@ function App() {
             <Route path="/wild" component={Wild} />
 
             <Route path="/payment" component={Payment} />
-            <Route path="/manage_vehicle_details" component={Vehicle} />
-            <Route path="/transport_owner_profile" component={Transport} />
+
           </Switch>
       
    </Router>

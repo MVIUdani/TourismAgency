@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import '../css/authentication.css';
 import validate from './validateInfo';
 import useForm from "./useForm";
+import { Link } from "react-router-dom";
 
 const CustomerSignup = ({ submitForm }) => {
     const { handleChange, handleSubmit, values, errors } = useForm(
@@ -91,7 +92,7 @@ const CustomerSignup = ({ submitForm }) => {
 
                 <button type="submit" className="btn btn-primary btn-block">Sign Up</button>
                 <p className="forgot-password text-right">
-                    Already registered <a href="#">login?</a>
+                    Already registered <Link to='/sign-in'>login?</Link>
                 </p>
             </form>
             </div>

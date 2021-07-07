@@ -1,8 +1,9 @@
 import React, { Component } from "react";
+import { useHistory } from "react-router-dom";
 import '../css/signup.css';
 
 
-export default class SignUp extends Component {
+/*export default class SignUp extends Component {
 
 
     render() {
@@ -28,4 +29,34 @@ export default class SignUp extends Component {
         );
     }
    
+}*/
+
+function SignUp(){
+    const history = useHistory();
+
+    function customerAccount(){
+        history.push('/cus-signup');
+    }
+
+    return(
+        <div className="Z">
+        <br></br><br></br><br></br>
+    <div className="container">
+    <div className="hero-box">
+        <label htmlFor=""><h2>Select Account Type</h2></label>
+        <div className="btn-container">
+            
+            <button onClick={customerAccount}>Customer Account </button>
+            <button onClick="">Hotel Owner Account</button>
+            <button onClick="">Guide Account</button>
+            <button onClick="">Transport Owner Account</button>
+          
+
+        </div>
+    </div>
+</div>
+</div>
+    );
 }
+
+export default SignUp;
