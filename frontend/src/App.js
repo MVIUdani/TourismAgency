@@ -55,7 +55,7 @@ function App() {
             <Route path="/thrills" component={Thrills} />
             <Route path="/wild" component={Wild} />
 
-            <Route path="payment" component={Payment} />
+            <Route path="/payment" component={Payment} />
 
           </Switch>
       
