@@ -6,14 +6,14 @@ class Pristine extends Component{
     render(){
         return(
    <div>
-   <h2>Pristine</h2>
+   <div class="card-wrapper">
+    <div class="card-inner">
+    <h2>Pristine</h2>
    <div class="video">
    <ReactPlayer
 url="https://www.youtube.com/watch?v=FjSX4Eqtbjk&ab_channel=SriLankaTourism"
 />  
-   </div>
-   <div class="card-wrapper">
-    <div class="card-inner">  
+   </div>  
    <p>With nearly 1600 km of of palm fringed Coastline baked to perfection surrounding the country Sri Lanka is the ideal destination for beach bums worldwide.  
        May it be windsurfing, kayaking, yachting, water skiing, scuba diving or jut lazing around for the perfect tan, Sri Lanka offers it all.</p>
     

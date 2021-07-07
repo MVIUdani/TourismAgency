@@ -12,12 +12,12 @@ function Footer() {
             <Link to='/aboutus'>About Us</Link>
           </div>
           <div class='footer-link-items'>
-            <Link to='/'>Contact Us</Link>
+            <Link to='/contactus'>Contact Us</Link>
           </div>
         </div>
         <div className='footer-link-wrapper'>
           <div class='footer-link-items'>
-            <Link to='/'>Give feedback</Link>
+            <Link to='/feedback'>Give feedback</Link>
           </div>
           <div class='footer-link-items'>
             <Link to='/'>Privacy & Policy</Link>

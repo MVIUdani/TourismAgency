@@ -15,7 +15,7 @@ export default class PaymentFirst extends Component {
               <div className="checkout-container">
                     <h2>Select your Payment Method</h2>
                     <br></br><br></br>
-                    <li><Link to='/'>Credit or Debit Card</Link></li>
+                    <li><Link to='/payment'>Credit or Debit Card</Link></li>
                     <br></br>
                     <li><Link to='/'>Payhere</Link></li>
                 </div>
