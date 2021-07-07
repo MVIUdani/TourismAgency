@@ -1,10 +1,12 @@
 import React, { Component } from "react";
 import '../css/aboutus.css';
 
+
+
 export default class Aboutus extends Component {
     render() {
         return (
-    
+  
 <div className="A">
 
 <br></br><center><h1><i>PARADISE LANKA TOURS</i></h1></center>
@@ -31,7 +33,15 @@ export default class Aboutus extends Component {
 </div>
 
 
+
+
+
+      
+
+
+
 );
 }
 
 }
+

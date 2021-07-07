@@ -16,7 +16,7 @@ export default class Packagedetails extends Component {
           <div className='C'>
 
            <img className="Photo" src='sigiriya.jpg' alt="" width="255" height="215"></img>
-           <img className="Photo" src='sigiriya.jpg' alt="" width="255" height="215"></img>
+         
             <div className="C-part">
 
             <img className="Photo" src='polonnaruwa.jpg' alt="" width="250" height="210"></img>
