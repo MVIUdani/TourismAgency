@@ -1,12 +1,11 @@
 import React, { Component } from "react";
 import '../css/package-details.css';
 
+
 export default class Packagedetails extends Component {
     render() {
         return (
 
-            <div className="Big"> 
-    <center><h2><i>Package Details</i></h2></center>
           
      
     <div className="Start">
@@ -33,13 +32,13 @@ export default class Packagedetails extends Component {
           </div>
 
          <div className="D">
-         <h3>Package No:</h3>
-          <h4>Visit Places:</h4>
-          <h4>Day limits:</h4>
-          <h4>Transport type:</h4>
-          <h4>Price:</h4>
-          <a href="#"><h4>Locations:</h4></a>
-          <a href="#"><h4>Hotel Facilities:</h4></a>
+         <h4>Package No:</h4>
+          <h5>Visit Places:</h5>
+          <h5>Day limits:</h5>
+          <h5>Transport type:</h5>
+          <h5>Price:</h5>
+          <a href="#"><h5>Locations:</h5></a>
+          <a href="#"><h5>Hotel Facilities:</h5></a>
           
           <br></br><br></br>
          
@@ -51,7 +50,7 @@ export default class Packagedetails extends Component {
 
     </div>
 
-    </div>
+  
 
          );
     }
