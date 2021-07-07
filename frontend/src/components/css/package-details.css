@@ -1,0 +1,121 @@
+body{
+
+    background-color: #0099CC;
+}
+
+.Start{
+
+
+    display: flex;
+    flex-flow: row;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    border:6px solid black;
+
+
+    width: 32.5cm;
+    height: 14cm;
+    background-color: white;
+    margin-left: 2cm;
+    margin-top: 0.5cm;
+    border-radius: 16px;
+}
+
+.C{
+
+    
+    width: 6cm;
+    height: 14.5cm;
+    
+    margin-left: 0.5cm;
+    border-radius: 16px;
+    margin-top: 1cm;
+
+}
+
+.Photo{
+
+    border-radius: 24px;
+    margin-top: 0.5cm;
+    animation-timing-function: cubic-bezier(1, 0, 0, 1);
+    margin-left: 0.5cm;
+}
+
+.C-part{
+
+    
+    width: 5cm;
+    height: 6cm;
+  
+    margin-left: 0.25cm;
+    border-radius: 16px;
+    margin-top: 0.2cm;
+
+}
+
+.E{
+
+    
+    width: 6cm;
+    height: 13cm;
+   
+    margin-left: 0.8cm;
+    border-radius: 16px;
+    margin-top: 1cm;
+
+}
+
+.E-part{
+
+    width: 5.5cm;
+    height: 6cm;
+  
+    margin-left: 0.25cm;
+    border-radius: 16px;
+    margin-top: 0.05cm;
+
+}
+
+
+.D{
+
+    width: 17cm;
+    height: 12.5cm;
+    background-color: white;
+    margin-left: 1.5cm;
+    border-radius: 16px;
+    margin-top: 1cm;
+
+}
+
+h3{
+
+    margin-left: 0.8cm;
+}
+
+h4{
+
+    margin-left: 0.8cm;
+}
+
+button{
+    
+        background-color: #0099CC;
+        border: none;
+        color: black;
+        padding: 12px 26px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 15px;
+        border-radius: 16px;
+        margin-left: 12cm;
+        margin-top: 1.5cm;
+}
+
+h5{
+
+    margin-left: 0.8cm;
+}
