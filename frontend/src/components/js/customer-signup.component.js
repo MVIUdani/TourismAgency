@@ -89,7 +89,7 @@ const CustomerSignup = ({ submitForm }) => {
                     />
                     {errors.confirmpassword && <p>{errors.confirmpassword}</p>}
                 </div>
-
+<br></br>
                 <button type="submit" className="btn btn-primary btn-block">Sign Up</button>
                 <p className="forgot-password text-right">
                     Already registered <Link to='/sign-in'>login?</Link>
