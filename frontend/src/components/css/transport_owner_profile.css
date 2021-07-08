@@ -13,10 +13,16 @@
 
     width: 7cm;
     height: 9cm;
-   
+
     margin-left: 5px;
    border-radius: 10px;
     
+}
+
+h6{
+
+    color: #000;
+    margin-left: 0.5cm;
 }
 
 

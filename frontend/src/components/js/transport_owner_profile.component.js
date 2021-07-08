@@ -23,10 +23,10 @@ export default class Transportowner extends Component {
                     </div>
         
                     <br></br>
-                    <Link to='/manage_vehicle_details'><h5>Vehicle details setting</h5></Link>
-                    <h5><a href="#">Edit Profile</a></h5>
-                    <h5><a href="#">Vehicle details setting</a></h5>
-                    <h5><a href="#">Booked date update</a></h5>
+                    
+                    <Link to='/transport_owner_edit_profile'><h6>Edit Profile Details</h6></Link>
+                    <Link to='/manage_vehicle_details'><h6>Vehicle details setting</h6></Link>
+                    <Link to='/transport_owner_booked_date'><h6>Booked Date Update</h6></Link>
                  
                  
         

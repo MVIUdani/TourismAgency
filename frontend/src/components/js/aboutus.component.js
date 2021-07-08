@@ -23,21 +23,15 @@ export default class Aboutus extends Component {
           <i><h4>Hotel</h4></i>
           <i><h4>Guides</h4></i>
           <i><h4>Transport Owners</h4></i>
-          
-          
+         
+
+         
   </div>
 <br></br><br></br><br></br>
 <center><b>You can join and get the services from our agencey!</b></center>
 
 
 </div>
-
-
-
-
-
-      
-
 
 
 );
