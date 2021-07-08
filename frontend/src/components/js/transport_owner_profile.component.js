@@ -15,11 +15,11 @@ export default class Transportowner extends Component {
                 
                  
                     <div className="Data">
-                        <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
-                        <br></br><br></br>
+                        <br></br><br></br><br></br><br></br><br></br>
+                        <br></br><br></br><br></br><br></br>
                       <h3>First Name:</h3>
                       <h4>Last Name:</h4>
-                      <h4>Transport Owner</h4>
+                      <h5>Transport Owner</h5>
                     </div>
         
                     <br></br>
@@ -35,20 +35,23 @@ export default class Transportowner extends Component {
                 <div className="Second">
         
         
-                 <div className="Dot">
-        
-                  <div className='Pic'>
-                  <img src='sigiriya.jpg' alt="" width="250" height="242"></img>
+                 
+                  <img className="Size" src='tra1.jpg' alt="" width="280" height="252"></img>
                 
-                  </div>
+                  <img className="Size" src='tra5.jpeg' alt="" width="300" height="245"></img>
         
-                  <div className='Lot'>
-                  <img src='temple.jpg' alt="" width="350" height="242"></img>
-                  </div>
-         
+                 
+                  <img className="Size" src='tra3.jpg' alt="" width="310" height="242"></img>
+                
+                  <img className="Size" src='tra6.jpg' alt="" width="290" height="242"></img>
+                  <img className="Size" src='tra4.jpg' alt="" width="300" height="242"></img>
+                  <img className="Size" src='tra2.jpg' alt="" width="310" height="242"></img>
+                
+                
+                
         
                   
-                  </div>
+                
         
                   
         
