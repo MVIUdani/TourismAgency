@@ -12,11 +12,10 @@ export default class Transportowner extends Component {
      
             <div className="Impo">
         
-                
+            <img className="Profile" src='profile.jpg' alt="" width="240" height="235"></img>
                  
                     <div className="Data">
-                        <br></br><br></br><br></br><br></br><br></br>
-                        <br></br><br></br><br></br><br></br>
+                      <br></br>
                       <h3>First Name:</h3>
                       <h4>Last Name:</h4>
                       <h5>Transport Owner</h5>

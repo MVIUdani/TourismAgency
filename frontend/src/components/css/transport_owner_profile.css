@@ -10,7 +10,7 @@
 .Impo{
 
     width: 8cm;
-    height: 16cm;
+    height: 22cm;
     background-color: black;
  
    
@@ -20,7 +20,7 @@
 .Data{
 
     width: 7cm;
-    height: 9cm;
+    height: 3.5cm;
 
     margin-left: 5px;
    border-radius: 10px;
@@ -46,6 +46,13 @@ h6{
     height: 15cm;
     
     margin-left: 0.25cm;
+}
+
+.Profile{
+
+    margin-left: 0.8cm;
+    margin-top: 0.5cm;
+    border-radius: 12px;
 }
 
 .Size{
