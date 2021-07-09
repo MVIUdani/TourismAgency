@@ -8,6 +8,7 @@ import Navbar from './components/js/home/Navbar';
 
 //import nav bar pages
 import Login from "./components/js/login.component";
+import Forgot from "./components/js/forgotpassword.component";
 import SignUp from "./components/js/signup-first.component";
 import Home from "./components/js/home.component";
 import Aboutus from "./components/js/aboutus.component";
@@ -30,6 +31,8 @@ import Wild from './components/js/home/card item pages/wild';
 
 import Payment from './components/js/customer/payment';
 
+import Packagedetails from './components/js/package_details';
+
 
 
 function App() {
@@ -45,6 +48,8 @@ function App() {
             <Route path="/sign-in" component={Login} />
             <Route path="/sign-up" component={SignUp} />
 
+            <Route path="/forgot" component={Forgot} />
+
             <Route path="/cus-signup" component={CustomerSignup}/>
 
             <Route path="/contactus" component={Contacts} />
@@ -58,6 +63,7 @@ function App() {
             <Route path="/wild" component={Wild} />
 
             <Route path="/payment" component={Payment} />
+            <Route path="/package-details" component={Packagedetails} />
            
           </Switch>
       

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import Form from "react-validation/build/form";
 import Input from "react-validation/build/input";
 import '../css/authentication.css';
@@ -120,7 +121,7 @@ export default class Login extends Component {
 <br></br>
                 <button type="submit" className="btn btn-primary btn-block">Submit</button>
                 <p className="forgot-password text-right">
-                    Forgot <a href="#">password?</a>
+                    Forgot <Link to='/forgot'>password?</Link>
                 </p>
             </Form>
             </div>
