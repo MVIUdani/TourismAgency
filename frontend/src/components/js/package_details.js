@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import '../css/package-details.css';
-
+import { Link } from 'react-router-dom';
 
 export default class Packagedetails extends Component {
     render() {
@@ -10,48 +10,35 @@ export default class Packagedetails extends Component {
      
     <div className="Start">
 
-        
-          
-          <div className='C'>
+            <div className="Package-details">
 
-           <img className="Photo" src='sigiriya.jpg' alt="" width="255" height="215"></img>
-         
-            <div className="C-part">
+            <img className="Image-size" src='sigiriya.jpg' alt="" width="220" height="210"></img>
+            <img className="Image-size" src='polonnaruwa.jpg' alt="" width="230" height="210"></img>
+            <img className="Image-size" src='hortan.jpg' alt="" width="210" height="225"></img>
+            <img className="Image-size" src='waterfall02.jpg' alt="" width="235" height="215"></img>
+            <img className="Image-size" src='atamasthanaya.jpg' alt="" width="230" height="225"></img>
+            <img className="Image-size" src='athugala.jpg' alt="" width="200" height="225"></img>
 
-            <img className="Photo" src='polonnaruwa.jpg' alt="" width="250" height="210"></img>
-            </div>
-          </div>
-
-          <div className='E'>
-          <img className="Photo" src='atamasthanaya.jpg' alt="" width="250" height="225"></img>
-
-            <div className="E-part">
-            <img className="Photo" src='waterfall01.jpg' alt="" width="240" height="215"></img>
-
-            </div>
-          </div>
-
-         <div className="D">
-         <h4>Package No:</h4>
-          <h5>Visit Places:</h5>
-          <h5>Day limits:</h5>
-          <h5>Transport type:</h5>
-          <h5>Price:</h5>
-          <a href="#"><h5>Locations:</h5></a>
-          <a href="#"><h5>Hotel Facilities:</h5></a>
+           </div>
+            <div className="Places-image">
+            <h3>Package No:</h3>
+            <h5>Visit Places:</h5>
+            <h5>Day limits:</h5>
+            <h5>Transport type:</h5>
+            <h5>Price:</h5>
+            <Link to="/location-of-package"><h5>Locations:</h5></Link>
+            <Link to="/"><h5>Hotel Facilities:</h5></Link>
           
           <br></br><br></br>
          
-          <button type="button">Book Now</button>
+          <button className="Btn1" type="button">Request Package</button>
+          <button className="Btn1" type="button">Book Now</button>
           
-          </div>
-     
-  <br></br>
 
-    </div>
-
-  
-
+            </div>
+            
+            </div>
+   
          );
     }
 
