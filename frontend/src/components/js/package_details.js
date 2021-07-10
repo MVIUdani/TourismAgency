@@ -27,7 +27,7 @@ export default class Packagedetails extends Component {
             <h5>Transport type:</h5>
             <h5>Price:</h5>
             <Link to="/location-of-package"><h5>Locations:</h5></Link>
-            <Link to="/"><h5>Hotel Facilities:</h5></Link>
+            <Link to="/hotel-details-of-packageone"><h5>Hotel Facilities:</h5></Link>
           
           <br></br><br></br>
          

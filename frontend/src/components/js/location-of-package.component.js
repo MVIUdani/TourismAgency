@@ -62,7 +62,7 @@ In 20th century there are some records of elephants again in the park.
 
         </div>
 </div>
-
+<br></br><br></br>
 <h1>04.Bopath Ella Falls</h1>
     <br></br>
 
@@ -127,6 +127,7 @@ The view of Kurunagela city from the top of the rock is panoramic and a treat to
 
 
         </div>
+        <br></br>
 
 
  </div>

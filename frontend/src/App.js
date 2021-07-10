@@ -32,6 +32,14 @@ import Wild from './components/js/home/card item pages/wild';
 import Payment from './components/js/customer/payment';
 
 import Packagedetails from './components/js/package_details';
+import Vehicle from './components/js/manage_vehicle_details.component';
+import Transportowner from './components/js/transport_owner_profile.component';
+
+import Bookeddate from './components/js/transport_owner_booked_date.component';
+import Editprofile from './components/js/transport_owner_edit_profile.component'
+
+import Packagelocation from './components/js/location-of-package.component';
+import Package_one_hotel_details from './components/js/hotel-details-of-packageone.component';
 
 
 
@@ -64,6 +72,16 @@ function App() {
 
             <Route path="/payment" component={Payment} />
             <Route path="/package-details" component={Packagedetails} />
+
+            
+            <Route path="/manage_vehicle_details" component={Vehicle} />
+            <Route path="/transport_owner_profile" component={Transportowner} /> 
+            <Route path="/transport_owner_booked_date" component={Bookeddate} />
+            <Route path="/transport_owner_edit_profile" component={Editprofile} />
+
+            <Route path="/location-of-package" component={Packagelocation} />
+            <Route path="/hotel-details-of-packageone" component={Package_one_hotel_details} />
+
            
           </Switch>
       
