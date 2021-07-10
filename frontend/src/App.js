@@ -41,7 +41,7 @@ import Editprofile from './components/js/transport_owner_edit_profile.component'
 import Packagelocation from './components/js/location-of-package.component';
 import Package_one_hotel_details from './components/js/hotel-details-of-packageone.component';
 
-
+import Requests from './components/js/request.component';
 
 function App() {
   return (<Router>
@@ -81,6 +81,7 @@ function App() {
 
             <Route path="/location-of-package" component={Packagelocation} />
             <Route path="/hotel-details-of-packageone" component={Package_one_hotel_details} />
+            <Route path='/requests' component={Requests} />
 
            
           </Switch>
