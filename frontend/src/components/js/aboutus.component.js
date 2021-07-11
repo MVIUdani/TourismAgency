@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import '../css/aboutus.css';
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 
 
 export default class Aboutus extends Component {
@@ -24,8 +24,7 @@ export default class Aboutus extends Component {
           <i><h4>Guides</h4></i>
           <i><h4>Transport Owners</h4></i>
          
-         
-   <Link to='/transport_owner_profile'><h2>Transport Owner Details</h2></Link>
+      
          
   </div>
 <br></br><br></br><br></br>
