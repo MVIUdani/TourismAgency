@@ -26,12 +26,12 @@ export default class Packagedetails extends Component {
             <h5>Day limits:</h5>
             <h5>Transport type:</h5>
             <h5>Price:</h5>
-            <Link to="/location-of-package"><h5>Locations:</h5></Link>
-            <Link to="/hotel-details-of-packageone"><h5>Hotel Facilities:</h5></Link>
+            <Link to="/location-of-package"><h5>Locations</h5></Link>
+            <Link to="/hotel-details-of-packageone"><h5>Hotel Facilities</h5></Link>
           
           <br></br><br></br>
          
-          <button className="Btn1" type="button">Request Package</button>
+          <Link to="/request"><button className="Btn1" type="button">Request Package</button></Link>
           <button className="Btn1" type="button">Book Now</button>
           
 

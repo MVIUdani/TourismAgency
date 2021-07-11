@@ -14,16 +14,16 @@ export default class Editprofile extends Component {
     <hr></hr>
 
     <label htmlFor="email"><h6>First Name</h6></label>
-    <input type="text" placeholder="" name="vehicle_type" id="" required></input>
+    <input type="text" placeholder="Nimal" name="vehicle_type" id="" required></input>
 
     <label htmlFor="psw"><h6>Last Name</h6></label>
-    <input type="text" placeholder="" name="vehicle_color" id="" required></input>
+    <input type="text" placeholder="De Silva" name="vehicle_color" id="" required></input>
 
     <label htmlFor="psw-repeat"><h6>Email</h6></label>
-    <input type="email" placeholder="" name="no_of_seats" id="" required></input>
+    <input type="email" placeholder="nimal@gmail.com" name="no_of_seats" id="" required></input>
 
     <label htmlFor="psw-repeat"><h6>Contact Number</h6></label>
-    <input type="int" placeholder="" name="no_of_seats" id="" required></input>
+    <input type="int" placeholder="071982345" name="no_of_seats" id="" required></input>
 
     <hr></hr>
 

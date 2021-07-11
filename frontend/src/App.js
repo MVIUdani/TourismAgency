@@ -43,6 +43,7 @@ import Package_one_hotel_details from './components/js/hotel-details-of-packageo
 
 import Requests from './components/js/request.component';
 
+
 function App() {
   return (<Router>
     <Navbar />
@@ -82,7 +83,7 @@ function App() {
             <Route path="/location-of-package" component={Packagelocation} />
             <Route path="/hotel-details-of-packageone" component={Package_one_hotel_details} />
             <Route path='/requests' component={Requests} />
-
+            <Route path='/request' component={Requests} />
            
           </Switch>
       
