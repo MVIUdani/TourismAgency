@@ -32,6 +32,7 @@ import Scenic from './components/js/home/card item pages/scenic';
 import Thrills from './components/js/home/card item pages/thrills';
 import Wild from './components/js/home/card item pages/wild';
 
+import PaymentFirst from './components/js/customer/payment-first';
 import Payment from './components/js/customer/payment';
 
 import Packagedetails from './components/js/package_details';
@@ -78,6 +79,7 @@ function App() {
             <Route path="/thrills" component={Thrills} />
             <Route path="/wild" component={Wild} />
 
+            <Route path="/payment-first" component={PaymentFirst} />
             <Route path="/payment" component={Payment} />
             <Route path="/package-details" component={Packagedetails} />
 

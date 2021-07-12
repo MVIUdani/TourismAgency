@@ -17,7 +17,7 @@ function Count_pasenger(){
    
     <input type="int" placeholder="Enter Counter" name="count" id="" required></input>
     <br></br><br></br>
-        <Link to="/payment"><button className="Count_btn" type="submit">Submit</button></Link>
+        <Link to="/payment-first"><button className="Count_btn" type="submit">Submit</button></Link>
         </div>
         
 

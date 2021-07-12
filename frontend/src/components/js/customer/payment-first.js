@@ -17,7 +17,7 @@ export default class PaymentFirst extends Component {
                     <br></br><br></br>
                     <li><Link to='/payment'>Credit or Debit Card</Link></li>
                     <br></br>
-                    <li><Link to='/'>Payhere</Link></li>
+                    <li><Link to='/payment-first'>Payhere</Link></li>
                 </div>
                 </div>
               </div>
