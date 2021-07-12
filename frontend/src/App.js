@@ -42,7 +42,7 @@ import Packagelocation from './components/js/location-of-package.component';
 import Package_one_hotel_details from './components/js/hotel-details-of-packageone.component';
 
 import Requests from './components/js/request.component';
-
+import Count_pasenger from './components/js/count_pasenger';
 
 function App() {
   return (<Router>
@@ -84,7 +84,8 @@ function App() {
             <Route path="/hotel-details-of-packageone" component={Package_one_hotel_details} />
             <Route path='/requests' component={Requests} />
             <Route path='/request' component={Requests} />
-           
+           <Route path='/count_pasenger' component={Count_pasenger} />
+
           </Switch>
       
    </Router>
