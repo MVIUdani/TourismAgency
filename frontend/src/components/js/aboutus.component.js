@@ -28,7 +28,7 @@ export default class Aboutus extends Component {
          
   </div>
 <br></br><br></br><br></br>
-<center><b>You can join and get the services from our agencey!</b></center>
+<center><b>You can join and get the services from our agency!</b></center>
 
 
 </div>

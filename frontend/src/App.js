@@ -14,6 +14,9 @@ import Home from "./components/js/home.component";
 import Aboutus from "./components/js/aboutus.component";
 import Packages from "./components/js/packages.component";
 
+//extra navbar
+import LoggedNavbar from './components/js/home/LoggedNavbar';
+
 //import signup pages
 import CustomerSignup from './components/js/customer-signup.component';
 
@@ -43,6 +46,10 @@ import Package_one_hotel_details from './components/js/hotel-details-of-packageo
 
 import Requests from './components/js/request.component';
 import Count_pasenger from './components/js/count_pasenger';
+
+//customer subpages
+import Customer from './components/js/customer/customer_profile';
+import CusEditprofile from './components/js/customer/customer_edit_profile';
 
 function App() {
   return (<Router>
@@ -82,9 +89,12 @@ function App() {
 
             <Route path="/location-of-package" component={Packagelocation} />
             <Route path="/hotel-details-of-packageone" component={Package_one_hotel_details} />
-            <Route path='/requests' component={Requests} />
+            
             <Route path='/request' component={Requests} />
            <Route path='/count_pasenger' component={Count_pasenger} />
+
+           <Route path='/cus-profile' component={Customer} />
+           <Route path='/edit_profile' component={CusEditprofile} />
 
           </Switch>
       
