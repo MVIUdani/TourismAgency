@@ -1,8 +1,8 @@
 //import logo from './logo.svg';
-import React from 'react';
+import React,{useEffect,useState } from 'react';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link,Redirect } from "react-router-dom";
 
 import Navbar from './components/js/home/Navbar';
 
@@ -53,6 +53,33 @@ import Customer from './components/js/customer/customer_profile';
 import CusEditprofile from './components/js/customer/customer_edit_profile';
 
 function App() {
+
+  const checkAuthenticated = async () => {
+    try {
+      const res = await fetch("http://localhost:5000/auth/verify", {
+        method: "GET",
+        headers: { jwt_token: localStorage.token }
+      });
+
+      const parseRes = await res.json();
+
+      parseRes === true ? setIsAuthenticated(true) : setIsAuthenticated(false);
+    } catch (err) {
+      console.error(err.message);
+    }
+  };
+
+  useEffect(() => {
+    checkAuthenticated();
+  }, []);
+
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+
+  const setAuth = boolean => {
+    setIsAuthenticated(boolean);
+  };
+
+
   return (<Router>
     <Navbar />
     
@@ -62,8 +89,22 @@ function App() {
             <Route exact path='/home' component={Home} />
             <Route path="/aboutus" component={Aboutus} />
             <Route path="/packages" component={Packages} /> 
-            <Route path="/sign-in" component={Login} />
+            <Route exact path="/sign-in"  render={props =>
+                !isAuthenticated ? (
+                  <Login {...props} setAuth={setAuth} />
+                ) : (
+                  <Redirect to="/cus-profile" />
+                )
+              } />
             <Route path="/sign-up" component={SignUp} />
+
+            <Route exact path="/cus-signup"  render={props =>
+                !isAuthenticated ? (
+                  <CustomerSignup {...props} setAuth={setAuth} />
+                ) : (
+                  <Redirect to="/sign-in" />
+                )
+              }/>
 
             <Route path="/forgot" component={Forgot} />
 

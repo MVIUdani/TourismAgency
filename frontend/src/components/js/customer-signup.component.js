@@ -1,10 +1,11 @@
-import React, { Component } from "react";
+import React, { Component,useState } from "react";
 import '../css/authentication.css';
-import validate from './validateInfo';
-import useForm from "./useForm";
+//import validate from './validateInfo';
+//import useForm from "./useForm";
 import { Link } from "react-router-dom";
 
-const CustomerSignup = ({ submitForm }) => {
+
+/*const CustomerSignup = ({ submitForm }) => {
     const { handleChange, handleSubmit, values, errors } = useForm(
       submitForm,
       validate
@@ -100,5 +101,132 @@ const CustomerSignup = ({ submitForm }) => {
         );
     
 }
+
+export default CustomerSignup;*/
+
+const CustomerSignup = ({setAuth})=>{
+
+    const [inputs, setInputs] = useState({
+        firstname:"",
+        lastname:"",
+        email: "",
+        username: "",
+        password: ""
+      });
+      const { firstname,lastname,email,username,password} = inputs;
+
+      const onChange = e =>
+      setInputs({ ...inputs, [e.target.name]: e.target.value });
+  
+    const onSubmitForm = async (e) => {
+      e.preventDefault();
+      try {
+        const body = { firstname,lastname,email,username,password };
+        const response = await fetch(
+          "http://localhost:5000/auth/cus-signup",
+          {
+            method: "POST",
+            headers: {
+              "Content-type": "application/json"
+            },
+            body: JSON.stringify(body)
+          }
+        );
+        const parseRes = await response.json();
+      
+        if (parseRes.token) {
+          localStorage.setItem("token", parseRes.token);
+          setAuth(true);
+        //  toast.success("Register Successfully");
+        } else {
+          setAuth(false);
+         // toast.error(parseRes);
+        }
+      } catch (err) {
+        console.error(err.message);
+      }
+    };
+
+    return (
+
+<div className="auth-wrapper">
+        <div className="auth-inner">
+            <form onSubmit={onSubmitForm}>
+                <h3>Sign Up</h3>
+
+                <div className="form-group">
+                    <label>First name</label>
+                    <input 
+                    type="text" 
+                    className="form-control" 
+                    name="firstname"
+                    placeholder="Enter your first name" 
+                    value={firstname}
+                    onChange={e => onChange(e)}
+                    required
+                    />
+                </div>
+
+                <div className="form-group">
+                    <label>Last name</label>
+                    <input type="text" 
+                    className="form-control"
+                    name="lastname" 
+                    placeholder="Enter your last name" 
+                    value={lastname}
+                    onChange={e => onChange(e)}
+                    required
+                    />
+                </div>
+
+                <div className="form-group">
+                    <label>Email address</label>
+                    <input type="email" 
+                    className="form-control"
+                    name="email" 
+                    placeholder="Enter your email address"
+                    value={email}
+                    onChange={e => onChange(e)}
+                    required 
+                    />
+                    
+                </div>
+
+                <div className="form-group">
+                    <label>User name</label>
+                    <input type="text" 
+                    className="form-control"
+                    name="username" 
+                    placeholder="Enter your user name" 
+                    value={username}
+                    onChange={e => onChange(e)}
+                    required
+                    />
+                </div>
+
+                <div className="form-group">
+                    <label>Password</label>
+                    <input 
+                    type="password" 
+                    className="form-control"
+                    name="password" 
+                    placeholder="Enter your password"
+                    value={password}
+                    onChange={e => onChange(e)}
+                    required 
+                    />
+                </div>
+
+<br></br>
+                <button type="submit" className="btn btn-primary btn-block">Sign Up</button>
+                <p className="forgot-password text-right">
+                    Already registered <Link to='/sign-in'>login?</Link>
+                </p>
+            </form>
+            </div>
+            </div>
+ 
+    );
+};
 
 export default CustomerSignup;

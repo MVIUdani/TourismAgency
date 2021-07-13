@@ -1,11 +1,11 @@
-import React, { Component } from "react";
+import React, { Component,useState } from "react";
 import { Link } from "react-router-dom";
-import Form from "react-validation/build/form";
-import Input from "react-validation/build/input";
+//import Form from "react-validation/build/form";
+//import Input from "react-validation/build/input";
 import '../css/authentication.css';
 
 
-const required = value => {
+/*const required = value => {
     if (!value) {
       return (
         <div>
@@ -50,7 +50,7 @@ export default class Login extends Component {
           loading: true
         });
     
-        this.form.validateAll();
+        this.form.validateAll();*/
     
        /* if (this.checkBtn.context._errors.length === 0) {
           AuthService.login(this.state.username, this.state.password).then(
@@ -77,7 +77,7 @@ export default class Login extends Component {
             loading: false
           });
         }*/
-      }
+   /*   }
 
 
     render() {
@@ -128,4 +128,97 @@ export default class Login extends Component {
             </div>
         );
     }
-}
+}*/
+
+const Login = ({ setAuth }) => {
+  const [inputs, setInputs] = useState({
+    email: "",
+    password: ""
+  });
+
+  const { email, password } = inputs;
+
+  const onChange = e =>
+    setInputs({ ...inputs, [e.target.name]: e.target.value });
+
+  const onSubmitForm = async e => {
+    e.preventDefault();
+    try {
+      const body = { email, password };
+      const response = await fetch(
+        "http://localhost:5000/auth/sign-in",
+        {
+          method: "POST",
+          headers: {
+            "Content-type": "application/json"
+          },
+          body: JSON.stringify(body)
+        }
+      );
+
+      const parseRes = await response.json();
+
+       if (parseRes.token) {
+        localStorage.setItem("token", parseRes.token);
+        setAuth(true);
+       // toast.success("Logged in Successfully");
+      } else {
+        setAuth(false);
+       // toast.error(parseRes);
+      }
+    } catch (err) {
+      console.error(err.message);
+    }
+  };
+
+  return (
+    <div className="auth-wrapper">
+        <div className="auth-inner">
+            <form onSubmit={onSubmitForm}>
+                <h3>Login</h3>
+
+                <div className="form-group">
+                    <label>Email Address</label>
+                    <input type="email" 
+                    className="form-control" 
+                    placeholder="Enter your email address"
+                    name="email"
+                    value={email}
+                    onChange={e => onChange(e)}
+                   // validations={[required]} 
+                    required
+                    />
+                </div>
+
+                <div className="form-group">
+                    <label>Password</label>
+                    <input type="password" 
+                    className="form-control" 
+                    placeholder="Enter your password"
+                    name="password"
+                    value={password}
+                    onChange={e => onChange(e)}
+                  //  validations={[required]} 
+                    required
+                    />
+                </div>
+
+                <div className="form-group">
+                    <div className="custom-control custom-checkbox">
+                        <input type="checkbox" className="custom-control-input" id="customCheck1" />
+                        <label className="custom-control-label" htmlFor="customCheck1">Remember me</label>
+                    </div>
+                </div>
+<br></br>
+                <button type="submit" className="btn btn-primary btn-block">Submit</button>
+                <p className="forgot-password text-right">
+                Forgot <Link to='/forgot'>password?</Link>
+                </p>
+            </form>
+            </div>
+            </div>
+  ); 
+
+};
+
+export default Login;
