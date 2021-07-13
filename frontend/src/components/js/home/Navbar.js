@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from './Button';
-import { Link } from 'react-router-dom';
+import { Link,useLocation } from 'react-router-dom';
 import '../../css/home/Navbar.css';
 
 function Navbar() {
@@ -23,6 +23,12 @@ function Navbar() {
   }, []);
 
   window.addEventListener('resize', showButton);
+
+  const location =useLocation();
+
+  const isCurrentURL = (url) =>{
+    return location.pathname.toLowerCase() === url.toLowerCase();
+  }
 
   return (
     <>
@@ -61,27 +67,51 @@ function Navbar() {
             </li>
 
             <li>
+              {!isCurrentURL('/packages') && !isCurrentURL('/payment-first') && !isCurrentURL('/payment') && !isCurrentURL('/package-details')
+              && !isCurrentURL('/manage_vehicle_details') && !isCurrentURL('/transport_owner_profile') && !isCurrentURL('/transport_owner_edit_profile') 
+              && !isCurrentURL('/location-of-package') && !isCurrentURL('/hotel-details-of-packageone') && !isCurrentURL('/request') 
+              && !isCurrentURL('/count_pasenger') && !isCurrentURL('/cus-profile') && !isCurrentURL('/edit_profile') ?
               <Link
                 to='/sign-up'
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
                 Sign Up
-              </Link>
+              </Link> :
+              <Link
+              to='/cus-profile'
+              className='nav-links'
+              onClick={closeMobileMenu}
+            >
+              Go To Profile
+            </Link>
+              }
             </li>
 
              <li>
+             {!isCurrentURL('/packages') && !isCurrentURL('/payment-first') && !isCurrentURL('/payment') && !isCurrentURL('/package-details')
+              && !isCurrentURL('/manage_vehicle_details') && !isCurrentURL('/transport_owner_profile') && !isCurrentURL('/transport_owner_edit_profile') 
+              && !isCurrentURL('/location-of-package') && !isCurrentURL('/hotel-details-of-packageone') && !isCurrentURL('/request') 
+              && !isCurrentURL('/count_pasenger') && !isCurrentURL('/cus-profile') && !isCurrentURL('/edit_profile') ?
               <Link
                 to='/sign-in'
-                className='nav-links-mobile'
+                className='nav-links'
                 onClick={closeMobileMenu}
               >
                 Login
+              </Link>:
+                <Link
+                to='/'
+                className='nav-links'
+                onClick={closeMobileMenu}
+              >
+                LogOut
               </Link>
+             }
             </li>
           </ul>
           
-          {button && <Button buttonStyle='btn--outline'>LOGIN</Button>}
+          
         </div>
       </nav>
     </>
