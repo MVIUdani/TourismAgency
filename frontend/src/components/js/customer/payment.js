@@ -8,7 +8,7 @@ export default class Payment extends Component {
           <div className="app-container">
             <div className="row">
               <div className="col">
-                <Item name="Package 1" price="50$" img="logo.jpg" />
+                <Item name="Package 1" price="450$" img="logo.jpg" />
               </div>
               <div className="col no-gutters">
               <Checkout />
