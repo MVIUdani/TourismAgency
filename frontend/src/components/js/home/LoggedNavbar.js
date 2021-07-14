@@ -62,7 +62,7 @@ function LoggedNavbar() {
 
             <li>
               <Link
-                to='/customer-profile'
+                to='/'
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
@@ -73,7 +73,7 @@ function LoggedNavbar() {
              <li>
               <Link
                 to='/'
-                className='nav-links-mobile'
+                className='nav-links'
                 onClick={closeMobileMenu}
               >
                 Logout

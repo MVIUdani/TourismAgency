@@ -1,5 +1,6 @@
 import React, { Component,useState } from "react";
 import { Link } from "react-router-dom";
+//import { toast } from "react-toastify";
 //import Form from "react-validation/build/form";
 //import Input from "react-validation/build/input";
 import '../css/authentication.css';
@@ -13,7 +14,7 @@ import '../css/authentication.css';
         </div>
       );
     }
-  };
+  };c
 
 export default class Login extends Component {
     constructor(props) {
@@ -179,7 +180,8 @@ const Login = ({ setAuth }) => {
 
                 <div className="form-group">
                     <label>Email Address</label>
-                    <input type="email" 
+                    <input type="emaila" 
+                    //type="email"
                     className="form-control" 
                     placeholder="Enter your email address"
                     name="email"

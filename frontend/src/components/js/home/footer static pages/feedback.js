@@ -11,7 +11,10 @@ export default class Feedback extends Component{
             <h2>Give Your Feedback</h2> 
             <div className="form-group">
                     <label>Your Feedback</label>
-                    <input type="text" className="form-control" placeholder="Summary" />
+                    <input type="textfeedback"
+                    //type="text" 
+                    className="form-control" 
+                    placeholder="Summary" />
                 </div>
                 <br/>
                 <div className="form-group">

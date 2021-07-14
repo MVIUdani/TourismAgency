@@ -8,7 +8,7 @@ export default class Requests extends Component{
          <div className="request-wrapper">
          <div className="request-inner">
            <form>
-             <h2>Request Changes Regarding Places</h2> 
+             <h2>Request Changes Regarding Visted Places</h2> 
              <div className="form-group">
                      <label>Your Request</label>
                      <textarea className="form-control" placeholder="request your changes" />

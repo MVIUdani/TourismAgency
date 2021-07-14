@@ -1,7 +1,9 @@
 //import logo from './logo.svg';
 import React,{useEffect,useState } from 'react';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+//import "react-toastify/dist/ReactToastify.css";
 import './App.css';
+//import { toast } from "react-toastify";
 import { BrowserRouter as Router, Switch, Route, Link,Redirect } from "react-router-dom";
 
 import Navbar from './components/js/home/Navbar';
@@ -51,6 +53,8 @@ import Count_pasenger from './components/js/count_pasenger';
 //customer subpages
 import Customer from './components/js/customer/customer_profile';
 import CusEditprofile from './components/js/customer/customer_edit_profile';
+
+//toast.configure();
 
 function App() {
 

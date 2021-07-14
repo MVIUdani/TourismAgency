@@ -3,6 +3,7 @@ import '../css/authentication.css';
 //import validate from './validateInfo';
 //import useForm from "./useForm";
 import { Link } from "react-router-dom";
+//import { toast } from "react-toastify";
 
 
 /*const CustomerSignup = ({ submitForm }) => {
@@ -137,10 +138,10 @@ const CustomerSignup = ({setAuth})=>{
         if (parseRes.token) {
           localStorage.setItem("token", parseRes.token);
           setAuth(true);
-        //  toast.success("Register Successfully");
+       //  toast.success("Register Successfully");
         } else {
           setAuth(false);
-         // toast.error(parseRes);
+       //  toast.error(parseRes);
         }
       } catch (err) {
         console.error(err.message);
@@ -157,7 +158,8 @@ const CustomerSignup = ({setAuth})=>{
                 <div className="form-group">
                     <label>First name</label>
                     <input 
-                    type="text" 
+                    type="textfirst"
+                    //type="text" 
                     className="form-control" 
                     name="firstname"
                     placeholder="Enter your first name" 
@@ -169,7 +171,8 @@ const CustomerSignup = ({setAuth})=>{
 
                 <div className="form-group">
                     <label>Last name</label>
-                    <input type="text" 
+                    <input type="textfirst"
+                    //type="text"  
                     className="form-control"
                     name="lastname" 
                     placeholder="Enter your last name" 
@@ -181,7 +184,8 @@ const CustomerSignup = ({setAuth})=>{
 
                 <div className="form-group">
                     <label>Email address</label>
-                    <input type="email" 
+                    <input type="emaila" 
+                    //type="email"
                     className="form-control"
                     name="email" 
                     placeholder="Enter your email address"
@@ -194,7 +198,8 @@ const CustomerSignup = ({setAuth})=>{
 
                 <div className="form-group">
                     <label>User name</label>
-                    <input type="text" 
+                    <input type="textuser" 
+                    //type="text"
                     className="form-control"
                     name="username" 
                     placeholder="Enter your user name" 

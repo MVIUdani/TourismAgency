@@ -14,7 +14,10 @@ export default class Forgot extends Component{
         <h6>A reset link will be sent to your inbox!</h6>
         <div className="form-group">
         <label>Email</label>
-        <input type="email" className="form-control" placeholder="Enter your email"/>
+        <input type="emaila" 
+        //type="email"
+        className="form-control" 
+        placeholder="Enter your email"/>
         </div>
         
             <br/>

@@ -35,16 +35,16 @@ export default class Customer extends Component {
         
         
                  
-                  <img className="Size" src='/CustomerImages/cus1.jpg' alt="" width="280" height="252"></img>
+                  <img className="Size" src='/CustomerImages/cus8.jpg' alt="" width="280" height="252"></img>
                 
-                  <img className="Size" src='/CustomerImages/cus7.jpg' alt="" width="300" height="245"></img>
+                  <img className="Size" src='/CustomerImages/cus11.jpg' alt="" width="300" height="245"></img>
         
                  
-                  <img className="Size" src='/CustomerImages/cus2.jpg' alt="" width="310" height="242"></img>
+                  <img className="Size" src='/CustomerImages/cus13.jpg' alt="" width="310" height="242"></img>
                 
-                  <img className="Size" src='/CustomerImages/cus5.jpg' alt="" width="290" height="242"></img>
-                  <img className="Size" src='/CustomerImages/cus3.jpg' alt="" width="300" height="242"></img>
-                  <img className="Size" src='/CustomerImages/cus6.jpg' alt="" width="310" height="242"></img>
+                  <img className="Size" src='/CustomerImages/cus9.jpg' alt="" width="290" height="242"></img>
+                  <img className="Size" src='/CustomerImages/cus6.jpg' alt="" width="300" height="242"></img>
+                  <img className="Size" src='/CustomerImages/cus10.jpg' alt="" width="310" height="242"></img>
                 
                 
                 
