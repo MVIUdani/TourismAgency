@@ -54,6 +54,8 @@ import Count_pasenger from './components/js/count_pasenger';
 import Customer from './components/js/customer/customer_profile';
 import CusEditprofile from './components/js/customer/customer_edit_profile';
 
+import Transportowner_account_details from './components/js/transport_owner_add_account details';
+
 //toast.configure();
 
 function App() {
@@ -142,6 +144,7 @@ function App() {
 
            <Route path='/cus-profile' component={Customer} />
            <Route path='/edit_profile' component={CusEditprofile} />
+           <Route path='/transport_owner_add_account details' component={Transportowner_account_details} />
 
           </Switch>
       
