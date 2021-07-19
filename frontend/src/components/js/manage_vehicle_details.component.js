@@ -21,6 +21,19 @@ export default class Vehicle extends Component {
 
     <label htmlFor="psw-repeat"><h6>Number of seats</h6></label>
     <input type="text" placeholder="Number of seats" name="no_of_seats" id="" required></input>
+
+    <label htmlFor="psw-repeat"><h6>Valid date for licence</h6></label>
+    <input type="date" placeholder="Enter valid date for licence " name="valid_date" id="" required></input>
+
+    <label htmlFor="psw-repeat"><h6>Charging for a 1 km</h6></label>
+    <input type="int" placeholder="Charging for a 1 km" name="no_of_seats" id="" required></input>
+
+    <label htmlFor="psw-repeat"><h6>Other facilities of your vehicle</h6></label>
+    <input type="text" placeholder="Other facilities" name="no_of_seats" id="" required></input>
+
+    <label htmlFor="psw-repeat"><h6>Plate number of vehicle</h6></label>
+    <input type="int" placeholder="Enter your vehicle plate number" name="no_of_seats" id="" required></input>
+    
     <hr></hr>
 
     <button type="submit" className="registerbtn">Submit</button>
