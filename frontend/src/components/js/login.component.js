@@ -14,7 +14,7 @@ import '../css/authentication.css';
         </div>
       );
     }
-  };c
+  };
 
 export default class Login extends Component {
     constructor(props) {
