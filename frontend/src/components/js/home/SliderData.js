@@ -6,21 +6,21 @@ export const SliderData = [
 
     {
         title:'Nine Arch Bridge Road',
-        image:'CarousalImages/ca2.jpg'
+        image:'CarouselImages/ca2.jpg'
     },
 
     {
         title:'Worlds End Trail',
-        image:'CarousalImages/ca9.jpg'
+        image:'CarouselImages/ca9.jpg'
     },
 
     {
         title:'Sigiriya',
-        image:'CarousalImages/ca5.jpg'
+        image:'CarouselImages/ca5.jpg'
     },
 
     {
         title:'Knuckles',
-        image:'CarousalImages/ca12.jpg'
+        image:'CarouselImages/ca12.jpg'
     },
 ];
