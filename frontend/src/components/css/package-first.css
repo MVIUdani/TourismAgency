@@ -20,31 +20,6 @@ body{
     border-radius: 16px;
 }
 
-@keyframes frame{
-
-    0%{
-
-        transform: scale(0.9);
-        opacity: 0;
-    }
-
-    20%{
-
-        transform: scale(1);
-        opacity: 1;
-    }
-
-    80%{
-
-        transform: scale(1);
-        opacity: 1;
-    }
-    100%{
-
-        transform: translateY(100px);
-        opacity: 0;
-    }
-}
 
 .C{
 
@@ -62,7 +37,7 @@ body{
 
     border-radius: 24px;
     margin-top: 0.5cm;
-    animation: frame 5s linear infinite;
+    
 }
 
 .C-part{
@@ -83,9 +58,9 @@ body{
     width: 6cm;
     height: 13cm;
    
-    margin-left: 0.5cm;
+    margin-left: 0.6cm;
     border-radius: 16px;
-    margin-top: 2.6cm;
+    margin-top: 0.8cm;
 
 }
 
@@ -119,7 +94,7 @@ body{
   
     margin-left: 0.25cm;
     border-radius: 16px;
-    margin-top: 0.8cm;
+    margin-top: 0.5cm;
 
 }
 
