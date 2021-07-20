@@ -36,7 +36,7 @@ export default class Vehicle extends Component {
     
     <hr></hr>
 
-    <button type="submit" className="registerbtn">Submit</button>
+    <button type="submit" className="registerbtn1">Submit</button>
   </div>
 
 </form>
