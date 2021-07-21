@@ -57,6 +57,7 @@ import CusEditprofile from './components/js/customer/customer_edit_profile';
 import Transportowner_account_details from './components/js/transport_owner_add_account details';
 import Hotel_food from './components/js/hotel_food_details';
 import Hotel_room from './components/js/hotel_room_details';
+import Transport_owner_signup from './components/js/transportowner.component';
 
 //toast.configure();
 
@@ -149,6 +150,8 @@ function App() {
            <Route path='/transport_owner_add_account details' component={Transportowner_account_details} />
            <Route path='/hotel_food_details' component={Hotel_food} />
            <Route path='/hotel_room_details' component={Hotel_room} />
+
+           <Route path='/transportowner' component={Transport_owner_signup} />
 
           </Switch>
       

@@ -38,6 +38,10 @@ function SignUp(){
         history.push('/cus-signup');
     }
 
+    function transportownerAccount(){
+        history.push('/transportowner');
+    }
+
     return(
         <div className="Z">
         <br></br><br></br><br></br>
@@ -49,7 +53,7 @@ function SignUp(){
             <button onClick={customerAccount}>Customer Account </button>
             <button onClick="">Hotel Owner Account</button>
             <button onClick="">Guide Account</button>
-            <button onClick="">Transport Owner Account</button>
+            <button onClick={transportownerAccount}>Transport Owner Account</button>
           
 
         </div>
