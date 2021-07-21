@@ -6,7 +6,7 @@ body{
 .Count{
 
     width: 15cm;
-    height: 9cm;
+    height: 13cm;
     background-color: white ;
     border-radius: 12px;
     margin-left: 13cm;
@@ -21,6 +21,10 @@ body{
     height: 9cm;
     margin-left: 1cm;
     margin-top: 1cm;
+}
+
+.btn-primary {
+    margin-left: 360px;
 }
 
 .First h5{

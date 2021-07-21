@@ -34,7 +34,22 @@ export default class Packagedetails extends Component {
             </ul>
             </div>
             <h5>Day Duration: 12 Days</h5>
-            <h5>Transport type:Travelling Bus OR Van</h5>
+            <h5>Select your transport type:</h5>
+            <div class="form-check">
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked/>
+  <label class="form-check-label" for="flexRadioDefault1">
+  Travelling Bus 
+  </label> 
+  </div> 
+
+  <div class="form-check">
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"/>
+  <label class="form-check-label" for="flexRadioDefault2">
+   Travelling Van
+  </label>
+  </div>
+  
+
             <h5>Price for one passenger: 450$</h5>
             <Link to="/location-of-package"><h5>Locations</h5></Link>
             <Link to="/hotel-details-of-packageone"><h5>Hotel Facilities</h5></Link>

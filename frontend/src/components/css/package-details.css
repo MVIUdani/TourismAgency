@@ -23,11 +23,15 @@
 .Places-image{
 
     width: 19cm;
-    height: 17cm;
+    height: 19cm;
     margin-left: 0.5cm;
     background-color: rgba(255, 255, 255, 0.918);
     border-radius: 12px;
     border:2px solid black;
+}
+
+.form-check {
+    padding-left: 5.5rem;
 }
 
 .Places-image h3{
