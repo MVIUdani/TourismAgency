@@ -31,20 +31,20 @@ export default class Customer extends Component {
         
             </div>  
            
-                <div className="Second">
+                <div className="Second1">
         
         
                  
-                  <img className="Size" src='/CarouselImages/ca7.jpg' alt="" width="300" height="300"></img>
+                  <img className="Size" src='/CarouselImages/ca7.jpg' alt="" width="300" height="280"></img>
                 
-                  <img className="Size" src='/CarouselImages/ca9.jpg' alt="" width="300" height="300"></img>
+                  <img className="Size" src='/CarouselImages/ca9.jpg' alt="" width="300" height="280"></img>
         
                  
-                  <img className="Size" src='/CarouselImages/ca11.jpg' alt="" width="300" height="300"></img>
+                  <img className="Size" src='/CarouselImages/ca11.jpg' alt="" width="300" height="280"></img>
                 
-                  <img className="Size" src='/CarouselImages/ca12.jpg' alt="" width="300" height="300"></img>
-                  <img className="Size" src='/CarouselImages/ca8.jpg' alt="" width="300" height="300"></img>
-                  <img className="Size" src='/CarouselImages/ca10.jpg' alt="" width="300" height="300"></img>
+                  <img className="Size" src='/CarouselImages/ca12.jpg' alt="" width="300" height="280"></img>
+                  <img className="Size" src='/CarouselImages/ca8.jpg' alt="" width="300" height="280"></img>
+                  <img className="Size" src='/CarouselImages/ca10.jpg' alt="" width="300" height="280"></img>
                 
                 
                 
