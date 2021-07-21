@@ -24,11 +24,11 @@ function HeroSection(){
   <Carousel.Item>
     <img
       className="d-block w-100 "
-      src="CarouselImages/ca4.jpg"
+      src="CarouselImages/ca12.jpg"
       alt="First slide"
     />
     <Carousel.Caption>
-      <h3>HELLO AGAIN SRI LANKA</h3>
+      <h1>HELLO AGAIN SRI LANKA</h1>
       <p>Join with us & find your unique Sri Lankan Travel Experience</p>
     </Carousel.Caption>
   </Carousel.Item>
@@ -40,19 +40,19 @@ function HeroSection(){
     />
 
     <Carousel.Caption>
-      <h3>HELLO AGAIN SRI LANKA</h3>
+      <h1>HELLO AGAIN SRI LANKA</h1>
       <p>If you are guide,hotel owner or transport owner,then join with us</p>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src="CarouselImages/ca12.jpg"
+      src="CarouselImages/ca4.jpg"
       alt="Third slide"
     />
 
     <Carousel.Caption>
-      <h3>HELLO AGAIN SRI LANKA</h3>
+      <h1>HELLO AGAIN SRI LANKA</h1>
       <p>Join with us,We provide our best service to you</p>
     </Carousel.Caption>
   </Carousel.Item>
