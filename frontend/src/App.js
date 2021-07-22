@@ -37,6 +37,8 @@ import Wild from './components/js/home/card item pages/wild';
 import PaymentFirst from './components/js/customer/payment-first';
 import Payment from './components/js/customer/payment';
 
+import Maps from './components/js/map';
+
 import Packagedetails from './components/js/package_details';
 import Vehicle from './components/js/manage_vehicle_details.component';
 import Transportowner from './components/js/transport_owner_profile.component';
@@ -135,6 +137,7 @@ function App() {
             <Route path="/payment" component={Payment} />
             <Route path="/package-details" component={Packagedetails} />
 
+            <Route path="/maps" component={Maps} />
             
             <Route path="/manage_vehicle_details" component={Vehicle} />
             <Route path="/transport_owner_profile" component={Transportowner} /> 
