@@ -39,7 +39,7 @@ function SignUp(){
     }
 
     function transportownerAccount(){
-        history.push('/transportowner');
+        history.push('/transportowner-signup');
     }
 
     return(
