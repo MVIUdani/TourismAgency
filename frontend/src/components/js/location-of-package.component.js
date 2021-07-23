@@ -1,11 +1,14 @@
 import React, { Component } from "react";
 import '../css/package-location.css'
+import { Link } from 'react-router-dom';
+
 
 function Packagelocation(){
 return(
 
     <div className="Locations">
-
+        <br></br>
+<Link to='/maps'><h5>Get Map of locations</h5></Link>
     <h1>01.Sigiriya</h1>
     <br></br>
     <div className="Sigiriya">
