@@ -41,7 +41,7 @@ function HeroSection(){
 
     <Carousel.Caption>
       <h1>HELLO AGAIN SRI LANKA</h1>
-      <p>If you are guide,hotel owner or transport owner,then join with us</p>
+      <p>If you are guide,hotel owner or transport owner,then join with us to develop your business</p>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>

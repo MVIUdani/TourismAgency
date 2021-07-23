@@ -12,7 +12,7 @@ export default class Aboutus extends Component {
 <br></br><center><h1><i>PARADISE LANKA TOURS</i></h1></center>
 
 <center><h2>About Us</h2></center><br></br>
-<p> We are a agencey that determined to uplif the freelancing community in Sri Lanka.We provide many useful services through our agencey.</p>
+<p> We are a agencey that determined to uplift the freelancing community in Sri Lanka.We provide many useful services through our agencey.</p>
 <br></br>
 
 <center>Our Services for,</center>
