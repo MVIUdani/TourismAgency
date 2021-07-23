@@ -1,14 +1,14 @@
 import React, { Component } from "react";
-
+import styles from "../../css/hotelowner/hotel_owner_account.css";
 
 function Hotelowner_account_details(){
 
     return(
 
         
-<div className="Account_update">
+<div className="Account_update_new">
 <form>
-<div className="container">
+<div className={styles.container}>
     <center><h1>Bank Account Details</h1></center>
     <p>Please fill your bank account details.</p>
     <hr></hr>
