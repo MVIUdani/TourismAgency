@@ -70,7 +70,7 @@ function Transport_owner_signup(){
 
                 <div className="form-group">
                     <label>NIC number</label>
-                    <input type="int" 
+                    <input type="int1" 
                     //type="text"
                     className="form-control"
                     name="username" 
@@ -81,7 +81,7 @@ function Transport_owner_signup(){
 
                 <div className="form-group">
                     <label>Birthday</label>
-                    <input type="date" 
+                    <input type="date1" 
                     //type="text"
                     className="form-control"
                     name="username" 
