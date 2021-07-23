@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import  styles from '../css/hotelowner/hotelowner_owner_account.css'
+import  styles from '../../css/hotelowner/hotel_owner_account.css'
 
 
 
@@ -8,7 +8,7 @@ function Hotelowner_account_details(){
     return(
 
         
-<div className="Account_updates">
+<div className="Account_update_new">
 <form>
 <div className={styles.container}>
     <center><h1>Bank Account Details</h1></center>

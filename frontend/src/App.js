@@ -62,6 +62,7 @@ import Hotel_room from './components/js/hotel_room_details';
 import Transport_owner_signup from './components/js/transportowner-signup.component';
 
 import Guide_signup from './components/js/guide-signup.component';
+import Hotelowner_account_details from './components/js/hotelowner/hotel_owner_add_account_details';
 
 //toast.configure();
 
@@ -159,6 +160,7 @@ function App() {
            <Route path='/transportowner-signup' component={Transport_owner_signup} />
 
            <Route path='/guide-signup' component={Guide_signup} />
+           <Route path='/hotel_owner_add_account details' component={Hotelowner_account_details} />
 
           </Switch>
       
