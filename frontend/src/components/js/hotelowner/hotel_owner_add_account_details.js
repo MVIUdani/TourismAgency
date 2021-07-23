@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import  styles from '../../css/hotelowner/hotel_owner_account.css'
-
 
 
 function Hotelowner_account_details(){
@@ -8,9 +6,9 @@ function Hotelowner_account_details(){
     return(
 
         
-<div className="Account_update_new">
+<div className="Account_update">
 <form>
-<div className={styles.container}>
+<div className="container">
     <center><h1>Bank Account Details</h1></center>
     <p>Please fill your bank account details.</p>
     <hr></hr>
@@ -34,7 +32,7 @@ function Hotelowner_account_details(){
 
     <hr></hr>
 
-    <button type="submit" className="registerbtn4">Submit</button>
+    <button type="submit" className="registerbtn">Submit</button>
   </div>
 
 </form>
