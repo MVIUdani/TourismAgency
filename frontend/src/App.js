@@ -65,6 +65,8 @@ import Transport_owner_signup from './components/js/transportowner-signup.compon
 import Guide_signup from './components/js/guide-signup.component';
 import Hotelowner_account_details from './components/js/hotelowner/hotel_owner_add_account_details';
 
+import SimpleRating from './components/js/customer/rating';
+
 //toast.configure();
 
 function App() {
@@ -138,6 +140,7 @@ function App() {
             <Route path="/payment-first" component={PaymentFirst} />
             <Route path="/payment" component={Payment} />
             <Route path="/package-details" component={Packagedetails} />
+            <Route path="/rates" component={SimpleRating} />
 
             <Route path="/maps" component={Maps} />
             
