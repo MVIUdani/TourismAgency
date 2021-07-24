@@ -160,7 +160,7 @@ function App() {
            <Route path='/transportowner-signup' component={Transport_owner_signup} />
 
            <Route path='/guide-signup' component={Guide_signup} />
-           <Route path='/hotel_owner_add_account details' component={Hotelowner_account_details} />
+           <Route path='/hotel_owner_add_account_details' component={Hotelowner_account_details} />
 
           </Switch>
       
