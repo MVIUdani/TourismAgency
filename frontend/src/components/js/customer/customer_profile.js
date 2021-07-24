@@ -24,6 +24,7 @@ export default class Customer extends Component {
                     <br></br>
                     
                     <Link to='/edit_profile'><h6>Edit Profile Details</h6></Link>
+                    <Link to='favourites'><h6>View Favourites</h6></Link>
                     <Link to='/packages'><h6>View Packages</h6></Link>
                     
                  

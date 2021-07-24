@@ -55,6 +55,7 @@ import Count_pasenger from './components/js/count_pasenger';
 //customer subpages
 import Customer from './components/js/customer/customer_profile';
 import CusEditprofile from './components/js/customer/customer_edit_profile';
+import FavouriteList from './components/js/customer/favourite_list';
 
 import Transportowner_account_details from './components/js/transport_owner_add_account details';
 import Hotel_food from './components/js/hotel_food_details';
@@ -153,6 +154,8 @@ function App() {
 
            <Route path='/cus-profile' component={Customer} />
            <Route path='/edit_profile' component={CusEditprofile} />
+           <Route path='/favourites' component={FavouriteList} />
+
            <Route path='/transport_owner_add_account details' component={Transportowner_account_details} />
            <Route path='/hotel_food_details' component={Hotel_food} />
            <Route path='/hotel_room_details' component={Hotel_room} />
