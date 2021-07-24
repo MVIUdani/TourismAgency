@@ -49,14 +49,7 @@ export default class Transportowner extends Component {
                   <img className="Size" src='tra4.jpg' alt="" width="300" height="242"></img>
                   <img className="Size" src='tra2.jpg' alt="" width="310" height="242"></img>
                 
-                
-                
-        
-                  
-                
-        
-                  
-        
+            
                  
                   </div> 
             
