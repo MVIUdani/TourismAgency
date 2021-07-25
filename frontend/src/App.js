@@ -168,7 +168,7 @@ function App() {
 
            <Route path='/guide-signup' component={Guide_signup} />
            <Route path='/hotel_owner_add_account_details' component={Hotelowner_account_details} />
-           <Route path='/hotel_owner_manage_bank_details' component={Transport_banak_account} />
+           <Route path='/transport_owner_manage_bank_details' component={Transport_banak_account} />
 
           </Switch>
       
