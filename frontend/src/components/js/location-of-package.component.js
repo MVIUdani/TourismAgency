@@ -8,7 +8,7 @@ return(
 
     <div className="Locations">
         <br></br>
-<Link to='/maps'><h5>Get Map of locations</h5></Link>
+<Link to='/maps'><h5 style={{color:"#fff",marginLeft:"40px"}}>Get Map of locations</h5></Link>
     <h1>01.Sigiriya</h1>
     <br></br>
     <div className="Sigiriya">
