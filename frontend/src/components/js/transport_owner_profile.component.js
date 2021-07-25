@@ -27,6 +27,7 @@ export default class Transportowner extends Component {
                     <Link to='/manage_vehicle_details'><h6>Vehicle details setting</h6></Link>
                     <Link to='/transport_owner_booked_date'><h6>Booked Date Update</h6></Link>
                     <Link to='/transport_owner_add_account details'><h6>Add account details</h6></Link>
+                    <Link to='/transport_owner_manage_bank_details'><h6>Manage bank account details</h6></Link>
                     <Link to='/hotel_food_details'><h6>Hotel Foods</h6></Link>
                     <Link to='/hotel_room_details'><h6>Hotel Rooms</h6></Link>
                     <Link to='/hotel_owner_add_account_details'><h6>Account</h6></Link>
