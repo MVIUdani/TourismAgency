@@ -1,4 +1,4 @@
-/*import React, { Component } from "react";
+import React, { Component } from "react";
 import styles from '../../css/customer/customer_edit_profile.css';
 
 export default class CusEditprofile extends Component {
@@ -38,9 +38,9 @@ export default class CusEditprofile extends Component {
         );
 
     }
-}*/
+}
 
-import {useState} from "react";
+/*import {useState} from "react";
 import styles from '../../css/customer/customer_edit_profile.css';
 import Axios from "axios";
 
@@ -54,14 +54,33 @@ function CusEditprofile(){
     const [newlastname,SetNewLastname] = useState("");
     const [newemail,SetNewEmail] = useState("");
     const [newcontact,SetNewContact] = useState(0);
+
+    const [userList,SetUserList] = useState([]);
     
 const updateProfile = (user_id) => {
     Axios.put("http://localhost:5000/userCrud/update",
     {
      firstname: newfirstname, lastname: newlastname, email: newemail, contact: newcontact, user_id: user_id 
-    })
+    }).then(
+        (response)=>{
+            SetUserList(
+                userList.map((val)=>{
+                    return val.user_id == user_id
+                    ?{
+                        user_id : val.user_id,
+                        firstname : newfirstname,
+                        lastname : newlastname,
+                        email : newemail,
+                        contact : newcontact,
+                    }
+                    :val;
+                })
+            );
+        }
+    );
 }
 
+{userList.map((val,key) => {
 return (
 
 
@@ -74,7 +93,7 @@ return (
     
         <label htmlFor="firstname"><h6>First Name</h6></label>
         <input type="text" 
-        placeholder="" 
+        placeholder={val.firstname} 
         name="firstname" 
         id="" 
         required>
@@ -82,7 +101,7 @@ return (
     
         <label htmlFor="lastname"><h6>Last Name</h6></label>
         <input type="text" 
-        placeholder="" 
+        placeholder={val.lastname} 
         name="lastname" 
         id="" 
         required>
@@ -90,7 +109,7 @@ return (
     
         <label htmlFor="email"><h6>Email</h6></label>
         <input type="email" 
-        placeholder="" 
+        placeholder={val.email} 
         name="email" 
         id="" 
         required>
@@ -98,7 +117,7 @@ return (
     
         <label htmlFor="phonenumber"><h6>Contact Number</h6></label>
         <input type="int" 
-        placeholder="" 
+        placeholder={val.contact} 
         name="phonenumber" 
         id="" 
         required>
@@ -115,9 +134,10 @@ return (
     
     
             );
+})}
 
 }
 
-export default CusEditprofile;
+export default CusEditprofile;*/
 
 
