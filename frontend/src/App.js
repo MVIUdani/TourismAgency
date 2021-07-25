@@ -66,6 +66,7 @@ import Guide_signup from './components/js/guide-signup.component';
 import Hotelowner_account_details from './components/js/hotelowner/hotel_owner_add_account_details';
 
 import SimpleRating from './components/js/customer/rating';
+import Transport_banak_account from './components/js/transport_owner_manage_bank_details';
 
 //toast.configure();
 
@@ -167,6 +168,7 @@ function App() {
 
            <Route path='/guide-signup' component={Guide_signup} />
            <Route path='/hotel_owner_add_account_details' component={Hotelowner_account_details} />
+           <Route path='/hotel_owner_manage_bank_details' component={Transport_banak_account} />
 
           </Switch>
       
