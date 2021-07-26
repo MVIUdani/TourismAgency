@@ -68,6 +68,8 @@ import Hotelowner_account_details from './components/js/hotelowner/hotel_owner_a
 import SimpleRating from './components/js/customer/rating';
 import Transport_banak_account from './components/js/transport_owner_manage_bank_details';
 
+import ThemedExample from './components/js/chatbot';
+
 //toast.configure();
 
 function App() {
@@ -137,6 +139,8 @@ function App() {
             <Route path="/scenic" component={Scenic} />
             <Route path="/thrills" component={Thrills} />
             <Route path="/wild" component={Wild} />
+
+            <Route path="/chatbot" component={ThemedExample} />
 
             <Route path="/payment-first" component={PaymentFirst} />
             <Route path="/payment" component={Payment} />
