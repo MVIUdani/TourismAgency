@@ -29,8 +29,31 @@ const steps = [
       {
         id: '3',
         message: 'Hi {previousValue}, nice to meet you!',
-        end: true,
+        //end: true,
+        trigger: '4',
       },
+      {
+          id: '4',
+          message: 'Do you need some help?',
+          trigger: '5',
+      },
+      {
+          id: '5',
+          options: [
+               { value: 1, label: 'Yes', trigger: '6' },
+               { value: 2, label: 'No', trigger: '7'}
+          ],
+      },
+      {
+          id: '7',
+          message: 'Okay,Bye',
+          end: true,
+      },
+      {
+          id: '6',
+          message: 'Great',
+          end: true,
+      }
 ];
 
 const ThemedExample = () => (
