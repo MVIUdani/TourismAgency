@@ -51,8 +51,33 @@ const steps = [
       },
       {
           id: '6',
-          message: 'Great',
-          end: true,
+          message: 'Great, I am very glad to help you',
+         // end: true,
+          trigger: '8',
+      },
+      {
+        id: '8',
+        message: 'What do you want to know? Select your option',
+       // message: 'Select your option',
+        //end: true,
+        trigger: '9',
+      },
+      {
+        id: '9',
+        options: [
+          {value: 1, label:'Know about packages',trigger: '10'},
+          {value: 2, label:'Know about services', trigger: '11' },
+        ],
+      },
+      {
+        id: '10',
+        message: 'Okay, I will redirect you to packages page',
+        end: true
+      },
+      {
+        id: '11',
+        message: 'Okay',
+        end: true,
       }
 ];
 
