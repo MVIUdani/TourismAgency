@@ -43,8 +43,6 @@ function Edit_and_request_package(){
 </div>
 
     );
-
-
 }
 
 export default Edit_and_request_package;
