@@ -86,9 +86,9 @@
 .Btn1{
 
     width: 4.95cm;
-    height: 1cm;
-    background-color: #0099CC;
-    border-radius: 8px;
+    height: 1.25cm;
+  
+    border-radius: 12px;
     margin-left: 0.9cm;
 
 }
@@ -101,6 +101,13 @@
 
 .Btn1 h6{
 
-    margin-top: 0.2cm;
+    margin-top: 0.25cm;
 }
 
+.Btn1  {
+    background-color:#0099CC;
+}
+
+ .Btn1:focus {     
+    background-color:rgba(128, 128, 128, 0.685);    
+}
