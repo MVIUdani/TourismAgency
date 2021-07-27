@@ -56,7 +56,7 @@ export default class Packagedetails extends Component {
           
           <br></br>
          
-          <Link to="/request"><button className="Btn1" type="button">Request Package</button></Link>
+          <Link to="/request"><button className="Btn1" type="button">Request new Package</button></Link>
           <Link to="/count_pasenger"><button className="Btn1" type="button">Book Now</button></Link>
           
 
