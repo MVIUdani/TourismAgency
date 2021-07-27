@@ -69,6 +69,7 @@ import SimpleRating from './components/js/customer/rating';
 import Transport_banak_account from './components/js/transport_owner_manage_bank_details';
 
 import ThemedExample from './components/js/chatbot';
+import Edit_and_request_package from './components/js/edit_and_request_package';
 
 //toast.configure();
 
@@ -173,6 +174,7 @@ function App() {
            <Route path='/guide-signup' component={Guide_signup} />
            <Route path='/hotel_owner_add_account_details' component={Hotelowner_account_details} />
            <Route path='/transport_owner_manage_bank_details' component={Transport_banak_account} />
+           <Route path='/edit_and_request_package' component={Edit_and_request_package} />
 
           </Switch>
       
