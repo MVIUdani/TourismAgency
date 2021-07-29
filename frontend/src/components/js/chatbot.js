@@ -2,6 +2,13 @@
 import { ThemeProvider } from 'styled-components';
 import ChatBot from 'react-simple-chatbot';
 
+// all available config props
+const config ={
+  width: "400px",
+  height: "500px",
+  floating: true,
+};
+
 // all available props
 const theme = {
   background: '#f5f8fb',
@@ -84,6 +91,7 @@ const steps = [
 const ThemedExample = () => (
   <ThemeProvider theme={theme}>
     <ChatBot steps={steps} />;
+    {...config}
   </ThemeProvider>
 );
 
