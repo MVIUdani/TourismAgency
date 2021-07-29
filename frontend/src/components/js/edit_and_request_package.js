@@ -21,8 +21,8 @@ function Edit_and_request_package(){
 
     <label htmlFor="psw"><h6>Vehicle type</h6></label>
     <div class="form-check">
-  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"/>
-  <label class="form-check-label" for="flexRadioDefault2">
+    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"/>
+    <label class="form-check-label" for="flexRadioDefault2">
    Travelling Bus
   </label>
   </div>
