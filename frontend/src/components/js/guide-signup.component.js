@@ -1,8 +1,52 @@
 import React, { Component,useState } from "react";
 import '../css/authentication.css';
 import { Link } from "react-router-dom";
+//import { toast } from "react-toastify";
 
-function Guide_signup(){
+const Guide_signup=({setAuth})=>{
+   
+    const [inputs, setInputs] = useState({
+        firstname:"",
+        lastname:"",
+        email: "",
+        username: "",
+        password: "",
+        nic: "",
+        birthday: ""
+      });
+      const { firstname,lastname,email,username,password,nic,birthday} = inputs;
+
+      const onChange = e =>
+      setInputs({ ...inputs, [e.target.name]: e.target.value });
+  
+    const onSubmitForm = async (e) => {
+      e.preventDefault();
+      try {
+        const body = { firstname,lastname,email,username,password,nic,birthday };
+        const response = await fetch(
+          "http://localhost:5000/auth/guide-signup",
+          {
+            method: "POST",
+            headers: {
+              "Content-type": "application/json"
+            },
+            body: JSON.stringify(body)
+          }
+        );
+        const parseRes = await response.json();
+      
+        if (parseRes.token) {
+          localStorage.setItem("token", parseRes.token);
+          setAuth(true);
+       //  toast.success("Register Successfully");
+        } else {
+          setAuth(false);
+       //  toast.error(parseRes);
+        }
+      } catch (err) {
+        console.error(err.message);
+      }
+    };
     return(
 
         <div className="auth-wrapper">
@@ -17,7 +61,9 @@ function Guide_signup(){
                             //type="text" 
                             className="form-control" 
                             name="firstname"
-                            placeholder="Enter your first name" 
+                            placeholder="Enter your first name"
+                            value={firstname}
+                            onChange={e => onChange(e)} 
                             required
                             />
                         </div>
@@ -28,7 +74,9 @@ function Guide_signup(){
                             //type="text"  
                             className="form-control"
                             name="lastname" 
-                            placeholder="Enter your last name" 
+                            placeholder="Enter your last name"
+                            value={lastname}
+                            onChange={e => onChange(e)} 
                             required
                             />
                         </div>
@@ -40,6 +88,8 @@ function Guide_signup(){
                             className="form-control"
                             name="email" 
                             placeholder="Enter your email address"
+                            value={email}
+                            onChange={e => onChange(e)}
                             required
                             />
                             
@@ -51,7 +101,9 @@ function Guide_signup(){
                             //type="text"
                             className="form-control"
                             name="username" 
-                            placeholder="Enter your user name" 
+                            placeholder="Enter your user name"
+                            value={username}
+                            onChange={e => onChange(e)} 
                             required
                             />
                         </div>
@@ -63,6 +115,8 @@ function Guide_signup(){
                             className="form-control"
                             name="password" 
                             placeholder="Enter your password"
+                            value={password}
+                            onChange={e => onChange(e)}
                             required 
                             />
                         </div>
@@ -72,8 +126,10 @@ function Guide_signup(){
                             <input type="int" 
                             //type="text"
                             className="form-control"
-                            name="username" 
-                            placeholder="Enter your NIC number" 
+                            name="nic" 
+                            placeholder="Enter your NIC number"
+                            value={nic}
+                            onChange={e => onChange(e)} 
                             required
                             />
                         </div>
@@ -83,8 +139,10 @@ function Guide_signup(){
                             <input type="date" 
                             //type="text"
                             className="form-control"
-                            name="username" 
-                            placeholder="Enter your birthday" 
+                            name="birthday" 
+                            placeholder="Enter your birthday"
+                            value={birthday}
+                            onChange={e => onChange(e)} 
                             required
                             />
                         </div>
