@@ -51,7 +51,7 @@ const Guide_signup=({setAuth})=>{
 
         <div className="auth-wrapper">
                 <div className="auth-inner">
-                    <form >
+                    <form onSubmit={onSubmitForm}>
                         <h3>Sign Up</h3>
         
                         <div className="form-group">
