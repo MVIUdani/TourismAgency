@@ -20,7 +20,6 @@ export default class Transportowner extends Component {
                       <h4>Last Name:</h4>
                       <h5>Transport Owner</h5>
                     </div>
-        
                     <br></br>
                     
                     <Link to='/transport_owner_edit_profile'><h6>Edit Profile Details</h6></Link>

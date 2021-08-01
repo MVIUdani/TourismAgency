@@ -35,7 +35,6 @@ function Edit_and_request_package(){
   </div>
 
     <hr></hr>
-
     <button type="submit" className="registerbtn5">Submit</button>
   </div>
 
