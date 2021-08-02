@@ -3,7 +3,7 @@ import React, {useState} from "react";
 import Customer from './customer/customer_profile';
 import Transportowner from './transport_owner_profile.component';
 
-export default function(){
+export default function RolePage(){
     const [role, setRole] = useState("");
 
     return(
