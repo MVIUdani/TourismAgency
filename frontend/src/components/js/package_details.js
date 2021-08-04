@@ -4,9 +4,7 @@ import { Link } from 'react-router-dom';
 
 export default class Packagedetails extends Component {
     render() {
-        return (
-
-          
+        return (    
      
     <div className="Start">
 
