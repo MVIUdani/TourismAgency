@@ -1,10 +1,128 @@
 import React, { Component,useState } from "react";
+import Axios from "axios";
 import '../css/authentication.css';
 //import validate from './validateInfo';
 //import useForm from "./useForm";
 import { Link } from "react-router-dom";
 //import { toast } from "react-toastify";
 
+export default function CustomerSignup(){
+    const [firstnameReg, setFirstnameReg] = useState("");
+    const [lastnameReg, setLastnameReg] = useState("");
+    const [emailReg, setEmailReg] = useState("");
+    const [usernameReg, setUsernameReg] = useState("");
+    const [passwordReg, setPasswordReg] = useState(""); 
+  
+    Axios.defaults.withCredentials = true;
+  
+    const register = () => {
+      Axios.post("http://localhost:5000/cus-signup", {
+        firstname: firstnameReg,
+        lastname: lastnameReg,
+        email: emailReg,   
+        username: usernameReg,
+        password: passwordReg,
+      }).then((response) => {
+        console.log(response);
+      });
+    };
+  
+    return (
+  
+      <div className="auth-wrapper">
+              <div className="auth-inner">
+                  <form>
+                      <h3>Sign Up</h3>
+      
+                      <div className="form-group">
+                          <label>First name</label>
+                          <input 
+                          type="textfirst"
+                          //type="text" 
+                          className="form-control" 
+                          name="firstname"
+                          placeholder="Enter your first name" 
+                         // value={firstname}
+                         onChange={(e) => {
+                          setFirstnameReg(e.target.value);
+                        }}
+                          required
+                          />
+                      </div>
+      
+                      <div className="form-group">
+                          <label>Last name</label>
+                          <input type="textfirst"
+                          //type="text"  
+                          className="form-control"
+                          name="lastname" 
+                          placeholder="Enter your last name" 
+                         // value={lastname}
+                          onChange={(e) => {
+                              setLastnameReg(e.target.value);
+                            }}
+                          required
+                          />
+                      </div>
+      
+                      <div className="form-group">
+                          <label>Email address</label>
+                          <input type="emaila" 
+                          //type="email"
+                          className="form-control"
+                          name="email" 
+                          placeholder="Enter your email address"
+                         // value={email}
+                          onChange={(e) => {
+                              setEmailReg(e.target.value);
+                            }}
+                          required 
+                          />
+                          
+                      </div>
+      
+                      <div className="form-group">
+                          <label>User name</label>
+                          <input type="textuser" 
+                          //type="text"
+                          className="form-control"
+                          name="username" 
+                          placeholder="Enter your user name" 
+                        //  value={username}
+                          onChange={(e) => {
+                              setUsernameReg(e.target.value);
+                            }}
+                          required
+                          />
+                      </div>
+      
+                      <div className="form-group">
+                          <label>Password</label>
+                          <input 
+                          type="password" 
+                          className="form-control"
+                          name="password" 
+                          placeholder="Enter your password"
+                        //  value={password}
+                          onChange={(e) => {
+                              setPasswordReg(e.target.value);
+                            }}
+                          required 
+                          />
+                      </div>
+      
+      <br></br>
+                      <button type="submit" className="btn btn-primary btn-block" onClick={register}>Sign Up</button>
+                      <p className="forgot-password text-right">
+                          Already registered <Link to='/sign-in'>login?</Link>
+                      </p>
+                  </form>
+                  </div>
+                  </div>
+       
+          );
+  
+  }
 
 /*const CustomerSignup = ({ submitForm }) => {
     const { handleChange, handleSubmit, values, errors } = useForm(
@@ -105,7 +223,9 @@ import { Link } from "react-router-dom";
 
 export default CustomerSignup;*/
 
-const CustomerSignup = ({setAuth})=>{
+// ***This implement according to jwtAuth***
+
+/*const CustomerSignup = ({setAuth})=>{
 
     const [inputs, setInputs] = useState({
         firstname:"",
@@ -234,4 +354,5 @@ const CustomerSignup = ({setAuth})=>{
     );
 };
 
-export default CustomerSignup;
+export default CustomerSignup;*/
+
