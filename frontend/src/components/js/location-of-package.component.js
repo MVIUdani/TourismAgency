@@ -14,7 +14,7 @@ return(
     <div className="Sigiriya">
        
 
-        <img className="Picture" src='sigiriya2.jpg' alt="" width="260" height="220"></img>
+        <img className="Picture" src='sigiriya.jpg' alt="" width="260" height="220"></img>
       
 
         <div className="Sigiriya-des">
