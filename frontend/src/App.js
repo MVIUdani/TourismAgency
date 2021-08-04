@@ -10,6 +10,7 @@ import Navbar from './components/js/home/Navbar';
 
 //import nav bar pages
 import Login from "./components/js/login.component";
+import RolePage from './components/js/user_role';
 import Forgot from "./components/js/forgotpassword.component";
 import SignUp from "./components/js/signup-first.component";
 import Home from "./components/js/home.component";
@@ -127,7 +128,8 @@ function App() {
                   <Redirect to="/sign-in" />
                 )
               }/>
-
+              
+            <Route path="/rolepage" component={RolePage} />
             <Route path="/forgot" component={Forgot} />
 
             <Route path="/cus-signup" component={CustomerSignup}/>
