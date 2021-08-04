@@ -1,5 +1,6 @@
-import React, { Component,useState } from "react";
+import React, { Component,useState,useEffect } from "react";
 import { Link } from "react-router-dom";
+import Axios from "axios";
 //import { toast } from "react-toastify";
 //import Form from "react-validation/build/form";
 //import Input from "react-validation/build/input";
@@ -131,7 +132,89 @@ export default class Login extends Component {
     }
 }*/
 
-const Login = ({ setAuth }) => {
+export default function(){
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  
+  const [loginStatus, setLoginStatus] = useState("");
+
+  const login = () => {
+    Axios.post("http://localhost:5000/sign-in", {
+      email: email,
+      password: password,
+    }).then((response) => {
+      if (response.data.message) {
+        setLoginStatus(response.data.message);
+      } else {
+        setLoginStatus(response.data[0].email_address);
+      }
+    });
+  };
+
+  useEffect(() => {
+    Axios.get("http://localhost:5000/sign-in").then((response) => {
+      if (response.data.loggedIn == true) {
+        setLoginStatus(response.data.user[0].email_address);
+      }
+    });
+  }, []);
+
+  return (
+    <div className="auth-wrapper">
+        <div className="auth-inner">
+            <form>
+                <h3>Login</h3>
+
+                <div className="form-group">
+                    <label>Email Address</label>
+                    <input type="emaila" 
+                    //type="email"
+                    className="form-control" 
+                    placeholder="Enter your email address"
+                    name="email"
+                   // value={email}
+                    onChange={(e) => {
+                      setEmail(e.target.value);
+                    }}
+                   // validations={[required]} 
+                    required
+                    />
+                </div>
+
+                <div className="form-group">
+                    <label>Password</label>
+                    <input type="password" 
+                    className="form-control" 
+                    placeholder="Enter your password"
+                    name="password"
+                   // value={password}
+                    onChange={(e) => {
+                      setPassword(e.target.value);
+                    }}
+                  //  validations={[required]} 
+                    required
+                    />
+                </div>
+
+                <div className="form-group">
+                    <div className="custom-control custom-checkbox">
+                        <input type="checkbox" className="custom-control-input" id="customCheck1" />
+                        <label className="custom-control-label" htmlFor="customCheck1">Remember me</label>
+                    </div>
+                </div>
+<br></br>
+                <button type="submit" className="btn btn-primary btn-block" onClick={login}>Submit</button>
+                <p className="forgot-password text-right">
+                Forgot <Link to='/forgot'>password?</Link>
+                </p>
+            </form>
+            </div>
+            </div>
+  ); 
+
+}
+
+/*const Login = ({ setAuth }) => {
   const [inputs, setInputs] = useState({
     email: "",
     password: ""
@@ -223,4 +306,4 @@ const Login = ({ setAuth }) => {
 
 };
 
-export default Login;
+export default Login;*/

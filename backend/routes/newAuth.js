@@ -114,12 +114,12 @@ module.exports = function(app){
       });
       
       app.post("/sign-in", (req, res) => {
-        const username = req.body.username;
+        const email = req.body.email;
         const password = req.body.password;
       
         con.query(
-          "SELECT * FROM users WHERE user_name = ?;",
-          username,
+          "SELECT * FROM users WHERE email_address = ?;",
+          email,
           (err, result) => {
             if (err) {
               res.send({ err: err });
@@ -132,7 +132,7 @@ module.exports = function(app){
                   console.log(req.session.user);
                   res.send(result);
                 } else {
-                  res.send({ message: "Wrong username/password combination!" });
+                  res.send({ message: "Wrong email/password combination!" });
                 }
               });
             } else {
