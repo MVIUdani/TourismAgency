@@ -1,5 +1,5 @@
 import React, { Component,useState,useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import Axios from "axios";
 //import { toast } from "react-toastify";
 //import Form from "react-validation/build/form";
@@ -137,6 +137,7 @@ export default function Login(){
   const [password, setPassword] = useState("");
   
   const [loginStatus, setLoginStatus] = useState("");
+  const history = useHistory();
 
   const login = () => {
     Axios.post("http://localhost:5000/sign-in", {
@@ -149,6 +150,7 @@ export default function Login(){
         setLoginStatus(response.data[0].email_address);
       }
     });
+    history.push('/rolepage');
   };
 
   useEffect(() => {
