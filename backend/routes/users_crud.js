@@ -1,9 +1,10 @@
-const express = require("express");
-const router = express.Router();
+/*const express = require("express");
+const router = express.Router();*/
 const con = require("../db");
 
+module.exports = function(app){
 //create user
-router.post("/create",(req,res)=>{
+app.post("/create",(req,res)=>{
    const firstname = req.body.firstname;
    const lastname = req.body.lastname;
    const email = req.body.email;
@@ -24,7 +25,7 @@ router.post("/create",(req,res)=>{
 });
 
 //view user
-router.get("/read",(req,res)=>{
+app.get("/read",(req,res)=>{
     con.query(
         "SELECT * FROM users",
         (err, result) => {
@@ -38,7 +39,7 @@ router.get("/read",(req,res)=>{
 });
 
 //update user
-router.put("/update",(req,res)=>{
+app.put("/update",(req,res)=>{
     const user_id = req.body.user_id;
     const firstname = req.body.firstname;
     const lastname = req.body.lastname;
@@ -59,7 +60,7 @@ router.put("/update",(req,res)=>{
 });
 
 //delete user
-router.delete("/delete/:user_id",(req,res)=>{
+app.delete("/delete/:user_id",(req,res)=>{
     const user_id = req.params.user_id;
     
     con.query(
@@ -75,4 +76,4 @@ router.delete("/delete/:user_id",(req,res)=>{
     );
 });
 
-module.exports = router;
+}

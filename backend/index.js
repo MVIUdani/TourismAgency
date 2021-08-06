@@ -37,7 +37,7 @@ app.use(
 
 //app.use("/dashboard", require("./routes/dashboard"));
 
-app.use("/userCrud", require("./routes/users_crud"));
+require("./routes/users_crud")(app);
 
 require('./routes/newAuth')(app);
 
