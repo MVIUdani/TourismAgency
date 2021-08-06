@@ -1,7 +1,7 @@
 import React, { Component,useState } from "react";
 import Axios from "axios";
 import '../css/authentication.css';
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 //import { toast } from "react-toastify";
 
 export default function Guide_signup(){
@@ -12,6 +12,8 @@ export default function Guide_signup(){
   const [passwordReg, setPasswordReg] = useState(""); 
   const [nicReg, setNicReg] = useState("");
   const [birthdayReg, setBirthdayReg] = useState(""); 
+
+  const history = useHistory();
 
   Axios.defaults.withCredentials = true;
 
@@ -27,6 +29,7 @@ export default function Guide_signup(){
     }).then((response) => {
       console.log(response);
     });
+    history.push('/rolepage');
   };
 
   return (
