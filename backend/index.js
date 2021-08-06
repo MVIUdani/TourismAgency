@@ -33,9 +33,9 @@ app.use(
 
 //routes
 
-app.use("/auth", require("./routes/jwtAuth"));
+//app.use("/auth", require("./routes/jwtAuth"));
 
-app.use("/dashboard", require("./routes/dashboard"));
+//app.use("/dashboard", require("./routes/dashboard"));
 
 app.use("/userCrud", require("./routes/users_crud"));
 
