@@ -32,7 +32,7 @@ export default class Transportowner extends Component {
                   
                     <Link to='/hotel_food_details'><h6>Hotel Foods</h6></Link>
                     <Link to='/hotel_room_details'><h6>Hotel Rooms</h6></Link>
-                    <Link to='/hotel_owner_add_account_details'><h6>Account</h6></Link>
+                    <Link to='/hotel_owner_add_account_details'><h6>Bank Account</h6></Link>
                   
         
             </div>  
