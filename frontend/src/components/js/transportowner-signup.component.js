@@ -29,7 +29,7 @@ export default function Guide_signup(){
     }).then((response) => {
       console.log(response);
     });
-    history.push('/transport_owner_profile');
+    history.push('/home');
   };
 
   return (

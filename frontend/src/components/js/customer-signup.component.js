@@ -27,7 +27,7 @@ export default function CustomerSignup(){
       }).then((response) => {
         console.log(response);
       });
-      history.push('/cus-profile');
+      history.push('/home');
     };
   
     return (
