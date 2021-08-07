@@ -7,16 +7,17 @@ const config ={
   width: "400px",
   height: "500px",
   floating: true,
+  headerTitle: "Paradise Lanka Tours Chat Bot",
 };
 
 // all available props
 const theme = {
   background: '#f5f8fb',
   fontFamily: 'Helvetica Neue',
-  headerBgColor: '#EF6C00',
+  headerBgColor: '#1829fa',
   headerFontColor: '#fff',
   headerFontSize: '15px',
-  botBubbleColor: '#EF6C00',
+  botBubbleColor: '#1829fa',
   botFontColor: '#fff',
   userBubbleColor: '#fff',
   userFontColor: '#4a4a4a',
@@ -90,8 +91,8 @@ const steps = [
 
 const ThemedExample = () => (
   <ThemeProvider theme={theme}>
-    <ChatBot steps={steps} />;
-    {...config}
+    <ChatBot steps={steps} {...config} />;
+    
   </ThemeProvider>
 );
 
