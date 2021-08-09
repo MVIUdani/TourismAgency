@@ -1,6 +1,6 @@
 import React, { Component,useState } from "react";
 import Axios from "axios";
-import '../css/authentication.css';
+import '../../css/authentication.css';
 //import validate from './validateInfo';
 //import useForm from "./useForm";
 import { Link,useHistory } from "react-router-dom";

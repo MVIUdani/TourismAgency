@@ -21,7 +21,7 @@ import Packages from "./components/js/packages.component";
 import LoggedNavbar from './components/js/home/LoggedNavbar';
 
 //import signup pages
-import CustomerSignup from './components/js/customer-signup.component';
+import CustomerSignup from './components/js/signup_pages/customer-signup.component';
 
 //import footer static pages
 import Contacts from './components/js/home/footer static pages/contactus';
@@ -61,10 +61,10 @@ import FavouriteList from './components/js/customer/favourite_list';
 import Transportowner_account_details from './components/js/transport_owner_add_account details';
 import Hotel_food from './components/js/hotel_food_details';
 import Hotel_room from './components/js/hotel_room_details';
-import Transport_owner_signup from './components/js/transportowner-signup.component';
+import Transport_owner_signup from './components/js/signup_pages/transportowner-signup.component';
 
-import Guide_signup from './components/js/guide-signup.component';
-import HotelOwner_Signup from './components/js/hotelowner-signup.component';
+import Guide_signup from './components/js/signup_pages/guide-signup.component';
+import HotelOwner_Signup from './components/js/signup_pages/hotelowner-signup.component';
 import Hotelowner_account_details from './components/js/hotelowner/hotel_owner_add_account_details';
 
 import SimpleRating from './components/js/customer/rating';
