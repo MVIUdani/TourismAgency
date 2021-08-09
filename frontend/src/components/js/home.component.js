@@ -3,7 +3,7 @@ import React from 'react';
 import Cards from '../js/home/Cards';
 import HeroSection from '../js/home/HeroSection';
 import Footer from '../js/home/Footer';
-//import ThemedExample from './chatbot';
+import ThemedExample from './chatbot';
 
 function Home() {
   return (
@@ -11,6 +11,7 @@ function Home() {
       <HeroSection />
       <Cards />
       <Footer />
+      <ThemedExample />
     </>
   );
 }

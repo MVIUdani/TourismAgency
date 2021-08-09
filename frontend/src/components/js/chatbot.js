@@ -1,4 +1,4 @@
-/*import React from 'react';
+import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import ChatBot from 'react-simple-chatbot';
 
@@ -96,13 +96,13 @@ const ThemedExample = () => (
   </ThemeProvider>
 );
 
-export default ThemedExample;*/
+export default ThemedExample;
 
-import React from 'react';
+/*import React from 'react';
 import { Component } from 'react';
 
 export default class ThemedExample extends Component{
     render(){
       return null;
     }
-    }
+    }*/
