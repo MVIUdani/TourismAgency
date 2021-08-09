@@ -73,6 +73,16 @@ import Transport_banak_account from './components/js/transport_owner_manage_bank
 import ThemedExample from './components/js/chatbot';
 import Edit_and_request_package from './components/js/edit_and_request_package';
 
+import Admin from './components/js/admin/image_list';
+import AdminEditprofile from './components/js/admin/admin_editprofile';
+
+import AdminAssignGuide from './components/js/admin/bookings/admin_assignguide';
+
+import PendingBookings from './components/js/admin/bookings/pending_bookings';
+import CurrentBookings from './components/js/admin/bookings/current_bookings';
+import RejectedBookings from './components/js/admin/bookings/rejected_bookings';
+import BookingHistory from './components/js/admin/bookings/booking_history';
+
 //toast.configure();
 
 function App() {
@@ -179,6 +189,16 @@ function App() {
            <Route path='/hotel_owner_add_account_details' component={Hotelowner_account_details} />
            <Route path='/transport_owner_manage_bank_details' component={Transport_banak_account} />
            <Route path='/edit_and_request_package' component={Edit_and_request_package} />
+
+           <Route path='/admin-profile' component={Admin} />
+           <Route path='/admin_editprofile' component={AdminEditprofile} />
+
+           <Route path='/admin_assignguide' component={AdminAssignGuide} />
+
+           <Route exact path = "/bookings/pending_bookings" component = {PendingBookings} />
+           <Route exact path = "/bookings/current_bookings" component = {CurrentBookings} />
+           <Route exact path = "/bookings/rejected_bookings" component = {RejectedBookings} />
+           <Route exact path = "/bookings/booking_history" component = {BookingHistory} />
 
           </Switch>
       
