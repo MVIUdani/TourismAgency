@@ -1,4 +1,4 @@
-import React from 'react';
+/*import React from 'react';
 //import '../App.css';
 //import { Button } from './Button';
 import '../../css/home/HeroSection.css';
@@ -12,9 +12,9 @@ function HeroSection() {
   );
 }
 
-export default HeroSection;
+export default HeroSection;*/
 
-/*import React,{Component} from 'react';
+import React,{Component} from 'react';
 import {Carousel} from 'react-bootstrap';
 import '../../css/home/HeroSection.css';
 
@@ -60,4 +60,4 @@ function HeroSection(){
   );
 }
 
-export default HeroSection;*/
+export default HeroSection;
