@@ -64,6 +64,8 @@ import Hotel_room from './components/js/hotel_room_details';
 import Transport_owner_signup from './components/js/signup_pages/transportowner-signup.component';
 
 import Guide_signup from './components/js/signup_pages/guide-signup.component';
+import Guide from './components/js/guide/guide';
+
 import HotelOwner_Signup from './components/js/signup_pages/hotelowner-signup.component';
 import Hotelowner_account_details from './components/js/hotelowner/hotel_owner_add_account_details';
 
@@ -185,6 +187,8 @@ function App() {
            <Route path='/transportowner-signup' component={Transport_owner_signup} />
 
            <Route path='/guide-signup' component={Guide_signup} />
+           <Route path
+
            <Route path='/hotelowner-signup' component={HotelOwner_Signup} />
            <Route path='/hotel_owner_add_account_details' component={Hotelowner_account_details} />
            <Route path='/transport_owner_manage_bank_details' component={Transport_banak_account} />
