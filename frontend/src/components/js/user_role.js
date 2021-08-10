@@ -3,6 +3,7 @@ import Axios from "axios";
 
 import Customer from './customer/customer_profile';
 import Transportowner from './transport_owner_profile.component';
+import Admin from './admin/image_list';
 
 export default function RolePage(){
     const [role, setRole] = useState("");
@@ -19,6 +20,7 @@ export default function RolePage(){
     return(
 <div>
     {role == "1" && <Customer /> }
+    {role == "2" && <Admin />}
     {role == "4" && <Transportowner />}
 </div>
     );

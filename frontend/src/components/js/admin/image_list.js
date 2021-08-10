@@ -1,14 +1,29 @@
   
-import React, { Component } from "react";
+import React, {useState,useEffect} from "react";
 import '../../css/admin/admin.css';
 import { Link } from 'react-router-dom';
 import ImageList from '@material-ui/core/ImageList';
 import ImageListItem from '@material-ui/core/ImageListItem';
+import Axios from "axios";
 //import LoggedNavbar from "./LoggedNavbar";
 
 
-export default class Admin extends Component {
-    render() {
+export default function Admin () {
+  const [firstname, setFirstname] = useState("");
+  const [lastname, setLastname] = useState("");
+  const [email, setEmail] = useState("");
+
+  Axios.defaults.withCredentials = true;
+  useEffect(() => {
+    Axios.get("http://localhost:5000/sign-in").then((response) => {
+      if (response.data.loggedIn == true) {
+        setFirstname(response.data.user[0].first_name);
+        setLastname(response.data.user[0].last_name);
+        setEmail(response.data.user[0].email_address);
+      }
+    });
+  }, []);  
+
         return (
          
             
@@ -21,11 +36,14 @@ export default class Admin extends Component {
                  
                     <div className="Data">
                       <br></br>
-                      <h3>First Name:</h3>
-                      <h4>Last Name:</h4>
+                      <h4>First Name: {firstname}</h4>
+                      <h4>Last Name: {lastname}</h4>
+                      <h4>Email : {email}</h4>
                       <h5>Admin</h5>
                     </div>
         
+                    <br></br>
+                    <br></br>
                     <br></br>
                     
                     <Link to='/admin_editprofile'><h6>Edit Profile </h6></Link>
@@ -68,7 +86,7 @@ export default class Admin extends Component {
 
 
         );
-        }
+        
     }
           
          
