@@ -187,7 +187,7 @@ function App() {
            <Route path='/transportowner-signup' component={Transport_owner_signup} />
 
            <Route path='/guide-signup' component={Guide_signup} />
-           <Route path
+           <Route path='/guide-profile' component={Guide} />
 
            <Route path='/hotelowner-signup' component={HotelOwner_Signup} />
            <Route path='/hotel_owner_add_account_details' component={Hotelowner_account_details} />
