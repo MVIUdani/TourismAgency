@@ -50,6 +50,7 @@ export default Vehicle;
 
 /*
 
+
 import React, { Component,useState, useEffect } from "react";
 import styles from '../css/transport-owner-details.css';
 import Axios from 'axios';
@@ -177,18 +178,47 @@ const ShowDelete = () => {
     return (
             <div className="Dataget">
                 <br></br>
+                <h1>My vehicle details</h1>
+                <hr></hr>
+                <form>
+                <br></br>
                 
-                <h6> Vehicle Type: {val.name}</h6>
-                <br></br>
-                <h6> Number Of Seats: {val.seats}</h6>
-                <br></br>
-                <h6> Color: {val.color}</h6>
+
+                <label><h6>Valid date for licence</h6></label>
+            <input type="text" value={val.name}></input>
+
+
+
+                <label><h6>Valid date for licence</h6></label>
+            <input type="int" value={val.seats}></input>
+
+              
+                <label><h6>Vehicle Color</h6></label>
+            <input type="text" value={val.color}></input>
+
+
+
+                <label><h6>Valid date for licence</h6></label>
+            <input type="text" value={val.valid_date}></input>
+
+                <label><h6>Charging for a 1 km</h6></label>
+            <input type="int" value={val.cost}></input>
+
+                
+                <label><h6>plate Number</h6></label>
+            <input type="int" value={val.plate_no}></input>
+
+        
+            <label><h6>Other details</h6></label>
+            <input type="text" value={val.other_details}></input>
+
 
                 <button className="Use_button">Edit</button>
-                <button  onClick={ShowDelete} className="Use_button">Delete</button>
-                
-
+               
+               
+                </form>
             </div>
+           
 
     );
 
@@ -196,14 +226,15 @@ const ShowDelete = () => {
 
 
 )};
-
-
-       
+ 
+     
 </div>
-
 
              );
             }
             
             export default Vehicle;
+
+            // <button  onClick={ShowDelete} className="Use_button">Delete</button>
+
             */
