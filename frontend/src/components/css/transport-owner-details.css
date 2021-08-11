@@ -100,3 +100,155 @@ a {
   h6{
     margin-left: 0.2cm;
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*
+
+
+* {box-sizing: border-box}
+
+body{
+    background-color: #0099CC;
+
+}
+.Basic{
+    margin-top: 0.5cm;
+    background-color: white;
+    margin-left: 13cm;
+    width: 14cm;
+    height: 25cm;
+    border-radius: 16px;
+}
+
+
+.container {
+  padding: 16px;
+}
+
+
+input[type=text] {
+  width: 90%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  border-radius: 12px;
+  margin-left: 0.2cm;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+hr {
+  border: 1px solid black;
+  margin-bottom: 25px;
+}
+
+
+.registerbtn {
+  background-color: #0099CC;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 80%;
+  opacity: 0.9;
+  margin-left: 1cm;
+  border-radius: 12px;
+}
+
+.register {
+  background-color: #545758;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 80%;
+  opacity: 0.9;
+  margin-left: 1cm;
+  border-radius: 12px;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+
+a {
+  color: #0099CC;
+}
+
+
+.signin {
+    background-color: #f1f1f1;
+    text-align: center;
+  }
+
+  p{
+
+    margin-left: 0.8cm;
+  }
+
+  h6{
+    margin-left: 0.2cm;
+  }
+
+  .Dataget{
+
+    margin-top: 0.5cm;
+    background-color: white;
+    width: 14cm;
+    height: 25.5cm;
+    border-radius: 16px;
+  }
+
+  .Dataget h6{
+
+    margin-left: 0.5cm;
+  }
+
+  .Use_button{
+
+  background-color: #0099CC;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 80%;
+  opacity: 0.9;
+  margin-left: 1cm;
+  border-radius: 12px;
+  
+  }
+
+
+  */
