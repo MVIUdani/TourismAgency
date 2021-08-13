@@ -163,8 +163,6 @@ const ShowDelete = () => {
 
         }}></input>
 
-    
-
 
     <Link to="/transport_owner_profile"><button onClick={submitReview} type="submit" className="registerbtn">Submit</button></Link>
   </div>
