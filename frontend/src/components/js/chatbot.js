@@ -79,12 +79,40 @@ const steps = [
       },
       {
         id: '10',
-        message: 'Okay, I will redirect you to packages page',
-        end: true
+        message: 'Okay, Now you can see about details of packages',
+       // end: true
+        trigger: '12',
+      },
+      {
+        id: '12',
+        component: (
+        <div>
+          <ul>
+          <li>We have created packages that includes list of places with description, day duration of visit, transport facilities & hotel facilities</li>
+          <li>If you want you can customize this packages</li>
+          </ul>
+        </div>
+        ),
+        end: true,
       },
       {
         id: '11',
-        message: 'Okay',
+        message: 'Okay, Now you can see our services',
+       // end: true,
+        trigger: '13',
+      },
+      {
+        id: '13',
+        component: (
+        <div>
+          <ul>
+          <li>We help to customer to find unique Sri Lankan Travel Experience.</li>
+          <li>Hotel owners, Transport owners & Guides can develop their business.</li>
+          <li>You can get knowledge about Sri Lankan Tourism.</li>
+          <li>We contribute to develop tourism industry.</li>
+          </ul>
+        </div>
+        ),
         end: true,
       }
 ];
