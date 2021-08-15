@@ -84,6 +84,7 @@ import PendingBookings from './components/js/admin/bookings/pending_bookings';
 import CurrentBookings from './components/js/admin/bookings/current_bookings';
 import RejectedBookings from './components/js/admin/bookings/rejected_bookings';
 import BookingHistory from './components/js/admin/bookings/booking_history';
+import Transport_owner_all_details from './components/js/transport_owner_all_details';
 
 //toast.configure();
 
@@ -203,6 +204,7 @@ function App() {
            <Route exact path = "/bookings/current_bookings" component = {CurrentBookings} />
            <Route exact path = "/bookings/rejected_bookings" component = {RejectedBookings} />
            <Route exact path = "/bookings/booking_history" component = {BookingHistory} />
+           <Route path='/transport_owner_all_details' component={Transport_owner_all_details} />
 
           </Switch>
       
