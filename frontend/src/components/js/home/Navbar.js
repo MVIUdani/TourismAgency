@@ -79,7 +79,7 @@ function Navbar() {
                 Sign Up
               </Link> :
               <Link
-              to='/guide_profile'
+              to='/cus-profile'
               className='nav-links'
               onClick={closeMobileMenu}
             >

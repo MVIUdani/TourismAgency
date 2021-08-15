@@ -14,7 +14,7 @@ export default class Guide extends Component {
      
             <div className="Impo">
         
-            <img className="Profile" src='profile.jpeg' alt="" width="240" height="235"></img>
+            <img className="Profile" src='profile.jpg' alt="" width="240" height="235"></img>
                  
                     <div className="Data">
                       <br></br>
