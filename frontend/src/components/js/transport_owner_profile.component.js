@@ -55,16 +55,16 @@ export default function Transportowner(){
         
         
                  
-                  <img className="Size" src='tra1.jpg' alt="" width="280" height="252"></img>
+                  <img className="Size3" src='tra1.jpg' alt="" width="280" height="252"></img>
                 
-                  <img className="Size" src='tra5.jpeg' alt="" width="300" height="245"></img>
+                  <img className="Size3" src='tra5.jpeg' alt="" width="300" height="245"></img>
         
                  
-                  <img className="Size" src='tra3.jpg' alt="" width="310" height="242"></img>
+                  <img className="Size3" src='tra3.jpg' alt="" width="310" height="242"></img>
                 
-                  <img className="Size" src='tra6.jpg' alt="" width="290" height="242"></img>
-                  <img className="Size" src='tra4.jpg' alt="" width="300" height="242"></img>
-                  <img className="Size" src='tra2.jpg' alt="" width="310" height="242"></img>
+                  <img className="Size3" src='tra6.jpg' alt="" width="290" height="242"></img>
+                  <img className="Size3" src='tra4.jpg' alt="" width="300" height="242"></img>
+                  <img className="Size3" src='tra2.jpg' alt="" width="310" height="242"></img>
                 
             
                  
