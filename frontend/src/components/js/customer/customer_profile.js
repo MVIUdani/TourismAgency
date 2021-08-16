@@ -5,6 +5,7 @@ import Axios from "axios";
 
 
 export default function Customer() {
+  const [user_id, setUser_id] = useState("");
   const [firstname, setFirstname] = useState("");
   const [lastname, setLastname] = useState("");
   const [email, setEmail] = useState("");
@@ -13,6 +14,7 @@ export default function Customer() {
   useEffect(() => {
     Axios.get("http://localhost:5000/sign-in").then((response) => {
       if (response.data.loggedIn == true) {
+        setUser_id(response.data.user[0].user_id);
         setFirstname(response.data.user[0].first_name);
         setLastname(response.data.user[0].last_name);
         setEmail(response.data.user[0].email_address);
@@ -48,26 +50,26 @@ export default function Customer() {
         
             </div>  
            
-                <div className="Second5">
+                <div className="Second1">
         
         
                  
-                  <img className="Sizenew" src='/CarouselImages/ca7.jpg' alt="" width="300" height="280"></img>
+                  <img className="Size" src='/CarouselImages/ca7.jpg' alt="" width="300" height="280"></img>
                 
-                  <img className="Sizenew" src='/CarouselImages/ca9.jpg' alt="" width="300" height="280"></img>
+                  <img className="Size" src='/CarouselImages/ca9.jpg' alt="" width="300" height="280"></img>
         
                  
-                  <img className="Sizenew" src='/CarouselImages/ca11.jpg' alt="" width="300" height="280"></img>
+                  <img className="Size" src='/CarouselImages/ca11.jpg' alt="" width="300" height="280"></img>
                 
-                  <img className="Sizenew" src='/CarouselImages/ca12.jpg' alt="" width="300" height="280"></img>
-                  <img className="Sizenew" src='/CarouselImages/ca8.jpg' alt="" width="300" height="280"></img>
-                  <img className="Sizenew" src='/CarouselImages/ca10.jpg' alt="" width="300" height="280"></img>
+                  <img className="Size" src='/CarouselImages/ca12.jpg' alt="" width="300" height="280"></img>
+                  <img className="Size" src='/CarouselImages/ca8.jpg' alt="" width="300" height="280"></img>
+                  <img className="Size" src='/CarouselImages/ca10.jpg' alt="" width="300" height="280"></img>
                 
                 
                 
         
                   
-    
+                
         
                   
         
