@@ -41,9 +41,9 @@ export default function Transportowner(){
                     
                     <Link to='/transport_owner_edit_profile'><h6>Edit Profile Details</h6></Link>
                     <Link to='/manage_vehicle_details'><h6>Add vehicle details</h6></Link>
-                    <Link to='/'><h6>Edit vehicle details details</h6></Link>
+                    
                     <Link to='/transport_owner_booked_date'><h6>Booked Date Update</h6></Link>
-                    <Link to='/'><h6>Manage booked dates details</h6></Link>
+                   
                     <Link to='/transport_owner_add_account details'><h6>Add account details</h6></Link>
                     <Link to='/transport_owner_manage_bank_details'><h6>Manage bank account details</h6></Link>
                   
@@ -56,12 +56,8 @@ export default function Transportowner(){
         
                  
                   <img className="Size3" src='tra1.jpg' alt="" width="280" height="252"></img>
-                
-                  <img className="Size3" src='tra5.jpeg' alt="" width="300" height="245"></img>
-        
-                 
+                  <img className="Size3" src='tra5.jpeg' alt="" width="300" height="245"></img> 
                   <img className="Size3" src='tra3.jpg' alt="" width="310" height="242"></img>
-                
                   <img className="Size3" src='tra6.jpg' alt="" width="290" height="242"></img>
                   <img className="Size3" src='tra4.jpg' alt="" width="300" height="242"></img>
                   <img className="Size3" src='tra2.jpg' alt="" width="310" height="242"></img>
@@ -82,6 +78,14 @@ export default function Transportowner(){
         );
         
     }
+
+/*
+
+<Link to='/'><h6>Edit vehicle details details</h6></Link>
+ <Link to='/'><h6>Manage booked dates details</h6></Link>
+*/
+
+
 
     /*
        <Link to='/hotel_food_details'><h6>Hotel Foods</h6></Link>
