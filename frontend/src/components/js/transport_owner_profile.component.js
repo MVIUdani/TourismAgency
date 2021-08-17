@@ -66,13 +66,11 @@ export default function Transportowner(){
                  
                   </div> 
             
-           
         
             </div>
         
         
-        
-        
+      
 
 
         );
