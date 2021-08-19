@@ -26,6 +26,7 @@ import CustomerSignup from './components/js/signup_pages/customer-signup.compone
 //import footer static pages
 import Contacts from './components/js/home/footer static pages/contactus';
 import Feedback from './components/js/home/footer static pages/feedback';
+import Privacy from './components/js/home/footer static pages/privacy_policy';
 
 //import card item pages
 import Festival from './components/js/home/card item pages/festival';
@@ -149,6 +150,7 @@ function App() {
 
             <Route path="/contactus" component={Contacts} />
             <Route path="/feedback" component={Feedback} />
+            <Route path="/privacy" component={Privacy} />
 
             <Route path="/festival" component={Festival} />
             <Route path="/heritage" component={Heritage} />
