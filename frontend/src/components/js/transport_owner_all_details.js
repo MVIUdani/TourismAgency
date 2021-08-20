@@ -87,7 +87,7 @@ function Transport_owner_all_details(){
 
 
                 <button className="Use_button">Edit</button>
-               
+                <button className="Use_button">Delete</button>
                
                 </form>
             </div>
