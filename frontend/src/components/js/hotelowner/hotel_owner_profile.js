@@ -33,7 +33,7 @@ export default function Hotel_owner(){
                       <h4>First Name : {firstname}</h4>
                       <h4>Last Name : {lastname}</h4>
                       <h4>Email : {email}</h4>
-                      <h5>Transport Owner</h5>
+                      <h5>Hotel Owner</h5>
                     </div>
                     <br></br>
                     <br></br>

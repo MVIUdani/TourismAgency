@@ -3,6 +3,7 @@ import Axios from "axios";
 
 import Customer from './customer/customer_profile';
 import Transportowner from './transport_owner_profile.component';
+import Hotel_owner from "./hotelowner/hotel_owner_profile";
 import Guide from "./guide/guide";
 import Admin from './admin/image_list';
 
@@ -24,6 +25,7 @@ export default function RolePage(){
     {role == "2" && <Admin />}
     {role == "3" && <Guide />}
     {role == "4" && <Transportowner />}
+    {role == "5" && <Hotel_owner />}
 </div>
     );
 }
