@@ -51,21 +51,21 @@ export default function Guide (){
                    
 
             </div>  
-           
+           <br></br>
                 <div className="Second">
         
         
                  
-                  <img className="Size" src='guide/imgg1.jpeg' alt="" width="280" height="252"></img>
+                  <img className="Size2" src='guide/imgg1.jpeg' alt="" width="280" height="252"></img>
                 
-                  <img className="Size" src='guide/imgg2.jpeg' alt="" width="300" height="245"></img>
+                  <img className="Size2" src='guide/imgg2.jpeg' alt="" width="300" height="245"></img>
         
                  
-                  <img className="Size" src='guide/imgg3.jpeg' alt="" width="310" height="242"></img>
+                  <img className="Size2" src='guide/imgg3.jpeg' alt="" width="310" height="242"></img>
                 
-                  <img className="Size" src='guide/imgg4.jpeg' alt="" width="290" height="242"></img>
-                  <img className="Size" src='guide/imgg5.jpeg' alt="" width="300" height="242"></img>
-                  <img className="Size" src='guide/imgg6.jpeg' alt="" width="310" height="242"></img>
+                  <img className="Size2" src='guide/imgg4.jpeg' alt="" width="290" height="242"></img>
+                  <img className="Size2" src='guide/imgg5.jpeg' alt="" width="300" height="242"></img>
+                  <img className="Size2" src='guide/imgg6.jpeg' alt="" width="310" height="242"></img>
                 
                 
                 
