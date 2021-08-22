@@ -54,23 +54,17 @@ export default function Customer() {
         
         
                  
-                  <img className="Size" src='/CarouselImages/ca7.jpg' alt="" width="300" height="280"></img>
+                  <img className="Sizenew" src='/CarouselImages/ca7.jpg' alt="" width="300" height="280"></img>
                 
-                  <img className="Size" src='/CarouselImages/ca9.jpg' alt="" width="300" height="280"></img>
+                  <img className="Sizenew" src='/CarouselImages/ca9.jpg' alt="" width="300" height="280"></img>
         
                  
-                  <img className="Size" src='/CarouselImages/ca11.jpg' alt="" width="300" height="280"></img>
+                  <img className="Sizenew" src='/CarouselImages/ca11.jpg' alt="" width="300" height="280"></img>
                 
-                  <img className="Size" src='/CarouselImages/ca12.jpg' alt="" width="300" height="280"></img>
-                  <img className="Size" src='/CarouselImages/ca8.jpg' alt="" width="300" height="280"></img>
-                  <img className="Size" src='/CarouselImages/ca10.jpg' alt="" width="300" height="280"></img>
-                
-                
-                
-        
-                  
-                
-        
+                  <img className="Sizenew" src='/CarouselImages/ca12.jpg' alt="" width="300" height="280"></img>
+                  <img className="Sizenew" src='/CarouselImages/ca8.jpg' alt="" width="300" height="280"></img>
+                  <img className="Sizenew" src='/CarouselImages/ca10.jpg' alt="" width="300" height="280"></img>
+          
                   
         
                  
