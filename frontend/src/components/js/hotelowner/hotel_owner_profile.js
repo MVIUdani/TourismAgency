@@ -23,7 +23,7 @@ export default function Hotel_owner(){
   
             <div className="Extranew"> 
     
-     
+              
             <div className="Imponew">
         
             <img className="Profilenew" src='profile.jpg' alt="" width="240" height="235"></img>

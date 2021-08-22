@@ -209,7 +209,7 @@ function App() {
            <Route exact path = "/bookings/booking_history" component = {BookingHistory} />
            <Route path='/transport_owner_all_details' component={Transport_owner_all_details} />
 
-           <Route path = "/hotelowner/hotel_owner_profiley" component = {Hotel_owner} />
+           <Route path = "/hotelowner/hotel_owner_profile" component = {Hotel_owner} />
 
           </Switch>
       
