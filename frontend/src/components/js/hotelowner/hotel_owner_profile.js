@@ -1,5 +1,5 @@
 import React, {useState,useEffect} from "react";
-import '../../css/hotel_owner_profile.css'
+import '../../css/hotelowner/hotel_owner_profile.css'
 import { Link } from 'react-router-dom';
 import Axios from "axios";
 
