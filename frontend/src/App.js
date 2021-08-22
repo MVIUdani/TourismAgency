@@ -16,6 +16,7 @@ import SignUp from "./components/js/signup-first.component";
 import Home from "./components/js/home.component";
 import Aboutus from "./components/js/aboutus.component";
 import Packages from "./components/js/packages.component";
+import BeforePackage from './components/js/package-before-login/before_packages.component';
 
 //extra navbar
 import LoggedNavbar from './components/js/home/LoggedNavbar';
@@ -42,6 +43,8 @@ import Payment from './components/js/customer/payment';
 import Maps from './components/js/map';
 
 import Packagedetails from './components/js/package_details';
+import BeforePackagedetails from './components/js/package-before-login/before_pacakage_details';
+
 import Vehicle from './components/js/manage_vehicle_details.component';
 import Transportowner from './components/js/transport_owner_profile.component';
 
@@ -129,7 +132,8 @@ function App() {
             <Route exact path='/' component={Home} />
             <Route exact path='/home' component={Home} />
             <Route path="/aboutus" component={Aboutus} />
-            <Route path="/packages" component={Packages} /> 
+            <Route path="/packages" component={Packages} />
+            <Route path="/before-packages" component={BeforePackage} /> 
             <Route exact path="/sign-in"  render={props =>
                 !isAuthenticated ? (
                   <Login {...props} setAuth={setAuth} />
@@ -168,6 +172,7 @@ function App() {
             <Route path="/payment-first" component={PaymentFirst} />
             <Route path="/payment" component={Payment} />
             <Route path="/package-details" component={Packagedetails} />
+            <Route path="/before-package-details" component={BeforePackagedetails} />
             <Route path="/rates" component={SimpleRating} />
 
             <Route path="/maps" component={Maps} />
