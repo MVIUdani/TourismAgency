@@ -49,10 +49,10 @@ export default function Hotel_owner(){
         
         
                  
-                  <img className="Size4" src='tra1.jpg' alt="" width="280" height="252"></img>
-                  <img className="Size4" src='tra5.jpeg' alt="" width="300" height="245"></img> 
-                  <img className="Size4" src='tra3.jpg' alt="" width="310" height="242"></img>
-                  <img className="Size4" src='tra6.jpg' alt="" width="290" height="242"></img>
+                  <img className="Size4" src='./hotel/reciption.jpg' alt="" width="300" height="252"></img>
+                  <img className="Size4" src='./hotel/kuru_food.jpg' alt="" width="300" height="245"></img> 
+                  <img className="Size4" src='./hotel/pool.jpg' alt="" width="310" height="242"></img>
+                  <img className="Size4" src='./hotel/juice.jpg' alt="" width="300" height="242"></img>
                   <img className="Size4" src='tra4.jpg' alt="" width="300" height="242"></img>
                   <img className="Size4" src='tra2.jpg' alt="" width="310" height="242"></img>
                 
