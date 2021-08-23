@@ -56,7 +56,7 @@ export default function Admin () {
                     <Link to='/view_feedback'><h6>Feedback</h6></Link>
                     <Link to='/view_message'><h6>Messages</h6></Link>
                     <Link to='/view_ratings'><h6>View Ratings</h6></Link>
-                    <Link to='/logout'><h6>Logout</h6></Link>
+                    
             </div>  
            
                 <div className="Second">
