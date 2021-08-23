@@ -58,7 +58,7 @@ function Navbar() {
             </li>
             <li className='nav-item'>
               <Link
-                to='/before-packages'
+                to='/packages'
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
@@ -70,13 +70,7 @@ function Navbar() {
               {!isCurrentURL('/packages') && !isCurrentURL('/payment-first') && !isCurrentURL('/payment') && !isCurrentURL('/package-details')
               && !isCurrentURL('/manage_vehicle_details') && !isCurrentURL('/transport_owner_profile') && !isCurrentURL('/transport_owner_edit_profile') 
               && !isCurrentURL('/location-of-package') && !isCurrentURL('/hotel-details-of-packageone') && !isCurrentURL('/request') 
-              && !isCurrentURL('/count_pasenger') && !isCurrentURL('/cus-profile') && !isCurrentURL('/edit_profile') && !isCurrentURL('/favourites') 
-              && !isCurrentURL('/rolepage') && !isCurrentURL('/transport_owner_booked_date') && !isCurrentURL('/transport_owner_add_account details') 
-              && !isCurrentURL('/transport_owner_manage_bank_details') && !isCurrentURL('/transport_owner_all_details') && !isCurrentURL('/guide-profile') && !isCurrentURL('/hotelowner/hotel_owner_profile')
-              && !isCurrentURL('/hotel_food_details') && !isCurrentURL('/hotel_room_details') && !isCurrentURL('/hotel_owner_add_account_details') 
-              && !isCurrentURL('/admin-profile') && !isCurrentURL('/admin_editprofile') && !isCurrentURL('/admin_assignguide') && !isCurrentURL('/bookings/pending_bookings') 
-              && !isCurrentURL('/bookings/current_bookings') && !isCurrentURL('/bookings/rejected_bookings') && !isCurrentURL('/bookings/booking_history') 
-              && !isCurrentURL('/managepackages/manage_package')?
+              && !isCurrentURL('/count_pasenger') && !isCurrentURL('/cus-profile') && !isCurrentURL('/edit_profile') && !isCurrentURL('/rolepage') ?
               <Link
                 to='/sign-up'
                 className='nav-links'
@@ -98,13 +92,7 @@ function Navbar() {
              {!isCurrentURL('/packages') && !isCurrentURL('/payment-first') && !isCurrentURL('/payment') && !isCurrentURL('/package-details')
               && !isCurrentURL('/manage_vehicle_details') && !isCurrentURL('/transport_owner_profile') && !isCurrentURL('/transport_owner_edit_profile') 
               && !isCurrentURL('/location-of-package') && !isCurrentURL('/hotel-details-of-packageone') && !isCurrentURL('/request') 
-              && !isCurrentURL('/count_pasenger') && !isCurrentURL('/cus-profile') && !isCurrentURL('/edit_profile') && !isCurrentURL('/favourites')
-              && !isCurrentURL('/rolepage') && !isCurrentURL('/transport_owner_booked_date') && !isCurrentURL('/transport_owner_add_account details') 
-              && !isCurrentURL('/transport_owner_manage_bank_details') && !isCurrentURL('/transport_owner_all_details') && !isCurrentURL('/guide-profile') && !isCurrentURL('/hotelowner/hotel_owner_profile')
-              && !isCurrentURL('/hotel_food_details') && !isCurrentURL('/hotel_room_details') && !isCurrentURL('/hotel_owner_add_account_details') 
-              && !isCurrentURL('/admin-profile') && !isCurrentURL('/admin_editprofile') && !isCurrentURL('/admin_assignguide') && !isCurrentURL('/bookings/pending_bookings') 
-              && !isCurrentURL('/bookings/current_bookings') && !isCurrentURL('/bookings/rejected_bookings') && !isCurrentURL('/bookings/booking_history') 
-              && !isCurrentURL('/managepackages/manage_package')?
+              && !isCurrentURL('/count_pasenger') && !isCurrentURL('/cus-profile') && !isCurrentURL('/edit_profile') && !isCurrentURL('/rolepage') ?
               <Link
                 to='/sign-in'
                 className='nav-links'
