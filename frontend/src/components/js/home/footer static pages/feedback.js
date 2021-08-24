@@ -1,9 +1,26 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import "../../../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import '../../../css/footer static pages/feedback.css';
+import Axios from "axios";
 
-export default class Feedback extends Component{
-   render(){
+export default function Feedback(){
+  
+  const [firstname, setFirstname] = useState("");
+  const [lastname, setLastname] = useState("");
+  const [summary, setSummary] = useState("");
+  const [description, setDescription] = useState("");
+
+  const sentFeedback=() => {
+    Axios.post("http://localhost:5000/createFeedback",{
+     firstname: firstname,
+     lastname: lastname,
+     summary: summary,
+     description: description,
+    }).then((response) => {
+      console.log(response);
+    });
+  };
+
        return(
         <div className="feedback-wrapper">
         <div className="feedback-inner">
@@ -15,7 +32,11 @@ export default class Feedback extends Component{
              <input type="textfeedback"
                     //type="text" 
                     className="form-control" 
-                    placeholder="Enter your first name" />
+                    placeholder="Enter your first name"
+                    onChange={(e) => {
+                      setFirstname(e.target.value);
+                    }}
+                    />
             </div>
             <br/>
 
@@ -24,7 +45,11 @@ export default class Feedback extends Component{
             <input type="textfeedback"
                     //type="text" 
                     className="form-control" 
-                    placeholder="Enter your second name" />
+                    placeholder="Enter your second name" 
+                    onChange={(e) => {
+                      setLastname(e.target.value);
+                    }}
+                    />
             </div>
              <br/>
 
@@ -33,21 +58,30 @@ export default class Feedback extends Component{
                     <input type="textfeedback"
                     //type="text" 
                     className="form-control" 
-                    placeholder="Summary" />
+                    placeholder="Summary"
+                    onChange={(e) => {
+                      setSummary(e.target.value);
+                    }}
+                    />
                 </div>
                 <br/>
                 
                 <div className="form-group">
                     <label>Futher Details</label>
-                    <textarea className="form-control" placeholder="Optionally add more details here..." />
+                    <textarea className="form-control" 
+                    placeholder="Optionally add more details here..." 
+                    onChange={(e) => {
+                      setDescription(e.target.value);
+                    }}
+                    />
                 </div>
                 <br/>
 
-            <button type="submit" className="btn btn-primary btn-block">Submit</button>
+            <button type="submit" className="btn btn-primary btn-block" onClick={sentFeedback}>Submit</button>
 
           </form>
           </div>
           </div>
        );
-   } 
+   
 }
