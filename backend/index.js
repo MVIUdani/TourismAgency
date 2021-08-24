@@ -41,6 +41,8 @@ require("./routes/users_crud")(app);
 
 require('./routes/newAuth')(app);
 
+require('./routes/feedback')(app);
+
 app.listen(5000, () => {
   console.log(`Server is starting on port 5000`);
 });
