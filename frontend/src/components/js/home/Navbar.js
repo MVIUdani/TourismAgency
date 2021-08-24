@@ -85,7 +85,7 @@ function Navbar() {
                 Sign Up
               </Link> :
               <Link
-              to='/cus-profile'
+              to='/cus-profile' //this should be change according to user roles
               className='nav-links'
               onClick={closeMobileMenu}
             >
