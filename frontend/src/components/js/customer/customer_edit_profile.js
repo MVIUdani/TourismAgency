@@ -1,8 +1,28 @@
-import React, { Component } from "react";
+import React, {useState,useEffect} from "react";
 import styles from '../../css/customer/customer_edit_profile.css';
+import Axios from "axios";
 
-export default class CusEditprofile extends Component {
-    render() {
+export default function CusEditprofile (){
+  
+    const [user_id, setUser_id] = useState("");
+    const [firstname, setFirstname] = useState("");
+    const [lastname, setLastname] = useState("");
+    const [email, setEmail] = useState("");
+    const [contact, setContact] = useState("");
+  
+    Axios.defaults.withCredentials = true;
+    useEffect(() => {
+      Axios.get("http://localhost:5000/sign-in").then((response) => {
+        if (response.data.loggedIn == true) {
+          setUser_id(response.data.user[0].user_id);
+          setFirstname(response.data.user[0].first_name);
+          setLastname(response.data.user[0].last_name);
+          setEmail(response.data.user[0].email_address);
+          setContact(response.data.user[0].phone_no);
+        }
+      });
+    }, []); 
+    
         return (
 
 
@@ -14,16 +34,16 @@ export default class CusEditprofile extends Component {
     <hr></hr>
 
     <label htmlFor="firstname"><h6>First Name</h6></label>
-    <input type="text" placeholder="" name="firstname" id="" required></input>
+    <input type="text" placeholder={firstname} name="firstname" id="" required></input>
 
     <label htmlFor="lastname"><h6>Last Name</h6></label>
-    <input type="text" placeholder="" name="lastname" id="" required></input>
+    <input type="text" placeholder={lastname} name="lastname" id="" required></input>
 
     <label htmlFor="email"><h6>Email</h6></label>
-    <input type="email" placeholder="" name="email" id="" required></input>
+    <input type="email" placeholder={email} name="email" id="" required></input>
 
     <label htmlFor="phonenumber"><h6>Contact Number</h6></label>
-    <input type="int" placeholder="" name="phonenumber" id="" required></input>
+    <input type="int" placeholder={contact} name="phonenumber" id="" required></input>
 
     <hr></hr>
 
@@ -37,7 +57,7 @@ export default class CusEditprofile extends Component {
 
         );
 
-    }
+   
 }
 
 /*import {useState} from "react";
