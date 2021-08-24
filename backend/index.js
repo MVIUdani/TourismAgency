@@ -41,6 +41,8 @@ require("./routes/users_crud")(app);
 
 require('./routes/newAuth')(app);
 
+require('./routes/packages_crud')(app);
+
 require('./routes/feedback')(app);
 
 app.listen(5000, () => {
