@@ -44,6 +44,7 @@ import Maps from './components/js/map';
 
 import Packagedetails from './components/js/package_details';
 import BeforePackagedetails from './components/js/package-before-login/before_pacakage_details';
+import PackageSeconddetails from './components/js/packages/package_second';
 
 import Vehicle from './components/js/manage_vehicle_details.component';
 import Transportowner from './components/js/transport_owner_profile.component';
@@ -172,6 +173,7 @@ function App() {
             <Route path="/payment-first" component={PaymentFirst} />
             <Route path="/payment" component={Payment} />
             <Route path="/package-details" component={Packagedetails} />
+            <Route path="/package-second" component={PackageSeconddetails} />
             <Route path="/before-package-details" component={BeforePackagedetails} />
             <Route path="/rates" component={SimpleRating} />
 
