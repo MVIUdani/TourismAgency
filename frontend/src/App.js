@@ -191,7 +191,7 @@ function App() {
            <Route path='/count_pasenger' component={Count_pasenger} />
 
            <Route path='/cus-profile' component={Customer} />
-           <Route path='/edit_profile' component={CusEditprofile} />
+           <Route path='/edit_profile/:id' component={CusEditprofile} />
            <Route path='/favourites' component={FavouriteList} />
 
            <Route path='/transport_owner_add_account details' component={Transportowner_account_details} />

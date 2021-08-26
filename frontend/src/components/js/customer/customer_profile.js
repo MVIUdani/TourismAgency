@@ -41,7 +41,7 @@ export default function Customer() {
                     <br></br>
                     <br></br>
                     
-                    <Link to='/edit_profile'><h6>Edit Profile Details</h6></Link>
+                    <Link to='/edit_profile/${user_id}'><h6>Edit Profile Details</h6></Link>
                     <Link to='favourites'><h6>View Favourites</h6></Link>
                     <Link to='/packages'><h6>View Packages</h6></Link>
                     
