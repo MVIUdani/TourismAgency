@@ -45,7 +45,7 @@ function Package_one_hotel_details(){
             
             Situated in the heart of Polonnaruwa and upon the banks of the Parakrama Samudraya, is the stylish boutique resort of EKHO Lake House. A property first built in 1870 as a circuit bungalow for agents of the British Government.  EKHO lake house features an outdoor swimming pool and a hot tub. This hotel has a total of 14 rooms; 9 superior rooms, 4 deluxe rooms and the Queen suite which was named after the Queen of England’s stay. The rooms are well equipped with a minibar, safety deposit box, air conditioning and TV with satellite channels. When it comes to dining, guests have the opportunity to either dine in-room or at the restaurant. Free Wi-Fi and free onsite parking facilities are provided by this hotel. Enjoy a comfortable stay with luxury whilst you visit popular attractions of Polonnaruwa and other ancient cities in the Cultural Triangle. For more information on excursions and activities please do refer the pages of Things to do in Polonnaruwa and Things to do in the Cultural Triangle.
             <br></br><br></br>
-            <h5>If not available this hotel for relevent days. We give the other hotel:<a href="">https://www.epicsrilankaholidays.com/hotels/polonnaruwa-hotels/ekho-lakehouse.html</a></h5>
+            <h5>If not available this hotel for relevent booked days. We give the other hotel:<a href="">https://www.epicsrilankaholidays.com/hotels/polonnaruwa-hotels/ekho-lakehouse.html</a></h5>
             
           </div>
        
