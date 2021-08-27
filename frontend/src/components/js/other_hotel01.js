@@ -1,5 +1,5 @@
 import React, {useState,useEffect} from "react";
-import '../css/hotelowner/otherhotel.css';
+import '../css/otherhotel.css';
 import { Link } from 'react-router-dom';
 
 function Other_hotel01() {
