@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import '../css/package_hotel_details.css';
+import { Link } from 'react-router-dom';
 
 function Package_one_hotel_details(){
 
@@ -142,7 +143,7 @@ All guest accommodations feature thoughtful amenities to ensure an unparalleled 
     <h4> Hotel Description:</h4>
     Our prime concern is to provide our loyal customers a wonderful holiday experience. To action out our concerns we provide prime facilities to make your stay a Comfortable and a pleasant stay. Our mission is to offer every guest the most excellent conveniences during their stay with us, in guest rooms and suites that offer breath taking views of our surroundings. We are ready to serve you throughout your stay at Bopathfalls.
     <br></br><br></br>
-    <h5>If not available this hotel for relevent booked days. We give the other hotel:<a href="">http://bopathfalls.com/index.php</a></h5>
+    <h5>If not available this hotel for relevent booked days. We give the other hotel: <Link to='/hotel_food_details'><h6>Hotel Foods</h6></Link></h5>
     
   </div>
 </div>
