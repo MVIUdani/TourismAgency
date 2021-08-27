@@ -12,9 +12,10 @@ function Other_hotel01() {
 
 <div className="Hotel_details">
   <div className="Day">
-    <h1>Day 07 & Day 08</h1>
+    <h1>Day 01 & Day 02</h1>
     <h4>Hotel Name: Grand Hotel Nuwara Eliya</h4><br></br>
     <h4> Hotel Description:</h4>
+    <br></br>
     The Grand Hotel is a four-star boutique hotel[1] in Nuwara Eliya, Sri Lanka, that was built in the style of an Elizabethan-era manor house.[2] The hotel has 154 rooms, including three presidential suites, four junior suites, including a governor's suite that have been maintained to preserve the traditional design.[2] The Grand Hotel has a number of restaurants, bars and a billiards room.
     <br></br><br></br>
    

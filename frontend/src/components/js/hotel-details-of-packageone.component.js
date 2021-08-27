@@ -16,7 +16,7 @@ function Package_one_hotel_details(){
                 Avani Bentota Resort, Club Hotel Dolphin, Hotel Sigiriya and Reveal The Collection are popular holiday destinations in themselves with a multi- cultural clientele. Serendib Leisure hotels are nationally and internationally acclaimed for their skilled culinary teams and a professional service staff that goes the extra mile to make guests feel special and cared for.
                 Holidays at Serendib Leisure hotels are all about experiencing Sri Lanka and its culture, nature and heritage through all the senses. Serendib Leisure strives to ensure that every guest entering its hotel properties leaves with lasting memories of a truly wonderful tropical island holiday.
                 <br></br><br></br>
-                <h5>If not available this hotel for relevent booked days. We give the other hotel:<a href="">http://www.bestoflanka.com/hotel_sigiriya.php?lId=05</a></h5>
+                <h5>If not available this hotel for relevent booked days. We give the other hotel:<Link to='/other_hotel01'><br></br><h4>Hotel Details</h4></Link></h5>
                 
               </div>
             </div>
@@ -46,7 +46,7 @@ function Package_one_hotel_details(){
             
             Situated in the heart of Polonnaruwa and upon the banks of the Parakrama Samudraya, is the stylish boutique resort of EKHO Lake House. A property first built in 1870 as a circuit bungalow for agents of the British Government.  EKHO lake house features an outdoor swimming pool and a hot tub. This hotel has a total of 14 rooms; 9 superior rooms, 4 deluxe rooms and the Queen suite which was named after the Queen of England’s stay. The rooms are well equipped with a minibar, safety deposit box, air conditioning and TV with satellite channels. When it comes to dining, guests have the opportunity to either dine in-room or at the restaurant. Free Wi-Fi and free onsite parking facilities are provided by this hotel. Enjoy a comfortable stay with luxury whilst you visit popular attractions of Polonnaruwa and other ancient cities in the Cultural Triangle. For more information on excursions and activities please do refer the pages of Things to do in Polonnaruwa and Things to do in the Cultural Triangle.
             <br></br><br></br>
-            <h5>If not available this hotel for relevent booked days. We give the other hotel:<a href="">https://www.epicsrilankaholidays.com/hotels/polonnaruwa-hotels/ekho-lakehouse.html</a></h5>
+            <h5>If not available this hotel for relevent booked days. We give the other hotel:<Link to='/other_hotel01'><br></br><h4>Hotel Details</h4></Link></h5>
             
           </div>
        
@@ -77,9 +77,8 @@ function Package_one_hotel_details(){
 
 The Heritage Hotel offers impeccable service and all the essential amenities to invigorate travelers. The hotel offers access to a vast array of services, including 24-hour room service, free Wi-Fi in all rooms, 24-hour security, daily housekeeping, postal service.
 
-All guest accommodations feature thoughtful amenities to ensure an unparalleled sense of comfort. The hotel offers fantastic facilities, including outdoor pool, spa, massage, children's playground, pool (kids), to help you unwind after an action-packed day in the city. The Heritage Hotel is a smart choice for travelers to Anuradhapura, offering a relaxed and hassle-free stay every time.
     <br></br><br></br>
-    <h5>If not available this hotel for relevent booked days. We give the other hotel:<a href="">https://www.agoda.com/the-heritage-hotel/hotel/anuradhapura-lk.html?cid=1844104</a></h5>
+    <h5>If not available this hotel for relevent booked days. We give the other hotel:<Link to='/other_hotel01'><br></br><h4>Hotel Details</h4></Link></h5>
     
   </div>
 </div>
@@ -113,7 +112,7 @@ All guest accommodations feature thoughtful amenities to ensure an unparalleled 
     <h4> Hotel Description:</h4>
     The Grand Hotel is a four-star boutique hotel[1] in Nuwara Eliya, Sri Lanka, that was built in the style of an Elizabethan-era manor house.[2] The hotel has 154 rooms, including three presidential suites, four junior suites, including a governor's suite that have been maintained to preserve the traditional design.[2] The Grand Hotel has a number of restaurants, bars and a billiards room.
     <br></br><br></br>
-    <h5>If not available this hotel for relevent booked days. We give the other hotel:<a href="">https://www.brightsun.co.uk/holidays/asia/sri-lanka/nuwara-eliya/grand-hotel-nuwara-eliya</a></h5>
+    <h5>If not available this hotel for relevent booked days. We give the other hotel:<Link to='/other_hotel01'><br></br><h4>Hotel Details</h4></Link></h5>
     
   </div>
 </div>
@@ -143,7 +142,7 @@ All guest accommodations feature thoughtful amenities to ensure an unparalleled 
     <h4> Hotel Description:</h4>
     Our prime concern is to provide our loyal customers a wonderful holiday experience. To action out our concerns we provide prime facilities to make your stay a Comfortable and a pleasant stay. Our mission is to offer every guest the most excellent conveniences during their stay with us, in guest rooms and suites that offer breath taking views of our surroundings. We are ready to serve you throughout your stay at Bopathfalls.
     <br></br><br></br>
-    <h5>If not available this hotel for relevent booked days. We give the other hotel: <Link to='/other_hotel01'><br></br><br></br><h4>Hotel Details</h4></Link></h5>
+    <h5>If not available this hotel for relevent booked days. We give the other hotel: <Link to='/other_hotel01'><br></br><h4>Hotel Details</h4></Link></h5>
     
   </div>
 </div>
@@ -180,9 +179,8 @@ Roshara Nalla offers a terrace. The area is popular for fishing, and car hire is
 
 Roshara Nalla also provides a business center and free private parking.
 
-Negombo is 21 mi from the accommodations, while Kurunegala is 22 mi away. The nearest airport is Bandaranaike International, 17 mi from Roshara Nalla, and the property offers a paid airport shuttle service.
     <br></br><br></br>
-    <h5>More Details:<a href="">http://bopathfalls.com/index.php</a></h5>
+    <h5>If not available this hotel for relevent booked days. We give the other hotel: <Link to='/other_hotel01'><br></br><h4>Hotel Details</h4></Link></h5>
     
   </div>
 </div>
