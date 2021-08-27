@@ -45,6 +45,8 @@ require('./routes/packages_crud')(app);
 
 require('./routes/feedback')(app);
 
+require('./routes/request')(app);
+
 app.listen(5000, () => {
   console.log(`Server is starting on port 5000`);
 });
