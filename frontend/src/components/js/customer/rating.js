@@ -1,10 +1,10 @@
-/*import React from 'react';
+import React from 'react';
 import Rating from '@material-ui/lab/Rating';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 
 export default function SimpleRating() {
-  const [value, setValue] = React.useState(2);
+  const [value, setValue] = React.useState(0);
 
   return (
     <div>
@@ -20,13 +20,13 @@ export default function SimpleRating() {
       </Box>
       </div>
   );
-        }*/
+        }
 
-import React from 'react';
+/*import React from 'react';
 import { Component } from 'react';
 
 export default class SimpleRating extends Component{
     render(){
       return null;
     }
-    }
+    }*/
