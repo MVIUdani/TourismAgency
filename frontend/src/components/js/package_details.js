@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import '../css/package-details.css';
 import { Link } from 'react-router-dom';
+import SimpleRating from "./customer/rating";
 
 export default class Packagedetails extends Component {
     render() {
@@ -19,7 +20,7 @@ export default class Packagedetails extends Component {
 
            </div>
             <div className="Places-image">
-            <h3>Package No: 01</h3>
+            <h3>Package No: 01 <SimpleRating /></h3>
             <h5>Visit Places:</h5>
              <div  className="List_package">
             <ul>

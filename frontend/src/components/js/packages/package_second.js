@@ -1,6 +1,7 @@
 import React, { useState,useEffect } from "react";
 import '../../css/package-details.css';
 import { Link } from 'react-router-dom';
+import SimpleRating from "../customer/rating";
 import Axios from "axios";
 
 export default function PackageSeconddetails() {
@@ -30,7 +31,7 @@ export default function PackageSeconddetails() {
 
            </div>
             <div className="Places-image">
-            <h3>Package No: 0{package_id}</h3>
+            <h3>Package No: 0{package_id} <SimpleRating /></h3>
             <h5>Visit Places:</h5>
              <div  className="List_package">
             <ul>
