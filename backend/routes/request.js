@@ -8,7 +8,7 @@ const details = req.body.details;
 const user_id = req.body.user_id;
 
 con.query(
-"INSERT INTO request (requested_places, details, user_id) VALUES (?,?,?)",
+"INSERT INTO request (requested_places, further_details, user_id) VALUES (?,?,?)",
 [requested_places,details, user_id],
 (err, result) => {
     if (err) {
