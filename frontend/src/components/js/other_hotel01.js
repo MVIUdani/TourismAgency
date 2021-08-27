@@ -6,8 +6,8 @@ function Other_hotel01() {
     return(
 
 
-        <div className="Otherclass">     
-
+<div className="Otherclass">     
+<br></br><br></br>
 <div className="Hotel">
 
 <div className="Hotel_details">
@@ -17,7 +17,7 @@ function Other_hotel01() {
     <h4> Hotel Description:</h4>
     The Grand Hotel is a four-star boutique hotel[1] in Nuwara Eliya, Sri Lanka, that was built in the style of an Elizabethan-era manor house.[2] The hotel has 154 rooms, including three presidential suites, four junior suites, including a governor's suite that have been maintained to preserve the traditional design.[2] The Grand Hotel has a number of restaurants, bars and a billiards room.
     <br></br><br></br>
-    <h5>If not available this hotel for relevent booked days. We give the other hotel:<a href="">https://www.brightsun.co.uk/holidays/asia/sri-lanka/nuwara-eliya/grand-hotel-nuwara-eliya</a></h5>
+   
     
   </div>
 </div>
