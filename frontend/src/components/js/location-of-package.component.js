@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import '../css/package-location.css'
 import { Link } from 'react-router-dom';
+import IconButton from '@material-ui/core/IconButton';
+import FavoriteIcon from '@material-ui/icons/Favorite';
 
 
 function Packagelocation(){
@@ -15,7 +17,11 @@ return(
        
 
         <img className="Picture" src='sigiriya.jpg' alt="" width="260" height="220"></img>
-      
+        <div>
+        <IconButton color="secondary" aria-label="add to favorite">
+        <FavoriteIcon />
+       </IconButton>
+        </div>
 
         <div className="Sigiriya-des">
 
@@ -32,7 +38,11 @@ The capital and the royal palace were abandoned after the king's death. It was u
     <br></br>
     <div className="Sigiriya"> 
     <img className="Picture" src='polonnaruwa.jpg' alt="" width="260" height="220"></img>
-      
+    <div>
+        <IconButton color="secondary" aria-label="add to favorite">
+        <FavoriteIcon />
+       </IconButton>
+        </div>
 
       <div className="Sigiriya-des">
       Poḷonnaruwa (Sinhala: පොළොන්නරුව, romanized: Poḷonnaruva; Tamil: பொலன்னறுவ, romanized: Polaṉṉaṟuvai) is the main town of Polonnaruwa District in North Central Province, Sri Lanka. Kaduruwela area is the Polonnaruwa New Town and the other part of Polonnaruwa remains as the royal ancient city of the Kingdom of Polonnaruwa.
@@ -51,7 +61,11 @@ Currently the new Polonnaruwa is undergoing a major development project known as
        
 
         <img className="Picture" src='hortan.jpg' alt="" width="265" height="220"></img>
-      
+        <div>
+        <IconButton color="secondary" aria-label="add to favorite">
+        <FavoriteIcon />
+       </IconButton>
+        </div>
 
         <div className="Sigiriya-des">
     
@@ -73,7 +87,11 @@ In 20th century there are some records of elephants again in the park.
        
 
         <img className="Picture" src='waterfall02.jpg' alt="" width="270" height="200"></img>
-      
+        <div>
+        <IconButton color="secondary" aria-label="add to favorite">
+        <FavoriteIcon />
+       </IconButton>
+        </div>
 
         <div className="Sigiriya-des">
             <br></br>
@@ -89,7 +107,11 @@ In 20th century there are some records of elephants again in the park.
       
 
         <img className="Picture" src='atamasthanaya.jpg' alt="" width="265" height="250"></img>
-      
+        <div>
+        <IconButton color="secondary" aria-label="add to favorite">
+        <FavoriteIcon />
+       </IconButton>
+        </div>
 
         <div className="Sigiriya-des">
 
@@ -112,7 +134,11 @@ The city's apogee was reached under the reign of Dutthagamani who, in 161 BC, de
       
 
         <img className="Picture" src='athugala02.jpg' alt="" width="265" height="230"></img>
-      
+        <div>
+        <IconButton color="secondary" aria-label="add to favorite">
+        <FavoriteIcon />
+       </IconButton>
+        </div>
 
         <div className="Sigiriya-des">
         Athugala also called as ethagala is a very splendid rock that overlooks the Kurunegala town in Sri Lanka. Athugala is situated just around 1km away from Kurunegala town. The rock gets the name “athugala” due to its shape of an elephant. This is "the" iconic landmark of Kurunegala.
