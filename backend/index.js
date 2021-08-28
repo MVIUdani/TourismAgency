@@ -47,6 +47,8 @@ require('./routes/feedback')(app);
 
 require('./routes/request')(app);
 
+require('./routes/favorites')(app);
+
 app.listen(5000, () => {
   console.log(`Server is starting on port 5000`);
 });
