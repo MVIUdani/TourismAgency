@@ -1,5 +1,7 @@
 import React from 'react';
 import '../../css/customer/favourite_list.css';
+import IconButton from '@material-ui/core/IconButton';
+import DeleteIcon from '@material-ui/icons/Delete';
 
 function FavouriteList(){
     return(
@@ -8,13 +10,17 @@ function FavouriteList(){
             <br></br>
         <h1 style={{fontFamily:"Helvetica Neue"}}>My Favourite Locations in Sri Lanka</h1>
         <br></br>
-        <h3>Sigiriya</h3>
+        <h2 style={{marginLeft:"45px"}}>Sigiriya</h2>
     <br></br>
     <div className="Sigiriya">
        
 
         <img className="Picture" src='sigiriya.jpg' alt="" width="260" height="220"></img>
-      
+      <div>
+      <IconButton aria-label="delete">
+        <DeleteIcon />
+      </IconButton>
+      </div>
 
         <div className="Sigiriya-des">
 
