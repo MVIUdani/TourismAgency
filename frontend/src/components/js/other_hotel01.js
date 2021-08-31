@@ -12,7 +12,7 @@ function Other_hotel01() {
 
 <div className="Hotel_details">
   <div className="Day">
-    <h1>Day 01 & Day 02</h1>
+    <h1>Hotel Details</h1>
     <h4>Hotel Name: Grand Hotel Nuwara Eliya</h4><br></br>
     <h4> Hotel Description:</h4>
     <br></br>
