@@ -226,7 +226,7 @@ function App() {
 
            <Route path = "/hotel_owner_profile" component = {Hotel_owner} />
            <Route path = "/other_hotel01" component = {Other_hotel01} />
-           <Route path = "/other_charge" component = {Hotel_charge} />
+           <Route path = "/hotel_charge" component = {Hotel_charge} />
 
           </Switch>
       

@@ -41,6 +41,7 @@ export default function Hotel_owner(){
                     
                     <Link to='/hotel_food_details'><h6>Hotel Foods</h6></Link>
                     <Link to='/hotel_room_details'><h6>Hotel Rooms</h6></Link>
+                    <Link to='/hotel_charge'><h6>Charge of one day</h6></Link>
                      <Link to='/hotel_owner_add_account_details'><h6>Bank Account</h6></Link>
         
             </div>  

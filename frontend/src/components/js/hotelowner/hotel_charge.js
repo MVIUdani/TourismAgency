@@ -7,6 +7,7 @@ function Hotel_charge() {
     return(
 
         <div>
+            
             <h1>Hotel chagers update</h1>
 
         </div>
