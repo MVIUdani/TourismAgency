@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import '../../css/hotel_charge.css';
+import '../../css/hotelowner/hotel_charge.css';
 import { Link } from 'react-router-dom';
 
 function Hotel_charge() {
