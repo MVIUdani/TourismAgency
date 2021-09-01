@@ -8,7 +8,11 @@ function Hotel_owner_all_details(){
         return(
 
 
-            <div></div>
+            <div className="Hotel_all">
+                <br></br>
+                <h1>All My details </h1>
+
+            </div>
 
         );
 

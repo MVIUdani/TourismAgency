@@ -1,5 +1,5 @@
 import React, { Component,useState, useEffect } from "react";
-import '../css/transport_owner_all_details.css'
+//import '../css/transport_owner_all_details.css'
 import { Link } from 'react-router-dom';
 import Axios from 'axios';
 
