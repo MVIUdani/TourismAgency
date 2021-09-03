@@ -22,4 +22,18 @@ app.post("/api/insert",(req, res)=>{
 
 });
 
+app.get("/api/show", (req,res) => {
+    db.query("SELECT * FROM vehicle_info WHERE user_id=3 ", (err,result) => {
+        if(err){
+
+            console.log(err);
+        }else{
+
+            res.send(result);
+        }
+    });
+});
+
+
+
 }
