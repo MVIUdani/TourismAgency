@@ -10,6 +10,9 @@ module.exports = function(app){
         const firstname = req.body.firstname;
         const lastname = req.body.lastname;
         const email = req.body.email;
+        const address = req.body.address;
+        const city_name = req.body.city_name;
+        const country = req.body.country;
         const username = req.body.username;
         const password = req.body.password;
       
@@ -19,8 +22,8 @@ module.exports = function(app){
           }
       
           con.query(
-            "INSERT INTO users (first_name,last_name,email_address,user_name, user_password,role_id) VALUES (?,?,?,?,?,'1')",
-            [firstname, lastname, email, username, hash],
+            "INSERT INTO users (first_name,last_name,email_address, address, city_name, country, user_name, user_password,role_id) VALUES (?,?,?,?,?,?,?,?,'1')",
+            [firstname, lastname, email, address, city_name, country, username, hash],
             (err, result) => {
               console.log(err);
             }
