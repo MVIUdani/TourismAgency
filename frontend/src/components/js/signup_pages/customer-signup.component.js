@@ -12,6 +12,9 @@ export default function CustomerSignup(){
     const [emailReg, setEmailReg] = useState("");
     const [usernameReg, setUsernameReg] = useState("");
     const [passwordReg, setPasswordReg] = useState(""); 
+    const [addressReg, setAddressReg] = useState("");
+    const [city_nameReg, setCity_nameReg] = useState("");
+    const [countryReg, setCountryReg] = useState("");
 
     const history = useHistory();
   
@@ -21,7 +24,10 @@ export default function CustomerSignup(){
       Axios.post("http://localhost:5000/cus-signup", {
         firstname: firstnameReg,
         lastname: lastnameReg,
-        email: emailReg,   
+        email: emailReg,
+        address: addressReg,
+        city_name: city_nameReg,
+        country: countryReg,   
         username: usernameReg,
         password: passwordReg,
       }).then((response) => {
@@ -82,6 +88,51 @@ export default function CustomerSignup(){
                           required 
                           />
                           
+                      </div>
+
+                      <div className="form-group">
+                        <label>Address</label>
+                        <input type="address"
+                        //type="text"
+                        className="form-control"
+                        name="address"
+                        placeholder="Enter your address"
+                        onchange={(e) =>{
+                          setAddressReg(e.target.value);
+                        }}
+                        required
+                        />
+
+                      </div>
+
+                      <div className="form-group">
+                        <label>City</label>
+                        <input type="city"
+                        //type="text"
+                        className="form-control"
+                        name="city"
+                        placeholder="Enter your city name"
+                        onchange={(e) =>{
+                          setCity_nameReg(e.target.value);
+                        }}
+                        required
+                        />
+
+                      </div>
+
+                      <div className="form-group">
+                        <label>Country</label>
+                        <input type="country"
+                        //type="text"
+                        className="form-control"
+                        name="country"
+                        placeholder="Enter your country name"
+                        onchange={(e) =>{
+                          setCountryReg(e.target.value);
+                        }}
+                        required
+                        />
+
                       </div>
       
                       <div className="form-group">
