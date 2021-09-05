@@ -43,6 +43,8 @@ require('./routes/newAuth')(app);
 
 require('./routes/packages_crud')(app);
 
+require('./routes/booking')(app);
+
 require('./routes/feedback')(app);
 
 require('./routes/request')(app);
