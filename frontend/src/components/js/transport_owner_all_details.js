@@ -8,7 +8,11 @@ function Transport_owner_all_details(){
         return(
 
 
-            <div></div>
+            <div className="All_details">
+
+
+
+            </div>
 
         );
 
