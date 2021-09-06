@@ -22,7 +22,7 @@ export default function PackageSeconddetails() {
 
             <div className="Package-details">
 
-            <img className="Image-size" src='sigiriya3.jpg' alt="" width="240" height="210"></img>
+            <img className="Image-size" src='sigiriya.jpg' alt="" width="240" height="210"></img>
             <img className="Image-size" src='polonnaruwa.jpg' alt="" width="230" height="210"></img>
             <img className="Image-size" src='hortan.jpg' alt="" width="210" height="225"></img>
             <img className="Image-size" src='waterfall02.jpg' alt="" width="235" height="215"></img>
