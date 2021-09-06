@@ -30,6 +30,7 @@ export default class Packagedetails extends Component {
               <li><h6>Day 07 & 08 : Horton Place</h6></li>
               <li><h6>Day 09 & 10 : Bopath Ella Water Fall</h6></li>
               <li><h6>Day 11 & 12 : Kurunegala Atha gala & Wewa Rawma</h6></li>
+              
             </ul>
             </div>
             <h5>Day Duration: 12 Days</h5>
@@ -58,7 +59,6 @@ export default class Packagedetails extends Component {
           <Link to="/request"><button className="Btn1" type="button"><h6>Request new Package</h6></button></Link>
           <Link to="/count_pasenger"><button className="Btn1" type="button"><h6>Book Now</h6></button></Link>
           
-
             </div>
             
             </div>
