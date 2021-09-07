@@ -51,6 +51,8 @@ require('./routes/request')(app);
 
 require('./routes/favorites')(app);
 
+require('./routes/transport_owner_all_cruds')(app); // for transport owner
+
 app.listen(5000, () => {
   console.log(`Server is starting on port 5000`);
 });
