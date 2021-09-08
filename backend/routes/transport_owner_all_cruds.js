@@ -2,7 +2,7 @@ const con = require("../db");
 
 module.exports = function(app){
 
-app.post("/api/insert",(req, res)=>{
+app.post("/api/insert_vehicle_details",(req, res)=>{
 
     const name = req.body.name;
     const seats = req.body.seats;
