@@ -22,7 +22,7 @@ app.post("/api/insert_vehicle_details",(req, res)=>{
 
 });
 
-app.get("/api/show", (req,res) => {
+app.get("/api/show_vehicle_details", (req,res) => {
     db.query("SELECT * FROM vehicle_info WHERE user_id=3 ", (err,result) => {
         if(err){
 
