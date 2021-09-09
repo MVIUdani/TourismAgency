@@ -39,7 +39,7 @@ app.use(
 
 require("./routes/users_crud")(app);
 
-require('./routes/newAuth')(app);
+require('./routes/newAuth')(app); //for role base authentication
 
 require('./routes/packages_crud')(app);
 
