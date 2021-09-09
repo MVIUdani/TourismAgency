@@ -28,14 +28,12 @@ function Other_hotel01() {
 <img className="Hotel_size" src='hotel/h_01.jpg' alt="" width="450" height="245"></img>
 <img className="Hotel_size" src='hotel/h_02.jpg' alt="" width="285" height="220"></img>
 <img className="Hotel_size" src='hotel/h_04.jpg' alt="" width="240" height="205"></img>
-
 <img className="Hotel_size" src='hotel/h_03.jpg' alt="" width="250" height="210"></img>
 <img className="Hotel_size" src='hotel/h_05.jpg' alt="" width="255" height="215"></img>
 
 </div>
 
 </div>   
-
 
         </div>
 
