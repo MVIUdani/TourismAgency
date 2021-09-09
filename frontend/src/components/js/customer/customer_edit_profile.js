@@ -39,7 +39,7 @@ export default function CusEditprofile (){
     <hr></hr>
 
     <label htmlFor="firstname"><h6>First Name</h6></label>
-    <input type="text" value={firstname} name="firstname" id="" required></input>
+    <input type="text" placeholder={firstname} name="firstname" id="" required></input>
 
     <label htmlFor="lastname"><h6>Last Name</h6></label>
     <input type="text" placeholder={lastname} name="lastname" id="" required></input>
