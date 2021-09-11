@@ -48,7 +48,7 @@ export default function Transportowner(){
                     <Link to='/transport_owner_manage_bank_details'><h6>Manage bank account details</h6></Link>
                   
                     <Link to='/transport_owner_all_details'><h6>All my details</h6></Link>
-        
+                    <Link to='/package_details_two'><h6>pacake 02</h6></Link>
             </div>  
            
                 <div className="Second">
