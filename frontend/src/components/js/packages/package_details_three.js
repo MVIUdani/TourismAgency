@@ -3,7 +3,7 @@ import '../../css/package-details.css';
 import { Link } from 'react-router-dom';
 import SimpleRating from "../customer/rating";
 
-export default function Package_details_two() {
+export default function Package_details_three() {
 
         return (    
      
@@ -11,28 +11,29 @@ export default function Package_details_two() {
 
             <div className="Package-details">
 
-            <img className="Image-size" src='Package2/polonnaruwa2.jpg' alt="" width="240" height="210"></img>
-            <img className="Image-size" src='Package2/polonnaruwa.jpg' alt="" width="230" height="210"></img>
-            <img className="Image-size" src='Package2/bopath-ella.jpg' alt="" width="200" height="225"></img>
-            <img className="Image-size" src='Package2/atamasthanaya.jpg' alt="" width="235" height="215"></img>
-            <img className="Image-size" src='Package2/athugala2.jpg' alt="" width="220" height="225"></img>
-            <img className="Image-size" src='Package2/nallur.jpg' alt="" width="210" height="225"></img>
+            <img className="Image-size" src='Package3/Nuwara-Eliya.jpg' alt="" width="240" height="210"></img>
+            <img className="Image-size" src='Package3/horton-plains.jpg' alt="" width="230" height="210"></img>
+            <img className="Image-size" src='Package3/ravana-ella.jpg' alt="" width="200" height="225"></img>
+            <img className="Image-size" src='Package3/yala2.jpg' alt="" width="235" height="215"></img>
+            <img className="Image-size" src='Package3/hummanaya.jpg' alt="" width="220" height="225"></img>
+            <img className="Image-size" src='Package3/Galle-Fort.jpg' alt="" width="210" height="225"></img>
 
            </div>
             <div className="Places-image">
-            <h3>Package No: 02 <SimpleRating /></h3>
+            <h3>Package No: 03 <SimpleRating /></h3>
             <h5>Visit Places:</h5>
              <div  className="List_package">
             <ul>
-              <li><h6>Day 01 & 02 : Polonnaruwa</h6></li>
-              <li><h6>Day 03 & 04 : Bopath Ella Water Fall</h6></li>
-              <li><h6>Day 05 & 06 : Atamastana</h6></li>
-              <li><h6>Day 07 & 08 : Kurunegala-Athagala</h6></li>
-              <li><h6>Day 09 & 10 : Nallur Kandaswamy Kovil</h6></li>
+              <li><h6>Day 01 & 02 : Nuwara Eliya</h6></li>
+              <li><h6>Day 03 & 04 : Horton Plains National Park</h6></li>
+              <li><h6>Day 05 & 06 : Rawana Falls</h6></li>
+              <li><h6>Day 07 & 08 : Yala National Park Safari</h6></li>
+              <li><h6>Day 09 & 10 : Hummanaya</h6></li>
+              <li><h6>Day 11 & 12 : Galle Dutch Fort</h6></li>
               
             </ul>
             </div>
-            <h5>Day Duration: 10 Days</h5>
+            <h5>Day Duration: 12 Days</h5>
             <h5>Select your transport type:</h5>
             <div class="form-check">
   <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked/>
