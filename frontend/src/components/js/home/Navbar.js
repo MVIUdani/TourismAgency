@@ -76,7 +76,8 @@ function Navbar() {
               && !isCurrentURL('/hotel_owner_profile')  && !isCurrentURL('/hotel_food_details') && !isCurrentURL('/hotel_room_details') && !isCurrentURL('/hotel_owner_add_account_details') 
               && !isCurrentURL('/admin-profile') && !isCurrentURL('/admin_editprofile') && !isCurrentURL('/admin_assignguide') && !isCurrentURL('/bookings/pending_bookings') 
               && !isCurrentURL('/bookings/current_bookings') && !isCurrentURL('/bookings/rejected_bookings') && !isCurrentURL('/bookings/booking_history') 
-              && !isCurrentURL('/managepackages/manage_package') ?
+              && !isCurrentURL('/managepackages/manage_package') && !isCurrentURL('/package_details_two') && !isCurrentURL('/package_details_three') 
+              && !isCurrentURL('/package_details_four') ?
               <Link
                 to='/sign-up'
                 className='nav-links'
@@ -104,7 +105,8 @@ function Navbar() {
               && !isCurrentURL('/hotel_owner_profile')  && !isCurrentURL('/hotel_food_details') && !isCurrentURL('/hotel_room_details') && !isCurrentURL('/hotel_owner_add_account_details') 
               && !isCurrentURL('/admin-profile') && !isCurrentURL('/admin_editprofile') && !isCurrentURL('/admin_assignguide') && !isCurrentURL('/bookings/pending_bookings') 
               && !isCurrentURL('/bookings/current_bookings') && !isCurrentURL('/bookings/rejected_bookings') && !isCurrentURL('/bookings/booking_history') 
-              && !isCurrentURL('/managepackages/manage_package') ?
+              && !isCurrentURL('/managepackages/manage_package') && !isCurrentURL('/package_details_two') && !isCurrentURL('/package_details_three') 
+              && !isCurrentURL('/package_details_four') ?
               <Link
                 to='/sign-in'
                 className='nav-links'
