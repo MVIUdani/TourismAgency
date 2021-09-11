@@ -27,13 +27,11 @@ export default class Package_details_two extends Component {
               <li><h6>Day 01 & 02 : Galle Fort & Rumassala & Jungle beach</h6></li>
               <li><h6>Day 03 & 04 : Hikkaduwa coral garden </h6></li>
               <li><h6>Day 05 & 06 : Hambantota national port and city</h6></li>
-              <li><h6>Day 07 & 08 : Horton Place</h6></li>
-              <li><h6>Day 09 & 10 : Bopath Ella Water Fall</h6></li>
-              <li><h6>Day 11 & 12 : Kurunegala Atha gala & Wewa Rawma</h6></li>
+              <li><h6>Day 07 & 08 : Trinconeshwaram Kovil & Nilaveli Uppuveli beach</h6></li>
               
             </ul>
             </div>
-            <h5>Day Duration: 12 Days</h5>
+            <h5>Day Duration: 08 Days</h5>
             <h5>Select your transport type:</h5>
             <div class="form-check">
   <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked/>
