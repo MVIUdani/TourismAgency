@@ -97,7 +97,8 @@ import Hotel_owner from './components/js/hotelowner/hotel_owner_profile';
 import Other_hotel01 from './components/js/other_hotel01';
 import Hotel_charge from './components/js/hotelowner/hotel_charge';
 import Hotel_owner_all_details from './components/js/hotelowner/hotel_owner_all_details';
-import Package_details_two from './components/js/packages/package_details_two';
+
+import Package_details_four from './components/js/packages/package_details_four';
 
 //toast.configure();
 
@@ -230,7 +231,8 @@ function App() {
            <Route path = "/other_hotel01" component = {Other_hotel01} />
            <Route path = "/hotel_charge" component = {Hotel_charge} />
            <Route path = "/hotel_owner_all_details" component = {Hotel_owner_all_details} />
-           <Route path = "/package_details_two" component = {Package_details_two} />
+           
+           <Route path = "/package_details_four" component = {Package_details_four} />
 
           </Switch>
       
