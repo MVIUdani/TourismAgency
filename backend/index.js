@@ -53,6 +53,8 @@ require('./routes/favorites')(app);
 
 require('./routes/transport_owner_all_cruds')(app); // for transport owner
 
+//require('./routes/webScraping');
+
 app.listen(5000, () => {
   console.log(`Server is starting on port 5000`);
 });
