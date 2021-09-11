@@ -7,7 +7,7 @@ function Package_details_two() {
 
             <div className="Aa">
 
-
+                <h1>Package 02</h1>
 
             </div>
 

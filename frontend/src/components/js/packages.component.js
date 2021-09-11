@@ -86,6 +86,10 @@ const history = useHistory();
   function PackageFirst(){
     history.push('/package-details');
   }
+
+  function PackageSecond(){
+    history.push('/package_details_two');
+  }
   
   return(
     
@@ -135,7 +139,7 @@ const history = useHistory();
           <div className="btn-container">
               
               <button onClick={PackageFirst}>Package 01 </button>
-              <button onClick="">Package 02</button>
+              <button onClick={PackageSecond}>Package 02</button>
               <button onClick="">Package 03</button>
               <button onClick="">Package 04</button>
               <button onClick="">Package 05</button>
