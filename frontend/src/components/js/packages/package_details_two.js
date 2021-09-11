@@ -14,9 +14,9 @@ export default class Package_details_two extends Component {
             <img className="Image-size" src='Package2/gallefort.jpg' alt="" width="240" height="210"></img>
             <img className="Image-size" src='Package2/rumassala_2.jpg' alt="" width="220" height="210"></img>
             <img className="Image-size" src='Package2/jungle_beach.jpg' alt="" width="220" height="225"></img>
-            <img className="Image-size" src='waterfall02.jpg' alt="" width="235" height="215"></img>
-            <img className="Image-size" src='atamasthanaya.jpg' alt="" width="230" height="225"></img>
-            <img className="Image-size" src='athugala.jpg' alt="" width="200" height="225"></img>
+            <img className="Image-size" src='Package2/port.jpg' alt="" width="230" height="225"></img>
+            <img className="Image-size" src='Package2/hikkaduwa-coral-reef.jpg' alt="" width="230" height="215"></img>
+            <img className="Image-size" src='Package2/trinko-lakpura.jpg' alt="" width="215" height="215"></img>
 
            </div>
             <div className="Places-image">
@@ -24,9 +24,9 @@ export default class Package_details_two extends Component {
             <h5>Visit Places:</h5>
              <div  className="List_package">
             <ul>
-              <li><h6>Day 01 & 02 : Galle Fort & Rumassala</h6></li>
-              <li><h6>Day 03 & 04 : Polonnaruwa Historical Places </h6></li>
-              <li><h6>Day 05 & 06 : Anuradhapura & Atamastan places</h6></li>
+              <li><h6>Day 01 & 02 : Galle Fort & Rumassala & Jungle beach</h6></li>
+              <li><h6>Day 03 & 04 : Hikkaduwa coral garden </h6></li>
+              <li><h6>Day 05 & 06 : Hambantota national port and city</h6></li>
               <li><h6>Day 07 & 08 : Horton Place</h6></li>
               <li><h6>Day 09 & 10 : Bopath Ella Water Fall</h6></li>
               <li><h6>Day 11 & 12 : Kurunegala Atha gala & Wewa Rawma</h6></li>
