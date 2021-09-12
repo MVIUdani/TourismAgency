@@ -14,9 +14,9 @@ export default class Package_details_four extends Component {
             <img className="Image-size" src='Package4/gallefort.jpg' alt="" width="240" height="210"></img>
             <img className="Image-size" src='Package4/rumassala_2.jpg' alt="" width="220" height="210"></img>
             <img className="Image-size" src='Package4/jungle_beach.jpg' alt="" width="220" height="225"></img>
-            <img className="Image-size" src='Package4/port.jpg' alt="" width="230" height="225"></img>
+            <img className="Image-size" src='Package4/port.jpg' alt="" width="220" height="220"></img>
             <img className="Image-size" src='Package4/hikkaduwa-coral-reef.jpg' alt="" width="230" height="215"></img>
-            <img className="Image-size" src='Package4/trinko-lakpura.jpg' alt="" width="215" height="215"></img>
+            <img className="Image-size" src='Package4/trinko-lakpura.jpg' alt="" width="225" height="215"></img>
 
            </div>
             <div className="Places-image">
