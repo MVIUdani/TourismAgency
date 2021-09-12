@@ -16,7 +16,7 @@ export default class Package_details_four extends Component {
             <img className="Image-size" src='Package4/jungle_beach.jpg' alt="" width="220" height="225"></img>
             <img className="Image-size" src='Package4/port.jpg' alt="" width="220" height="220"></img>
             <img className="Image-size" src='Package4/hikkaduwa-coral-reef.jpg' alt="" width="230" height="215"></img>
-            <img className="Image-size" src='Package4/trinko-lakpura.jpg' alt="" width="225" height="215"></img>
+            <img className="Image-size" src='Package4/trinco-lakpura.jpg' alt="" width="225" height="215"></img>
 
            </div>
             <div className="Places-image">
@@ -27,7 +27,7 @@ export default class Package_details_four extends Component {
               <li><h6>Day 01 & 02 : Galle Fort & Rumassala & Jungle beach</h6></li>
               <li><h6>Day 03 & 04 : Hikkaduwa coral garden </h6></li>
               <li><h6>Day 05 & 06 : Hambantota national port and city</h6></li>
-              <li><h6>Day 07 & 08 : Trinconeshwaram Kovil & Nilaveli Uppuveli beach</h6></li>
+              <li><h6>Day 07 & 08 : Thirukoneswaram Kovil & Nilaveli Uppuveli beach</h6></li>
               
             </ul>
             </div>

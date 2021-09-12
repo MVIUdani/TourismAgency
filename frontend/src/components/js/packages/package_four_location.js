@@ -80,13 +80,13 @@ Currently, an edifice is being built in honour of Hanuman on the harbour end of 
         </div>
 </div>
 <br></br><br></br>
-<h1>04.Bopath Ella Falls</h1>
+<h1>04.Hikkaduwa coral garden</h1>
     <br></br>
 
 <div className="Sigiriya">
        
 
-        <img className="Picture" src='waterfall02.jpg' alt="" width="270" height="200"></img>
+        <img className="Picture" src='Package4/hikkaduwa-coral-reef.jpg' alt="" width="270" height="200"></img>
         <div>
         <IconButton color="secondary" aria-label="add to favorite">
         <FavoriteIcon />
@@ -95,18 +95,18 @@ Currently, an edifice is being built in honour of Hanuman on the harbour end of 
 
         <div className="Sigiriya-des">
             <br></br>
-        Bopath Ella (Sinhala: බෝපත් ඇල්ල) is a waterfall situated in the Ratnapura District of Sri Lanka. It has a shape very similar to the leaf of the Sacred fig or "Bo" tree, which has earned it this name. The waterfall is a major tourist attraction in the country. Local myths say that it is haunted and that it hides a treasure trove.
-        Bopath Ella is located in a village named Agalwatte in Kuruwita in the Ratnapura District of Sri Lanka.
+            Hikkaduwa National Park is one of the three marine national parks in Sri Lanka. The national park contains a fringing coral reef of high degree of biodiversity. The area was declared a wildlife sanctuary on May 18, 1979, and then on August 14, 1988, upgraded to a nature reserve with extended land area.[1] The growth of the number of visitors in the next 25 years increased the degradation of the coral reef. To reduce the effects to the ecosystem, the reef was declared a national park on September 19, 2002
+            Hikkaduwa coral reef is a typical shallow fringing reef with an average depth of around 5 metres (16 ft).[2] The coral reef reduces the coastal erosion and forms a natural breakwater.[1] The coast of the national park extends four km. Generally the coast is narrow, ranging from 5–50 m according to the climatic conditions of the year. Scuba diving is a popular recreation here.
         </div>
 
 </div>
 
-<h1>05.Atamasthana</h1>
+<h1>05.Hambantota national port and city</h1>
     <br></br>
 <div className="Sigiriya">
       
 
-        <img className="Picture" src='atamasthanaya.jpg' alt="" width="265" height="250"></img>
+        <img className="Picture" src='Package4/port.jpg' alt="" width="265" height="250"></img>
         <div>
         <IconButton color="secondary" aria-label="add to favorite">
         <FavoriteIcon />
@@ -115,25 +115,21 @@ Currently, an edifice is being built in honour of Hanuman on the harbour end of 
 
         <div className="Sigiriya-des">
 
-        Atamasthana (අටමස්ථාන) or Eight sacred places are a series of locations in Sri Lanka where the Buddha had visited during his three visits to the country. The sacred places are known as Jaya Sri Maha Bodhiya, Ruwanwelisaya, Thuparamaya, Lovamahapaya, Abhayagiri Dagaba, Jetavanarama, Mirisaveti Stupa and Lankarama. They are situated in Anuradhapura, the capital of the ancient Anuradhapura Kingdom.
+        Hambantota (Sinhala: හම්බන්තොට, Tamil: அம்பாந்தோட்டை) is the main town in Hambantota District, Southern Province, Sri Lanka. This underdeveloped area was hit hard by the 2004 Indian Ocean tsunami and is undergoing a number of major development projects including the construction of a new sea port and international airport finished in 2013. These projects and others such as Hambantota Cricket Stadium are said to form part of the government's plan to transform Hambantota into the second major urban hub of Sri Lanka, away from Colombo
+        The Hambantota International Port (also known as the Magampura Mahinda Rajapaksa Port or the Magam Ruhunupura Mahinda Rajapaksa Port) is a deep water port in Hambantota, Sri Lanka. It was opened on 18 November 2010, and is Sri Lanka's second largest port, after the Port of Colombo. In 2020, the port handled 1.8 million tonnes of LPG and dry bulk cargo.[3]
 
-The sacred city of Anuradhapura exerted a considerable influence on the development of architecture in the country during several centuries. The city is nominated as a UNESCO World Heritage Site in 1982, it lies 205 km north of the current capital Colombo in island's North Central Province, on the banks of the historic Malvathu Oya.
-
-According to the Mahavansa the sacred city was found around 350 BC by Pandukabhaya, the 1st king of the Anuradhapura kingdom and sixth since the arrival of Vijaya. It eventually become the principal shrines of Buddhism including the branch planted of the sacred fig tree, Bodhi tree from Bodhgaya, under which Siddharta attained spiritual enlightenment and supreme wisdom. The sacred tree brought there in the 3rd century BC during the second mission, led by Sangamitta, a Buddhist nun and daughter of Emperor Ashoka. The relics of Buddha have, moreover, shaped the religious topography of Anuradhapura, where the Thuparamaya was built by Devanampiya Tissa in the 3rd century BC to house the clavicle of Buddha, an important religious relic presented by Emperor Ashoka.[1]
-
-The city's apogee was reached under the reign of Dutthagamani who, in 161 BC, defeated the South Indian invader Ellalan re-establishing Buddhism in the place of Brahminism and endowed the site with extraordinary monuments including the Mirisaveti Stupa, Ruwanwelisaya, and the Brazen Palace. The city flourished for 1,300 years, then was abandoned after an invasion in 993.
-
+Construction of the port commenced in January 2008. In 2016, reported an operating profit of US$1.81 million but was considered economically unviable.[4] As debt repayment got difficult, the newly-elected government decided to privatise an 80% stake of the port to raise foreign exchange in order to repay maturing sovereign bonds unrelated to the port.[5][6] Of the two bidding companies, China Merchants Port was chosen,[5] which was to pay US$1.12 billion to Sri Lanka and spend additional amounts to develop the port into full operation
         </div>
 
     </div>
 
 <br></br><br></br><br></br><br></br>
-<h1>06.Kurunegala- Athagala</h1>
+<h1>06 Thirukoneswaram Kovil</h1>
     <br></br>
 <div className="Sigiriya">
       
 
-        <img className="Picture" src='athugala02.jpg' alt="" width="265" height="230"></img>
+        <img className="Picture" src='Package4/trinco-covil.jpg' alt="" width="265" height="230"></img>
         <div>
         <IconButton color="secondary" aria-label="add to favorite">
         <FavoriteIcon />
@@ -141,21 +137,34 @@ The city's apogee was reached under the reign of Dutthagamani who, in 161 BC, de
         </div>
 
         <div className="Sigiriya-des">
-        Athugala also called as ethagala is a very splendid rock that overlooks the Kurunegala town in Sri Lanka. Athugala is situated just around 1km away from Kurunegala town. The rock gets the name “athugala” due to its shape of an elephant. This is "the" iconic landmark of Kurunegala.
-
-
-You could select two ways to reach to the top of the rock. Either following the steps in the rock or riding your vehicle to the top. Walk to the top of the rock is little tiring and take around 15-20mins, but you'll forget that by watching around. Sometimes, you can find few monkey groups in the middle of the rock. So, it is always better to watch out your stuff.
-
-As you reach to the top of the rock you could see the temple (Athugala Viharaya) and massive snow white Buddha statue. This temple houses to the huge 88 ft Buddha statue. The great bare rock mountain provides a perfect setting for the Buddha statue. The night view of the Buddha statue from Kurunegala town is simply a breath taking view. Only the snow white Buddha statue can be seen in the sky while the whole surrounding is in dark. It is like the Buddha statue is floating in the sky. It is a worth visit view and these views make the place memorable.If you are to get the perfect view you need to start climbing the rock in the evening. Stay there at the top of the rock till it gets little dark.
-
-The view of Kurunagela city from the top of the rock is panoramic and a treat to the eyes. If you are passing the busy Kurunegala town athugala is a must visit place. Also, if you are to say you visited Kurunegala you need to climb athugala.
-
+        Koneswaram temple of Trincomalee (Tamil: திருக் கோணேச்சரம் கோயில்) or Thirukonamalai Konesar Temple – The Temple of the Thousand Pillars and Dakshina-Then Kailasam is a classical-medieval Hindu temple complex in Trincomalee, a Hindu religious pilgrimage centre in Eastern Province, Sri Lanka. The most sacred of the Pancha Ishwarams of Sri Lanka, it was built significantly during the reign of the early Cholas and the Five Dravidians of the Early Pandyan Kingdom on top of Konesar Malai, a promontory overlooking Trincomalee District, Gokarna bay and the Indian Ocean. Its Pallava, Chola, Pandyan and Jaffna design reflect a continual Tamil Saivite influence in the Vannimai region from the classical period. The monument contains its main shrine to Shiva in the form Kona-Eiswara, shortened to Konesar. Connected at the mouth of the Mahavilli Ganga River to the footprint of Shiva at Sivan Oli Padam Malai at the river's source, the temple symbolically crowns the flow of the Ganges River from Shiva's head of Mount Kailash to his feet.
 
 
         </div>
 
 
         </div>
+        
+<h1>07.Nilaveli Uppuveli beach</h1>
+    <br></br>
+<div className="Sigiriya">
+      
+
+        <img className="Picture" src='Package4/beach.jpg' alt="" width="265" height="250"></img>
+        <div>
+        <IconButton color="secondary" aria-label="add to favorite">
+        <FavoriteIcon />
+       </IconButton>
+        </div>
+
+        <div className="Sigiriya-des">
+        Nilaveli (Tamil: நிலாவெளி, romanized: Nilāveḷi; Sinhala: නිල්වැල්ල, romanized: Nilvælla) is a coastal resort town and suburb of the Trincomalee District, Sri Lanka located 16 km northwest of the city of Trincomalee. A historically popular Tamil village and tourist destination of the district alongside the nearby Uppuveli, the numbers of visitors declined following the 2004 Indian Ocean tsunami and Sri Lankan Civil War, but have risen again since 2010. Pigeon Island National Park, one of the two marine national parks of the region is situated 1 km off the coast of Nilaveli, its many species of vegetation, coral and reef fish contributing to Nilaveli's rich biodiversity.
+        The 10th century CE Tamil Nilaveli inscriptions mention the Koneswaram temple as having received a land grant in the Tamil country of one thousand seven hundred and ten acres (two hundred and fifty four vèli) of dry and wet land to meet its daily expenses - revealing the temple's role in providing various services to the local community by 900-1000 CE
+        </div>
+
+    </div>
+
+<br></br><br></br><br></br><br></br>
         <br></br>
 
 
