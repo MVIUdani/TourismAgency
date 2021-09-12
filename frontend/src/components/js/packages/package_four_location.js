@@ -56,12 +56,12 @@ Currently, an edifice is being built in honour of Hanuman on the harbour end of 
 
 
 </div>
-<h1>03.Horton Plains National Park</h1>
+<h1>03.Jungle Beach</h1>
     <br></br>
 <div className="Sigiriya">
        
 
-        <img className="Picture" src='hortan.jpg' alt="" width="265" height="220"></img>
+        <img className="Picture" src='Package4/jungle_beach.jpg' alt="" width="265" height="220"></img>
         <div>
         <IconButton color="secondary" aria-label="add to favorite">
         <FavoriteIcon />
@@ -70,13 +70,12 @@ Currently, an edifice is being built in honour of Hanuman on the harbour end of 
 
         <div className="Sigiriya-des">
     
-        Horton Plains National Park (Sinhala: හෝර්ටන් තැන්න ජාතික උද්‍යානය Hortan Thanna Jathika Udyanaya) is a national park in the central highlands of Sri Lanka that was designated in 1988. It is located at an elevation of 2,100–2,300 m (6,900–7,500 ft) and encompasses montane grassland and cloud forest. It is rich in biodiversity and many species found here are endemic to the region. It is also a popular tourist destination and is situated 8 kilometres (5.0 mi) from Ohiya, 6 kilometres (3.7 mi) from the world-famous Ohiya Gap/Dondra Watch and 32 kilometres (20 mi) from Nuwara Eliya.
+        The description of the beach paradises in Valmiki's epic Ramayana sounds like Unawatuna.
 
-The Horton Plains are the headwaters of three major Sri Lankan rivers, the Mahaweli, Kelani, and Walawe. In Sinhala the plains are known as Maha Eliya Plains (මහ එළිය තැන්න). Stone tools dating back to Balangoda culture have been found here. The plains' vegetation is grasslands interspersed with montane forest and includes many endemic woody plants. Large herds of Sri Lankan sambar deer feature as typical mammals and the park is also an Important Bird Area with many species not only endemic to Sri Lanka but restricted to the Horton Plains. Forest dieback is one of the major threats to the park and some studies suggest that it is caused by a natural phenomenon.
+"a seashore dotted with thousands of trees, coconuts, and palms dominating, strings of houses and hermitages along the coastline, human beings and superior beings such as Gandharvas, Siddhas, and ascetics, living in them and countless bejewelled celestial nymphs thronging the shore, the coast intermittently visited by heavenly beings, Gods and demons.":
+Unawatuna traces its roots to the great epic Ramayana. In the epic, the monkey-warrior Hanuman was sent back to India to fetch the four medicinal herbs by Jambavan namely, mritasanjeevani, vishalyakarani, suvarnakarani, and sandhani from the Himalayas in order to heal Lakshman who was wounded trying to save the abducted Princess Sita from the demon king Ravana. Hanuman failed to identify these herbs, so he lifted the entire mountain and carried it to the battlefield to try to save Lakshman, but in the process, a chunk of it "fell-down" in the location of the present day Unawatuna, the name of the village derives from "Una-watuna" meaning "fell down".
 
-The sheer precipice of World's End and Baker's Falls are among the tourist attractions of the park.
-
-In 20th century there are some records of elephants again in the park.
+Currently, an edifice is being built in honour of Hanuman on the harbour end of Rumassala Hill by Japanese monks of the Mahayana sect of Buddhism near the Peace Pagoda that they built.
 
         </div>
 </div>
