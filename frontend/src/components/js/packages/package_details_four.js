@@ -20,7 +20,7 @@ export default class Package_details_four extends Component {
 
            </div>
             <div className="Places-image">
-            <h3>Package No: 02</h3>
+            <h3>Package No: 04</h3>
             <h5>Visit Places:</h5>
              <div  className="List_package">
             <ul>
@@ -49,8 +49,8 @@ export default class Package_details_four extends Component {
   </div>
   
 
-            <h5>Price for one passenger: 450$</h5>
-            <Link to="/location-of-package"><h5>Locations</h5></Link>
+            <h5>Price for one passenger: 380$</h5>
+            <Link to="/package_four_location"><h5>Locations</h5></Link>
             <Link to="/hotel-details-of-packageone"><h5>Hotel Facilities</h5></Link>
           
           <br></br>
