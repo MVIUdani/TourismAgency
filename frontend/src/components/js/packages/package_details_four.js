@@ -32,7 +32,8 @@ export default class Package_details_four extends Component {
             </ul>
             </div>
             <h5>Day Duration: 08 Days</h5>
-            <h5>Select your transport type:</h5>
+            <h5>Please Select your transport type:</h5>
+
             <div class="form-check">
   <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked/>
   <label class="form-check-label" for="flexRadioDefault1">
