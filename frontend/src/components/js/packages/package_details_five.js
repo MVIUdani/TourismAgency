@@ -20,7 +20,7 @@ export default function Package_details_five() {
 
            </div>
             <div className="Places-image">
-            <h3>Package No: 02 <SimpleRating /></h3>
+            <h3>Package No: 05 <SimpleRating /></h3>
             <h5>Visit Places:</h5>
              <div  className="List_package">
             <ul>
