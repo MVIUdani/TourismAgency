@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+/*import React, { Component } from "react";
 import styles from '../css/transport_owner_booked_date.css';
 
 function Bookeddate() {
@@ -31,8 +31,8 @@ function Bookeddate() {
 
 export default Bookeddate;
 
+*/
 
-/*
 import React, { Component,useState, useEffect } from "react";
 import styles from '../css/transport_owner_booked_date.css';
 import Axios from 'axios';
@@ -46,7 +46,7 @@ function Bookeddate() {
 
 
   const submitDate = () => {
-    Axios.post('http://localhost:3001/api/update', {
+    Axios.post('http://localhost:3001/api/transport_owner_date_insert', {
       
    
    bookeddate: bookeddate,
@@ -93,6 +93,17 @@ const ShowDate = () => {
 
 </form>
 
+
+</div>
+
+
+        );
+        }
+
+export default Bookeddate;
+
+/*
+
 <button  onClick={ShowDate} type="submit" className="register">Show booked date</button>
 
 {dateList.map((val,key) => {
@@ -119,12 +130,8 @@ return (
 
 )};
 
-
-</div>
-
-
-        );
-        }
-
-export default Bookeddate;
 */
+
+
+
+
