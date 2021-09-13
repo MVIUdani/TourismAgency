@@ -51,7 +51,7 @@ export default function Package_details_two() {
 
             <h5>Price for one passenger: 450$</h5>
             <Link to="/package_two_location"><h5>Locations</h5></Link>
-            <Link to="/hotel-details-of-packageone"><h5>Hotel Facilities</h5></Link>
+            <Link to="/package_two_hotel_details"><h5>Hotel Facilities</h5></Link>
           
           <br></br>
           <Link to="/edit_and_request_package"><button className="Btn1" type="button"><h6>Edit & request package</h6></button></Link>
