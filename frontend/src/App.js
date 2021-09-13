@@ -99,7 +99,9 @@ import Hotel_charge from './components/js/hotelowner/hotel_charge';
 import Hotel_owner_all_details from './components/js/hotelowner/hotel_owner_all_details';
 
 import Package_details_two from './components/js/packages/package_details_two';
+import Package_two_location from './components/js/packages/package_two_location';
 import Package_details_three from './components/js/packages/package_details_three';
+import Package_three_location from './components/js/packages/package_three_location';
 import Package_details_four from './components/js/packages/package_details_four';
 import Package_four_location from './components/js/packages/package_four_location';
 import Package_four_hotel_details from './components/js/packages/package_four_hotel_details';
@@ -237,7 +239,9 @@ function App() {
            <Route path = "/hotel_owner_all_details" component = {Hotel_owner_all_details} />
 
            <Route path = "/package_details_two" component = {Package_details_two} />
+           <Route path = "/package_two_location" component = {Package_two_location} />
            <Route path = "/package_details_three" component = {Package_details_three} />
+           <Route path = "/package_three_location" component = {Package_three_location} />
            <Route path = "/package_details_four" component = {Package_details_four} />
            <Route path = "/package_four_location" component = {Package_four_location} />
            <Route path = "/package_four_hotel_details" component = {Package_four_hotel_details} />
