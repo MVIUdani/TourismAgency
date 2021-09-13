@@ -100,6 +100,7 @@ import Hotel_owner_all_details from './components/js/hotelowner/hotel_owner_all_
 
 import Package_details_two from './components/js/packages/package_details_two';
 import Package_two_location from './components/js/packages/package_two_location';
+import Package_two_hotel_details from './components/js/packages/package_two_hotel_details';
 import { Package_two_Maps } from './components/js/packages/package_two_map';
 import Package_details_three from './components/js/packages/package_details_three';
 import Package_three_location from './components/js/packages/package_three_location';
@@ -108,6 +109,7 @@ import Package_details_four from './components/js/packages/package_details_four'
 import Package_four_location from './components/js/packages/package_four_location';
 import { Package_four_Maps } from './components/js/packages/package_four_map';
 import Package_four_hotel_details from './components/js/packages/package_four_hotel_details';
+import Package_details_five from './components/js/packages/package_details_five';
 
 //toast.configure();
 
@@ -244,6 +246,7 @@ function App() {
            <Route path = "/package_details_two" component = {Package_details_two} />
            <Route path = "/package_two_location" component = {Package_two_location} />
            <Route path = "/package_map_two" component = {Package_two_Maps} />
+           <Route path = "/package_two_hotel_details" component = {Package_two_hotel_details} />
            <Route path = "/package_details_three" component = {Package_details_three} />
            <Route path = "/package_three_location" component = {Package_three_location} />
            <Route path = "/package_map_three" component = {Package_three_Maps} />
@@ -251,6 +254,7 @@ function App() {
            <Route path = "/package_four_location" component = {Package_four_location} />
            <Route path = "/package_map_four" component = {Package_four_Maps} />
            <Route path = "/package_four_hotel_details" component = {Package_four_hotel_details} />
+           <Route path = "/package_details_five" component = {Package_details_five} />
 
           </Switch>
       

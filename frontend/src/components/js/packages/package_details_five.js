@@ -3,7 +3,7 @@ import '../../css/package-details.css';
 import { Link } from 'react-router-dom';
 import SimpleRating from "../customer/rating";
 
-export default function Package_details_two() {
+export default function Package_details_five() {
 
         return (    
      
