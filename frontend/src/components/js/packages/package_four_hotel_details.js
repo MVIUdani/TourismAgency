@@ -70,12 +70,12 @@ function Package_four_hotel_details(){
 
 <div className="Hotel_details">
   <div className="Day">
-    <h1>Day 05 & Day 06</h1>
+    <h1>Day 05 & Day 06</h1><br></br>
     <h4>Hotel Name:The Heritage Hotel Anuradhapura</h4><br></br>
-    <h4> Hotel Description:</h4>
-    Conveniently located in Anuradhapura, The Heritage Hotel is a great base from which to explore this vibrant city. The city center is merely 2.0 km away and the airport can be reached within 240 minutes. A haven of rest and relaxation, the hotel will offer total renewal just steps away from the city's numerous attractions such as Tissa Wewa, Thissa Wewa Reservoir, Isurumuniya Temple.
-
-The Heritage Hotel offers impeccable service and all the essential amenities to invigorate travelers. The hotel offers access to a vast array of services, including 24-hour room service, free Wi-Fi in all rooms, 24-hour security, daily housekeeping, postal service.
+     Overlooking the pristine southern coast of Sri Lanka, Shangri-La Hambantota is home to an 18-hole championship golf course, which is the only resort course in the country, an expansive spa featuring exceptional Ayurveda treatments, and a unique artisan village that showcases local arts and crafts.
+274 rooms, including 20 suites
+Sri Lanka’s only 18-hole golf resort course
+Shangri-La Cares: Our commitment to your well-being in our care
 
     <br></br><br></br>
     <h5>If not available this hotel for relevent booked days. We give the other hotel:<Link to='/other_hotel01'><br></br><h4>Hotel Details</h4></Link></h5>
@@ -86,12 +86,11 @@ The Heritage Hotel offers impeccable service and all the essential amenities to 
 
 <div className="Hotel_images">
 
-<img className="Hotel_size" src='hotel/anu_hotel.jpg' alt="" width="475" height="245"></img>
-<img className="Hotel_size" src='hotel/anu_hotel2.jpg' alt="" width="260" height="220"></img>
-<img className="Hotel_size" src='hotel/anu_bed.jpg' alt="" width="240" height="205"></img>
-
-<img className="Hotel_size" src='hotel/anu_food1.jpg' alt="" width="250" height="210"></img>
-<img className="Hotel_size" src='hotel/anu_food2.jpg' alt="" width="255" height="215"></img>
+<img className="Hotel_size" src='Package4/Ham_1.jpg' alt="" width="380" height="220"></img>
+<img className="Hotel_size" src='Package4/Ham_2.jpg' alt="" width="305" height="220"></img>
+<img className="Hotel_size" src='Package4/Ham_4.jpg' alt="" width="245" height="200"></img>
+<img className="Hotel_size" src='Package4/Ham_5.jpg' alt="" width="250" height="210"></img>
+<img className="Hotel_size" src='Package4/Ham_6.jpg' alt="" width="250" height="215"></img>
 
 </div>
 
@@ -133,76 +132,7 @@ The Heritage Hotel offers impeccable service and all the essential amenities to 
 
 <hr></hr>
 
-<div className="Hotel">
-
-<div className="Hotel_details">
-  <div className="Day">
-    <h1>Day 09 & Day 10</h1>
-    <h4>Hotel Name:Bopath fall Hotel Rathnapura</h4><br></br>
-    <h4> Hotel Description:</h4>
-    Our prime concern is to provide our loyal customers a wonderful holiday experience. To action out our concerns we provide prime facilities to make your stay a Comfortable and a pleasant stay. Our mission is to offer every guest the most excellent conveniences during their stay with us, in guest rooms and suites that offer breath taking views of our surroundings. We are ready to serve you throughout your stay at Bopathfalls.
-    <br></br><br></br>
-    <h5>If not available this hotel for relevent booked days. We give the other hotel: <Link to='/other_hotel01'><br></br><h4>Hotel Details</h4></Link></h5>
-    
-  </div>
-</div>
-
-<div className="Hotel_images">
-
-<img className="Hotel_size" src='hotel/bopath_hotel.jpg' alt="" width="455" height="245"></img>
-<img className="Hotel_size" src='hotel/bopath_hotel2.jpg' alt="" width="280" height="220"></img>
-<img className="Hotel_size" src='hotel/bopath_bed.jpg' alt="" width="240" height="205"></img>
-
-<img className="Hotel_size" src='hotel/bopath_food.jpg' alt="" width="250" height="210"></img>
-<img className="Hotel_size" src='hotel/bopath_food2.jpg' alt="" width="250" height="215"></img>
-
-</div>
-
 </div>   
-
-<hr></hr>
-
-<div className="Hotel">
-
-<div className="Hotel_details">
-  <div className="Day">
-    <h1>Day 11 & Day 12</h1>
-    <h4>Hotel Name:Roshara Nalla Hotel Giriulla</h4><br></br>
-    <h4> Hotel Description:</h4>
-    Roshara Nalla features a restaurant, shared lounge, a garden and water sports facilities in Giriulla. Among the facilities at this property are a shared kitchen and room service, along with free WiFi throughout the property. The hotel provides an outdoor swimming pool, fitness center, evening entertainment and a 24-hour front desk.
-
-At the hotel, the rooms include a desk. At Roshara Nalla each room comes with a flat-screen TV, a private bathroom, and a patio with a lake view.
-
-Guests at the accommodations can enjoy a continental or a buffet breakfast.
-
-Roshara Nalla offers a terrace. The area is popular for fishing, and car hire is available at the hotel.
-
-Roshara Nalla also provides a business center and free private parking.
-
-    <br></br><br></br>
-    <h5>If not available this hotel for relevent booked days. We give the other hotel: <Link to='/other_hotel01'><br></br><h4>Hotel Details</h4></Link></h5>
-    
-  </div>
-</div>
-
-<div className="Hotel_images">
-
-<img className="Hotel_size" src='hotel/kuru_hotel.jpg' alt="" width="455" height="245"></img>
-<img className="Hotel_size" src='hotel/kuru_hotel2.jpg' alt="" width="280" height="220"></img>
-<img className="Hotel_size" src='hotel/kuru_bed.jpg' alt="" width="240" height="205"></img>
-
-<img className="Hotel_size" src='hotel/kuru_food.jpg' alt="" width="240" height="210"></img>
-<img className="Hotel_size" src='hotel/kuru_food2.jpg' alt="" width="260" height="215"></img>
-
-</div>
-
-</div>   
-
-
-</div>   
-
-
-
 
         );
 
