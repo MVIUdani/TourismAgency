@@ -10,7 +10,7 @@ export default function Package_two_location(){
 
         <div className="Locations">
         <br></br>
-<Link to='/maps'><h5 style={{color:"#fff",marginLeft:"40px"}}>Get Map of locations</h5></Link>
+<Link to='/package_map_two'><h5 style={{color:"#fff",marginLeft:"40px"}}>Get Map of locations</h5></Link>
 
 <h1>01.Polonnaruwa</h1>
     <br></br>

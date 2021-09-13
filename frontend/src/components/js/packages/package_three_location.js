@@ -9,7 +9,7 @@ export default function Package_three_location(){
     return ( 
         <div className="Locations">
             <br></br>
-<Link to='/maps'><h5 style={{color:"#fff",marginLeft:"40px"}}>Get Map of locations</h5></Link>
+<Link to='/package_map_three'><h5 style={{color:"#fff",marginLeft:"40px"}}>Get Map of locations</h5></Link>
 
 <h1>01.Nuwara Eliya</h1>
     <br></br>

@@ -27,4 +27,4 @@ export class Package_four_Maps extends React.Component {
 
   export default GoogleApiWrapper({
     apiKey: 'AIzaSyAIXpN9bKVGUrvtfkE97gCT7BgYzjo3swc'
-  })(Maps);
+  })(Package_four_Maps);
