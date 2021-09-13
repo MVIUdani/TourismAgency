@@ -67,7 +67,7 @@ function Navbar() {
             </li>
 
             <li>
-              {!isCurrentURL('/packages') && !isCurrentURL('/payment-first') && !isCurrentURL('/payment') && !isCurrentURL('/package-details')
+              {!isCurrentURL('/packages') && !isCurrentURL('/payment-first') && !isCurrentURL('/payment') && !isCurrentURL('/package-details') && !isCurrentURL('/maps')
               && !isCurrentURL('/manage_vehicle_details') && !isCurrentURL('/transport_owner_profile') && !isCurrentURL('/transport_owner_edit_profile') 
               && !isCurrentURL('/location-of-package') && !isCurrentURL('/hotel-details-of-packageone') && !isCurrentURL('/request') 
               && !isCurrentURL('/count_pasenger') && !isCurrentURL('/cus-profile') && !isCurrentURL('/edit_profile') && !isCurrentURL('/favourites') 
@@ -77,7 +77,8 @@ function Navbar() {
               && !isCurrentURL('/admin-profile') && !isCurrentURL('/admin_editprofile') && !isCurrentURL('/admin_assignguide') && !isCurrentURL('/bookings/pending_bookings') 
               && !isCurrentURL('/bookings/current_bookings') && !isCurrentURL('/bookings/rejected_bookings') && !isCurrentURL('/bookings/booking_history') 
               && !isCurrentURL('/managepackages/manage_package') && !isCurrentURL('/package_details_two') && !isCurrentURL('/package_details_three') 
-              && !isCurrentURL('/package_details_four') ?
+              && !isCurrentURL('/package_details_four') && !isCurrentURL('/package_two_location') && !isCurrentURL('/package_three_location') && !isCurrentURL('/package_four_location') 
+              && !isCurrentURL('/package_map_two') && !isCurrentURL('/package_map_three') && !isCurrentURL('/package_map_four') && !isCurrentURL('/package_four_hotel_details')?
               <Link
                 to='/sign-up'
                 className='nav-links'
@@ -96,7 +97,7 @@ function Navbar() {
             </li>
 
              <li>
-             {!isCurrentURL('/packages') && !isCurrentURL('/payment-first') && !isCurrentURL('/payment') && !isCurrentURL('/package-details')
+             {!isCurrentURL('/packages') && !isCurrentURL('/payment-first') && !isCurrentURL('/payment') && !isCurrentURL('/package-details') && !isCurrentURL('/maps')
               && !isCurrentURL('/manage_vehicle_details') && !isCurrentURL('/transport_owner_profile') && !isCurrentURL('/transport_owner_edit_profile') 
               && !isCurrentURL('/location-of-package') && !isCurrentURL('/hotel-details-of-packageone') && !isCurrentURL('/request') 
               && !isCurrentURL('/count_pasenger') && !isCurrentURL('/cus-profile') && !isCurrentURL('/edit_profile') && !isCurrentURL('/favourites') 
@@ -106,7 +107,8 @@ function Navbar() {
               && !isCurrentURL('/admin-profile') && !isCurrentURL('/admin_editprofile') && !isCurrentURL('/admin_assignguide') && !isCurrentURL('/bookings/pending_bookings') 
               && !isCurrentURL('/bookings/current_bookings') && !isCurrentURL('/bookings/rejected_bookings') && !isCurrentURL('/bookings/booking_history') 
               && !isCurrentURL('/managepackages/manage_package') && !isCurrentURL('/package_details_two') && !isCurrentURL('/package_details_three') 
-              && !isCurrentURL('/package_details_four') ?
+              && !isCurrentURL('/package_details_four') && !isCurrentURL('/package_two_location') && !isCurrentURL('/package_three_location') && !isCurrentURL('/package_four_location') 
+              && !isCurrentURL('/package_map_two') && !isCurrentURL('/package_map_three') && !isCurrentURL('/package_map_four') && !isCurrentURL('/package_four_hotel_details')?
               <Link
                 to='/sign-in'
                 className='nav-links'
