@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+/*import React, { Component } from "react";
 import styles from '../css/transport-owner-details.css';
 
 function Vehicle () {
@@ -48,7 +48,7 @@ function Vehicle () {
 
 export default Vehicle;
 
-/*
+*/
 
 
 import React, { Component,useState, useEffect } from "react";
@@ -71,7 +71,7 @@ function Vehicle() {
   const [VehicleList, setVehicleList] = useState([]);
 
   const submitReview = () => {
-      Axios.post('http://localhost:3001/api/insert', {
+      Axios.post('http://localhost:3001/api/insert_vehicle_details', {
         
       name:name, 
       seats:seats,
@@ -169,7 +169,21 @@ const ShowDelete = () => {
 
 </form>
 <br></br>
-<button  onClick={ShowDetails} type="submit" className="register">Show my vehicle details</button>
+
+     
+</div>
+
+      );
+    }
+            
+ export default Vehicle;
+
+            // <button  onClick={ShowDelete} className="Use_button">Delete</button>
+
+            
+
+            /*
+            <button  onClick={ShowDetails} type="submit" className="register">Show my vehicle details</button>
 
 {VehicleList.map((val,key) => {
 
@@ -224,15 +238,4 @@ const ShowDelete = () => {
 
 
 )};
- 
-     
-</div>
-
-             );
-            }
-            
-            export default Vehicle;
-
-            // <button  onClick={ShowDelete} className="Use_button">Delete</button>
-
-            */
+ */
