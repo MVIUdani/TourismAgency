@@ -109,6 +109,7 @@ import Package_details_four from './components/js/packages/package_details_four'
 import Package_four_location from './components/js/packages/package_four_location';
 import { Package_four_Maps } from './components/js/packages/package_four_map';
 import Package_four_hotel_details from './components/js/packages/package_four_hotel_details';
+import Package_details_five from './components/js/packages/package_details_five';
 
 //toast.configure();
 
@@ -253,6 +254,7 @@ function App() {
            <Route path = "/package_four_location" component = {Package_four_location} />
            <Route path = "/package_map_four" component = {Package_four_Maps} />
            <Route path = "/package_four_hotel_details" component = {Package_four_hotel_details} />
+           <Route path = "/package_details_five" component = {Package_details_five} />
 
           </Switch>
       
