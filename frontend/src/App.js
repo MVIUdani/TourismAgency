@@ -104,6 +104,7 @@ import Package_two_hotel_details from './components/js/packages/package_two_hote
 import { Package_two_Maps } from './components/js/packages/package_two_map';
 import Package_details_three from './components/js/packages/package_details_three';
 import Package_three_location from './components/js/packages/package_three_location';
+import Package_three_hotel_details from './components/js/packages/package_three_hotel_details';
 import { Package_three_Maps } from './components/js/packages/package_three_map';
 import Package_details_four from './components/js/packages/package_details_four';
 import Package_four_location from './components/js/packages/package_four_location';
@@ -250,6 +251,7 @@ function App() {
            <Route path = "/package_details_three" component = {Package_details_three} />
            <Route path = "/package_three_location" component = {Package_three_location} />
            <Route path = "/package_map_three" component = {Package_three_Maps} />
+           <Route path = "/package_three_hotel_details" component = {Package_three_hotel_details} />
            <Route path = "/package_details_four" component = {Package_details_four} />
            <Route path = "/package_four_location" component = {Package_four_location} />
            <Route path = "/package_map_four" component = {Package_four_Maps} />
