@@ -47,11 +47,15 @@ const handleChange=(e)=>{
             <input type="radio" value="van" id="van"
               onChange={handleChange} name="travel"/>
             <label for="van">Travelling Van</label>
+ <br></br>  
+            <input type="radio" value="car" id="car"
+              onChange={handleChange} name="travel"/>
+            <label for="car">Travelling Car</label>
   </form>
 </div>
   
 
-            <h5>Price for one passenger: {travel == "bus" ? '450$' : '' || travel == "van" ? '400$' : ''}</h5>
+            <h5>Price for one passenger: {travel == "bus" ? 'Rs.20,000' : '' || travel == "van" ? 'Rs.18,000' : '' || travel == "car" ? 'Rs.16,000' : ''}</h5>
 
             <Link to="/package_two_location"><h5>Locations</h5></Link>
             <Link to="/package_two_hotel_details"><h5>Hotel Facilities</h5></Link>
