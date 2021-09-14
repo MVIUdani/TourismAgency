@@ -5,6 +5,10 @@ import SimpleRating from "../customer/rating";
 
 export default function Package_details_five() {
 
+const [travel,setTravel] = useState('');
+const handleChange=(e)=>{
+  setTravel(e.target.value);
+}
         return (    
      
     <div className="Start">
@@ -34,22 +38,21 @@ export default function Package_details_five() {
             </div>
             <h5>Day Duration: 10 Days</h5>
             <h5>Select your transport type:</h5>
-            <div class="form-check">
-  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked/>
-  <label class="form-check-label" for="flexRadioDefault1">
-  Travelling Bus 
-  </label> 
-  </div> 
-
-  <div class="form-check">
-  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"/>
-  <label class="form-check-label" for="flexRadioDefault2">
-   Travelling Van
-  </label>
-  </div>
+<div style={{marginLeft:"30px"}}>
+  <form>
+             <input type="radio" value="bus" id="bus" 
+               onChange={handleChange} name="travel" />
+             <label for="bus">Travelling Bus</label>
+<br></br>
+            <input type="radio" value="van" id="van"
+              onChange={handleChange} name="travel"/>
+            <label for="van">Travelling Van</label>
+  </form>
+</div>
   
 
-            <h5>Price for one passenger: 450$</h5>
+            <h5>Price for one passenger: {travel == "bus" ? '450$' : '' || travel == "van" ? '400$' : ''}</h5>
+
             <Link to="/package_two_location"><h5>Locations</h5></Link>
             <Link to="/package_two_hotel_details"><h5>Hotel Facilities</h5></Link>
           
