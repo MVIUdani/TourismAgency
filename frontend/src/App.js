@@ -102,6 +102,8 @@ import Package_details_two from './components/js/packages/package_details_two';
 import Package_two_location from './components/js/packages/package_two_location';
 import Package_two_hotel_details from './components/js/packages/package_two_hotel_details';
 import { Package_two_Maps } from './components/js/packages/package_two_map';
+import Count_pasenger_two from './components/js/packages/count/count_two_package';
+import PaymentFirst_P2 from './components/js/packages/payment/payment_two_package';
 import Package_details_three from './components/js/packages/package_details_three';
 import Package_three_location from './components/js/packages/package_three_location';
 import Package_three_hotel_details from './components/js/packages/package_three_hotel_details';
@@ -248,6 +250,8 @@ function App() {
            <Route path = "/package_two_location" component = {Package_two_location} />
            <Route path = "/package_map_two" component = {Package_two_Maps} />
            <Route path = "/package_two_hotel_details" component = {Package_two_hotel_details} />
+           <Route path = "/count_pasenger_two" component = {Count_pasenger_two}/>
+           <Route path = "/payment-first-Ptwo" component = {PaymentFirst_P2}/>
            <Route path = "/package_details_three" component = {Package_details_three} />
            <Route path = "/package_three_location" component = {Package_three_location} />
            <Route path = "/package_map_three" component = {Package_three_Maps} />

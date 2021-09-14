@@ -63,7 +63,7 @@ export default function Package_details_two() {
           <br></br>
           <Link to="/edit_and_request_package"><button className="Btn1" type="button"><h6>Edit Package</h6></button></Link>
           <Link to="/request"><button className="Btn1" type="button"><h6>Request new Package</h6></button></Link>
-          <Link to="/count_pasenger"><button className="Btn1" type="button"><h6>Book Now</h6></button></Link>
+          <Link to="/count_pasenger_two"><button className="Btn1" type="button"><h6>Book Now</h6></button></Link>
           
 
             </div>
