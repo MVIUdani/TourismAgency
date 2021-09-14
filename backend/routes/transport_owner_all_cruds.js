@@ -22,7 +22,7 @@ app.post("/api/insert_vehicle_details",(req, res)=>{
 
 });
 
-app.get("/api/show_vehicle_details", (req,res) => {
+app.get("/api/show", (req,res) => {
     db.query("SELECT * FROM vehicle_info WHERE user_id=3 ", (err,result) => {
         if(err){
 
@@ -34,6 +34,32 @@ app.get("/api/show_vehicle_details", (req,res) => {
     });
 });
 
+
+app.get("/api/showAccount_details", (req,res) => {
+    db.query("SELECT * FROM bank_account_details WHERE user_id=3 ", (err,result) => {
+        if(err){
+
+            console.log(err);
+        }else{
+
+            res.send(result);
+        }
+    });
+});
+
+
+
+app.get("/api/booked_date_details", (req,res) => {
+    db.query("SELECT * FROM vehicle_date WHERE user_id=3 ", (err,result) => {
+        if(err){
+
+            console.log(err);
+        }else{
+
+            res.send(result);
+        }
+    });
+});
 
 
 }
