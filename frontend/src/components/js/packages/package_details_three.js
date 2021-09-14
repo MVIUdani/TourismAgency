@@ -62,7 +62,7 @@ export default function Package_details_three() {
             <Link to="/package_three_hotel_details"><h5>Hotel Facilities</h5></Link>
           
           <br></br>
-          <Link to="/edit_and_request_package"><button className="Btn1" type="button"><h6>Edit & request package</h6></button></Link>
+          <Link to="/edit_and_request_package"><button className="Btn1" type="button"><h6>Edit Package</h6></button></Link>
           <Link to="/request"><button className="Btn1" type="button"><h6>Request new Package</h6></button></Link>
           <Link to="/count_pasenger"><button className="Btn1" type="button"><h6>Book Now</h6></button></Link>
           
