@@ -9,6 +9,9 @@ function Transport_owner_all_details(){
     const [Account_detailsList, setAccount_detailsList] = useState([]);
     const [BookedDateList, setBookedDateList] = useState([]);
 
+    const [bookeddate,setBookeddate] = useState("");
+    const [user_id,setUser_id] = useState("");
+
     const ShowDetails = () => {
         Axios.get('http://localhost:3001/api/show').then( (response) => {
     
@@ -29,6 +32,33 @@ function Transport_owner_all_details(){
             setBookedDateList(response.data);
         });
     };
+
+   
+const updateNow = () => {
+        Axios.put("http://localhost:3001/api/update_date", {bookeddate:bookeddate}).then( (response) => {
+    
+            alert("Updated");
+        });
+    };
+
+    const deleteNow = (user_id) => {
+        Axios.delete('http://localhost:3001/api/delete_date/3');
+    };
+
+   
+/*
+    function deleteNow(user_id) {
+        Axios.get("http://localhost:3001/delete_date", {
+            params: {
+              user_id:user_id,
+              
+            },
+          })
+          .then((response) => {
+            alert("Delete sucessfull.");
+          });
+      }
+  */
 
     return(
 
@@ -52,38 +82,38 @@ function Transport_owner_all_details(){
                 <br></br>
                 
 
-                <label><h6>Vehicle type: {val.name}</h6></label>
-            <input type="text" ></input>
+                <label><h6>Vehicle type: </h6><h4>{val.name}</h4></label>
+            <input type="text"  placeholder="You can edit your vehicle details"></input>
 
 
 
-                <label><h6>Number Of seats: {val.seats}</h6></label>
-            <input type="int" ></input>
+                <label><h6>Number Of seats: </h6><h4>{val.seats}</h4></label>
+            <input type="int" placeholder="You can edit your vehicle details"></input>
 
               
-                <label><h6>Vehicle Color: {val.color}</h6></label>
-            <input type="text" ></input>
+                <label><h6>Vehicle Color: </h6><h4>{val.color}</h4></label>
+            <input type="text" placeholder="You can edit your vehicle details"></input>
 
 
 
-                <label><h6>Valid date for licence: {val.valid_date}</h6></label>
-            <input type="text" ></input>
+                <label><h6>Valid date for licence: </h6><h4>{val.valid_date}</h4></label>
+            <input type="text" placeholder="You can edit your vehicle details"></input>
 
-                <label><h6>Charging for a 1 km : {val.cost}</h6></label>
-            <input type="int" ></input>
+                <label><h6>Charging for a 1 km : </h6><h4>Rs. {val.cost}</h4></label>
+            <input type="int" placeholder="You can edit your vehicle details"></input>
 
                 
-                <label><h6>plate Number: {val.plate_no}</h6></label>
-            <input type="int" ></input>
+                <label><h6>plate Number: </h6><h4>{val.plate_no}</h4></label>
+            <input type="int" placeholder="You can edit your vehicle details"></input>
 
         
-            <label><h6>Other details: {val.other_details}</h6></label>
-            <input type="text" ></input>
+            <label><h6>Other details: </h6><h4>{val.other_details}</h4></label>
+            <input type="text" placeholder="You can edit your vehicle details"></input>
 
 
-                <button className="Use_button">Update</button>
+                <button onClick={updateNow} className="Use_button">Update</button>
                
-               
+                <button  className="Use_button">Delete</button>
                 </form>
             </div>
            
@@ -109,23 +139,23 @@ return (
             <br></br>
 
             <label><h6>Accounter Name:</h6> <h4>{val.user_name}</h4></label>
-        <input type="text" ></input>
+        <input type="text" placeholder="You can edit your bank account details"></input>
 
             <label><h6>Bank Name :</h6> <h4>{val.bank_name}</h4></label>
-        <input type="int" ></input>
+        <input type="int"  placeholder="You can edit your bank account details"></input>
 
           
             <label><h6>Branch Name:</h6><h4>{val.branch_name}</h4></label>
-        <input  type="text" ></input>
+        <input  type="text"  placeholder="You can edit your bank account details"></input>
 
 
 
             <label><h6>Account Number: </h6> <h4>{val.account_no}</h4></label>
-        <input type="text" ></input>
+        <input type="text"  placeholder="You can edit your bank account details"></input>
 
 
             <button className="Use_button">Update</button>
-           
+            <button className="Use_button">Delete</button>
            
             </form>
         </div>
@@ -158,12 +188,15 @@ return (
             <br></br>
 
             <label><h6>Booked Date:</h6> <h4>{val.bookeddate}</h4></label>
-            <input type="date" ></input>
+            <input type="date" onChange={(e) => {
+            setBookeddate(e.target.value);
+            }} ></input>
+
+            <input value={val.user_id} type="hidden"></input>
 
 
-
-            <button className="Use_button">Update</button>
-           
+            <button onClick={updateNow} className="Use_button">Update</button>
+            <button  onClick={() => deleteNow(val.user_id)} className="Use_button">Delete</button>
            
             </form>
         </div>
@@ -179,6 +212,9 @@ return (
 
     </div>
  
+
+
+
 
         </div>
 

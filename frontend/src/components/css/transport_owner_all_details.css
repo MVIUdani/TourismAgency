@@ -41,7 +41,7 @@ body{
        margin-left: 1.5cm;
        background-color: white;
        width: 13cm;
-       height: 25.5cm;
+       height: 34cm;
        border-radius: 16px;
        background-color: white;
    }
@@ -52,7 +52,7 @@ body{
        margin-left: 1.5cm;
        background-color: white;
        width: 13cm;
-       height: 22cm;
+       height: 24cm;
        border-radius: 16px;
        background-color: white;
    }
@@ -63,10 +63,11 @@ body{
        margin-left: 1.5cm;
        background-color: white;
        width: 10cm;
-       height: 12cm;
+       height: 14cm;
        border-radius: 16px;
        background-color: white;
    }
+   
    /*
    .Second1{
    
@@ -77,4 +78,4 @@ body{
        margin-top: 0.5cm;
    }
    
- */  
+   */
