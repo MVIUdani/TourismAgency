@@ -57,4 +57,106 @@ module.exports = function(app){
 
     });
 
+    app.post("/insertTransport_p3",(req,res)=>{
+      const travel = req.body.travel;
+  
+      con.query(
+        "INSERT INTO bookings (transport_type,price,packageID) VALUES (?,17000,3)",
+      [travel],
+      (err,result) => {
+    if(err){
+      console.log(err);
+    }else{
+      res.send("Values Inserted");
+    }
+  }
+      )
+      });
+  
+      app.post("/insertCount_p3",(req,res)=>{
+        const count = req.body.count;
+        const room_count = req.body.room_count;
+   
+        con.query(
+          "INSERT INTO bookings (no_of_visitors, no_of_rooms, packageID) VALUES (?,?,'3')",
+          [count,room_count],
+          (err,result) => {
+            if(err){
+              console.log(err);
+            }else{
+              res.send("Values Inserted");
+            }
+          }
+        )
+  
+      });
+
+      app.post("/insertTransport_p4",(req,res)=>{
+        const travel = req.body.travel;
+    
+        con.query(
+          "INSERT INTO bookings (transport_type,price,packageID) VALUES (?,17000,4)",
+        [travel],
+        (err,result) => {
+      if(err){
+        console.log(err);
+      }else{
+        res.send("Values Inserted");
+      }
+    }
+        )
+        });
+    
+        app.post("/insertCount_p4",(req,res)=>{
+          const count = req.body.count;
+          const room_count = req.body.room_count;
+     
+          con.query(
+            "INSERT INTO bookings (no_of_visitors, no_of_rooms, packageID) VALUES (?,?,'4')",
+            [count,room_count],
+            (err,result) => {
+              if(err){
+                console.log(err);
+              }else{
+                res.send("Values Inserted");
+              }
+            }
+          )
+    
+        });
+
+        app.post("/insertTransport_p5",(req,res)=>{
+          const travel = req.body.travel;
+      
+          con.query(
+            "INSERT INTO bookings (transport_type,price,packageID) VALUES (?,17000,5)",
+          [travel],
+          (err,result) => {
+        if(err){
+          console.log(err);
+        }else{
+          res.send("Values Inserted");
+        }
+      }
+          )
+          });
+      
+          app.post("/insertCount_p5",(req,res)=>{
+            const count = req.body.count;
+            const room_count = req.body.room_count;
+       
+            con.query(
+              "INSERT INTO bookings (no_of_visitors, no_of_rooms, packageID) VALUES (?,?,'5')",
+              [count,room_count],
+              (err,result) => {
+                if(err){
+                  console.log(err);
+                }else{
+                  res.send("Values Inserted");
+                }
+              }
+            )
+      
+          });
+
 }
