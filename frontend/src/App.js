@@ -108,14 +108,17 @@ import Package_details_three from './components/js/packages/package_details_thre
 import Package_three_location from './components/js/packages/package_three_location';
 import Package_three_hotel_details from './components/js/packages/package_three_hotel_details';
 import { Package_three_Maps } from './components/js/packages/package_three_map';
+import Count_pasenger_three from './components/js/packages/count/count_three_package';
 import PaymentFirst_P3 from './components/js/packages/payment/payment_three_package';
 import Package_details_four from './components/js/packages/package_details_four';
 import Package_four_location from './components/js/packages/package_four_location';
 import { Package_four_Maps } from './components/js/packages/package_four_map';
 import Package_four_hotel_details from './components/js/packages/package_four_hotel_details';
 import PaymentFirst_P4 from './components/js/packages/payment/payment_four_package';
+import Count_pasenger_four from './components/js/packages/count/count_four_package';
 import Package_details_five from './components/js/packages/package_details_five';
 import PaymentFirst_P5 from './components/js/packages/payment/payment_five_package';
+import Count_pasenger_five from './components/js/packages/count/count_five_package';
 
 //toast.configure();
 
@@ -259,14 +262,17 @@ function App() {
            <Route path = "/package_three_location" component = {Package_three_location} />
            <Route path = "/package_map_three" component = {Package_three_Maps} />
            <Route path = "/package_three_hotel_details" component = {Package_three_hotel_details} />
+           <Route path = "/count_pasenger_three" component = {Count_pasenger_three}/>
            <Route path = "/payment-first-Pthree" component = {PaymentFirst_P3}/>
            <Route path = "/package_details_four" component = {Package_details_four} />
            <Route path = "/package_four_location" component = {Package_four_location} />
            <Route path = "/package_map_four" component = {Package_four_Maps} />
            <Route path = "/package_four_hotel_details" component = {Package_four_hotel_details} />
+           <Route path = "/count_pasenger_four" component = {Count_pasenger_four}/>
            <Route path = "/payment-first-Pfour" component = {PaymentFirst_P4}/>
            <Route path = "/package_details_five" component = {Package_details_five} />
            <Route path = "/payment-first-Pfive" component = {PaymentFirst_P5}/>
+           <Route path = "/count_pasenger_five" component = {Count_pasenger_five}/>
 
           </Switch>
       
