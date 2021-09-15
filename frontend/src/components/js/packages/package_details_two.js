@@ -1,14 +1,30 @@
 import React, { useState,useEffect } from "react";
 import '../../css/package-details.css';
-import { Link } from 'react-router-dom';
+import { Link,useHistory } from 'react-router-dom';
 import SimpleRating from "../customer/rating";
+import Axios from "axios";
 
 export default function Package_details_two() {
   
   const [travel,setTravel] = useState('');
+  
+  const history = useHistory();
+
   const handleChange=(e)=>{
     setTravel(e.target.value);
   }
+
+  const addTravel=()=>{
+    Axios.post("http://localhost:5000/insertTransport_p2",{
+        travel: travel,
+        bus: '19000',
+        van: '17000',
+        car: '15000',
+    }).then((response) => {
+        console.log(response);
+      });
+      history.push('/count_pasenger_two');
+};
         return (    
      
     <div className="Start">
@@ -47,7 +63,7 @@ export default function Package_details_two() {
             <input type="radio" value="van" id="van"
               onChange={handleChange} name="travel"/>
             <label for="van">Travelling Van</label>
- <br></br>  
+<br></br>  
             <input type="radio" value="car" id="car"
               onChange={handleChange} name="travel"/>
             <label for="car">Travelling Car</label>
@@ -63,7 +79,7 @@ export default function Package_details_two() {
           <br></br>
           <Link to="/edit_and_request_package"><button className="Btn1" type="button"><h6>Edit Package</h6></button></Link>
           <Link to="/request"><button className="Btn1" type="button"><h6>Request new Package</h6></button></Link>
-          <Link to="/count_pasenger_two"><button className="Btn1" type="button"><h6>Book Now</h6></button></Link>
+          <button className="Btn1" type="button" onClick={addTravel}><h6>Book Now</h6></button>
           
 
             </div>
