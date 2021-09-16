@@ -12,8 +12,8 @@ function Count_pasenger_two(){
 
     const addCount=()=>{
         Axios.post("http://localhost:5000/insertCount_p2",{
-            count: count,
-            room_count: room_count,
+            count: count,  //8
+            room_count: room_count, //2
         }).then((response) => {
             console.log(response);
           });

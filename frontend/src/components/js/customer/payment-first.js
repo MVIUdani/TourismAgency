@@ -44,7 +44,7 @@ export default function PaymentFirst() {
     cancel_url: 'http://sample.com/cancel',
     notify_url: 'http://sample.com/notify',
     order_id: "45896588",
-    items: "Just For You Mom Ribbon Cake",
+    items: "Package 1",
     amount: "4500",  // 20000*10
     currency: 'LKR',
     first_name: 'Saman',

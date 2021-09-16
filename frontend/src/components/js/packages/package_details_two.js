@@ -18,7 +18,7 @@ export default function Package_details_two() {
     Axios.post("http://localhost:5000/insertTransport_p2",{
         travel: travel,
         bus: '19000',
-        van: '17000',
+        van: '17000', //Select van in this package
         car: '15000',
     }).then((response) => {
         console.log(response);

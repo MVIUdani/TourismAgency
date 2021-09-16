@@ -19,7 +19,7 @@ const addTravel=()=>{
       travel: travel,
       bus: '20000',
       van: '18000',
-      car: '16000',
+      car: '16000', //Select car in this package
   }).then((response) => {
       console.log(response);
     });

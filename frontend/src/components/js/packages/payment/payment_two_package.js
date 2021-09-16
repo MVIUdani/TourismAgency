@@ -10,6 +10,9 @@ export default function PaymentFirst_P2() {
   const [lastname, setLastname] = useState("");
   const [email, setEmail] = useState("");
   const [contact, setContact] = useState("");
+  const [address, setAddress] = useState("");
+  const [city, setCity] = useState("");
+  const [country, setCountry] = useState("");
 
   Axios.defaults.withCredentials = true;
   useEffect(() => {
@@ -20,6 +23,9 @@ export default function PaymentFirst_P2() {
         setLastname(response.data.user[0].last_name);
         setEmail(response.data.user[0].email_address);
         setContact(response.data.user[0].phone_no);
+        setAddress(response.data.user[0].address);
+        setCity(response.data.user[0].city);
+        setCountry(response.data.user[0].country);
       }
     });
   }, []); 
@@ -38,8 +44,8 @@ export default function PaymentFirst_P2() {
     cancel_url: 'http://sample.com/cancel',
     notify_url: 'http://sample.com/notify',
     order_id: "45896588",
-    items: "Just For You Mom Ribbon Cake",
-    amount: "4500", 
+    items: "Package 2",
+    amount: "4500", //17000*8
     currency: 'LKR',
     first_name: 'Saman',
     last_name: 'Perera',
@@ -85,8 +91,13 @@ export default function PaymentFirst_P2() {
               <div className="col no-gutters">
               <div className="checkout">
               <div className="checkout-container">
-                    <h2>Select your Payment Method</h2>
-                    <br></br><br></br>
+
+                    <h5>Full Payment: Rs.136,000</h5>
+                    <br></br>
+                    <h5>Advance: Rs.</h5>
+                    <hr></hr>
+                    <h4>Select your Payment Method</h4>
+                    <br></br>
                     <li><button onClick={Credit}>Credit or Debit Card</button></li>
                     <br></br>
                     <li><button onClick={pay}>Payhere</button></li>
