@@ -23,6 +23,40 @@ module.exports = function(app){
         );
     });
 
+    app.post("/insertTransport_p1",(req,res)=>{
+      const travel = req.body.travel;
+  
+      con.query(
+        "INSERT INTO bookings (transport_type,price,packageID) VALUES (?,17000,1)",
+      [travel],
+      (err,result) => {
+    if(err){
+      console.log(err);
+    }else{
+      res.send("Values Inserted");
+    }
+  }
+      )
+      });
+
+      app.post("/insertCount_p1",(req,res)=>{
+        const count = req.body.count;
+        const room_count = req.body.room_count;
+   
+        con.query(
+          "INSERT INTO bookings (no_of_visitors, no_of_rooms, packageID) VALUES (?,?,'1')",
+          [count,room_count],
+          (err,result) => {
+            if(err){
+              console.log(err);
+            }else{
+              res.send("Values Inserted");
+            }
+          }
+        )
+  
+      });
+
     app.post("/insertTransport_p2",(req,res)=>{
     const travel = req.body.travel;
 
