@@ -78,7 +78,10 @@ function Navbar() {
               && !isCurrentURL('/bookings/current_bookings') && !isCurrentURL('/bookings/rejected_bookings') && !isCurrentURL('/bookings/booking_history') 
               && !isCurrentURL('/managepackages/manage_package') && !isCurrentURL('/package_details_two') && !isCurrentURL('/package_details_three') 
               && !isCurrentURL('/package_details_four') && !isCurrentURL('/package_two_location') && !isCurrentURL('/package_three_location') && !isCurrentURL('/package_four_location') 
-              && !isCurrentURL('/package_map_two') && !isCurrentURL('/package_map_three') && !isCurrentURL('/package_map_four') && !isCurrentURL('/package_four_hotel_details')?
+              && !isCurrentURL('/package_map_two') && !isCurrentURL('/package_map_three') && !isCurrentURL('/package_map_four') && !isCurrentURL('/package_four_hotel_details')
+              && !isCurrentURL('/count_pasenger_two') && !isCurrentURL('/count_pasenger_three') && !isCurrentURL('/count_pasenger_four') && !isCurrentURL('/count_pasenger_five') 
+              && !isCurrentURL('/payment-first-Ptwo') && !isCurrentURL('/payment-first-Pthree') && !isCurrentURL('/payment-first-Pfour') && !isCurrentURL('/payment-first-Pfive')
+              && !isCurrentURL('/payment_success') ?
               <Link
                 to='/sign-up'
                 className='nav-links'
@@ -108,7 +111,10 @@ function Navbar() {
               && !isCurrentURL('/bookings/current_bookings') && !isCurrentURL('/bookings/rejected_bookings') && !isCurrentURL('/bookings/booking_history') 
               && !isCurrentURL('/managepackages/manage_package') && !isCurrentURL('/package_details_two') && !isCurrentURL('/package_details_three') 
               && !isCurrentURL('/package_details_four') && !isCurrentURL('/package_two_location') && !isCurrentURL('/package_three_location') && !isCurrentURL('/package_four_location') 
-              && !isCurrentURL('/package_map_two') && !isCurrentURL('/package_map_three') && !isCurrentURL('/package_map_four') && !isCurrentURL('/package_four_hotel_details')?
+              && !isCurrentURL('/package_map_two') && !isCurrentURL('/package_map_three') && !isCurrentURL('/package_map_four') && !isCurrentURL('/package_four_hotel_details')
+              && !isCurrentURL('/count_pasenger_two') && !isCurrentURL('/count_pasenger_three') && !isCurrentURL('/count_pasenger_four') && !isCurrentURL('/count_pasenger_five') 
+              && !isCurrentURL('/payment-first-Ptwo') && !isCurrentURL('/payment-first-Pthree') && !isCurrentURL('/payment-first-Pfour') && !isCurrentURL('/payment-first-Pfive')
+              && !isCurrentURL('/payment_success') ?
               <Link
                 to='/sign-in'
                 className='nav-links'
