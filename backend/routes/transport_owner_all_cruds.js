@@ -68,5 +68,64 @@ app.get("/api/booked_date_details", (req,res) => {
     });
 });
 
+app.put("/api/update_date", (req,res) => {
+   
+    const bookeddate = req.body.bookeddate;
+   
+    const sqlUpdate = "UPDATE vehicle_date SET bookeddate=? WHERE user_id=3";
 
+    db.query(sqlUpdate, [bookeddate],(err, result) => {
+       if(err) console.log(err);
+
+
+    });
+   
+});
+
+
+app.post("/api/transport_owner_date_insertt",(req, res)=>{
+
+
+    const bookeddate = req.body.bookeddate;
+    const user_id = req.body.user_id;
+
+    const sqlInsert = "INSERT INTO vehicle_date (bookeddate,user_id) VALUES (?,3)";
+    db.query(sqlInsert, [bookeddate,user_id] ,
+        (err,result) => {
+            if(err){
+    
+                console.log(err);
+            }else{
+    
+                res.send(result);
+            }
+    
+    });
+    
+    });
+
+
+    app.post("/api/account_details_insert",(req, res)=>{
+
+        const user_name = req.body.user_name;
+        const bank_name = req.body.bank_name;
+        const branch_name = req.body.branch_name;
+        const account_no = req.body.account_no;
+        const user_id = req.body.user_id;
+    
+        const sqlInsert = "INSERT INTO bank_account_details (user_name,bank_name,branch_name,account_no,user_id) VALUES (?,?,?,?,3)";
+        db.query(sqlInsert, [user_name,bank_name,branch_name,account_no,user_id] ,(err,result) => {
+            if(err){
+    
+                console.log(err);
+            }else{
+    
+                res.send(result);
+            }
+    
+    });
+    
+    });
+
+    
 }
