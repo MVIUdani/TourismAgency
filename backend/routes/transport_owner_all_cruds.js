@@ -83,7 +83,7 @@ app.put("/api/update_date", (req,res) => {
 });
 
 
-app.post("/api/transport_owner_date_insertt",(req, res)=>{
+app.post("/api/transport_owner_date_insert",(req, res)=>{
 
 
     const bookeddate = req.body.bookeddate;
