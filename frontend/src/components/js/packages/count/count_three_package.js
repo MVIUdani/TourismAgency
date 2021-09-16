@@ -17,7 +17,7 @@ function Count_pasenger_three(){
         }).then((response) => {
             console.log(response);
           });
-          history.push('/payment-first-Ptwo');
+          history.push('/payment-first-Pthree');
     };
 
     return(
