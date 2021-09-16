@@ -93,7 +93,8 @@ const steps = [
           </ul>
         </div>
         ),
-        end: true,
+        //end: true,
+        trigger: '14',
       },
       {
         id: '11',
@@ -113,7 +114,59 @@ const steps = [
           </ul>
         </div>
         ),
+       // end: true,
+       trigger: '15',
+      },
+      {
+        id: '14',
+        message: 'Above I mentioned details of our packages,Are you need to know about our services?',
+        trigger: '16',
+      },
+      {
+        id: '16',
+        options: [
+          { value: 1, label: 'Yes', trigger: '18' },
+          { value: 2, label: 'No', trigger: '7'}
+         ],
+      },
+      {
+        id: '15',
+        message: 'Above I mentioned about our services,Are you need to know about details of our packages?',
+        trigger: '17',
+      },
+      {
+        id: '17',
+        options: [
+          { value: 1, label: 'Yes', trigger: '19' },
+          { value: 2, label: 'No', trigger: '7'}
+         ],
+      },
+      {
+        id: '18',
+        component: (
+        <div>
+          <ul>
+          <li>We help to customer to find unique Sri Lankan Travel Experience.</li>
+          <li>Hotel owners, Transport owners & Guides can develop their business.</li>
+          <li>You can get knowledge about Sri Lankan Tourism.</li>
+          <li>We contribute to develop tourism industry.</li>
+          </ul>
+        </div>
+        ),
+       end: true,
+       },
+       {
+        id: '19',
+        component: (
+        <div>
+          <ul>
+          <li>We have created packages that includes list of places with description, day duration of visit, transport facilities & hotel facilities</li>
+          <li>If you want you can customize this packages</li>
+          </ul>
+        </div>
+        ),
         end: true,
+      
       }
 ];
 
