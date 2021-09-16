@@ -120,6 +120,8 @@ import Package_details_five from './components/js/packages/package_details_five'
 import PaymentFirst_P5 from './components/js/packages/payment/payment_five_package';
 import Count_pasenger_five from './components/js/packages/count/count_five_package';
 
+import Payment_Success_Alert from './components/js/customer/payment_success_message';
+
 //toast.configure();
 
 function App() {
@@ -273,6 +275,8 @@ function App() {
            <Route path = "/package_details_five" component = {Package_details_five} />
            <Route path = "/payment-first-Pfive" component = {PaymentFirst_P5}/>
            <Route path = "/count_pasenger_five" component = {Count_pasenger_five}/>
+
+           <Route path = "/payment_success" component = {Payment_Success_Alert} />
 
           </Switch>
       
