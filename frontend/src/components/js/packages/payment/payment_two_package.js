@@ -1,8 +1,28 @@
-import React, { Component } from "react";
+import React, { useState,useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import '../../../css/customer/payment.css';
+import Axios from "axios";
 
 export default function PaymentFirst_P2() {
+
+  const [user_id, setUser_id] = useState("");
+  const [firstname, setFirstname] = useState("");
+  const [lastname, setLastname] = useState("");
+  const [email, setEmail] = useState("");
+  const [contact, setContact] = useState("");
+
+  Axios.defaults.withCredentials = true;
+  useEffect(() => {
+    Axios.get("http://localhost:5000/sign-in").then((response) => {
+      if (response.data.loggedIn == true) {
+        setUser_id(response.data.user[0].user_id);
+        setFirstname(response.data.user[0].first_name);
+        setLastname(response.data.user[0].last_name);
+        setEmail(response.data.user[0].email_address);
+        setContact(response.data.user[0].phone_no);
+      }
+    });
+  }, []); 
 
   const history = useHistory();
 

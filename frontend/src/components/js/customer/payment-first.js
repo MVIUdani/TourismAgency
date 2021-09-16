@@ -1,8 +1,34 @@
-import React, { Component } from "react";
+import React, { useState,useEffect } from "react";
 import { useHistory } from "react-router-dom";
-import '../../css/customer/payment.css'
+import '../../css/customer/payment.css';
+import Axios from "axios";
 
 export default function PaymentFirst() {
+
+  const [user_id, setUser_id] = useState("");
+  const [firstname, setFirstname] = useState("");
+  const [lastname, setLastname] = useState("");
+  const [email, setEmail] = useState("");
+  const [contact, setContact] = useState("");
+  const [address, setAddress] = useState("");
+  const [city, setCity] = useState("");
+  const [country, setCountry] = useState("");
+
+  Axios.defaults.withCredentials = true;
+  useEffect(() => {
+    Axios.get("http://localhost:5000/sign-in").then((response) => {
+      if (response.data.loggedIn == true) {
+        setUser_id(response.data.user[0].user_id);
+        setFirstname(response.data.user[0].first_name);
+        setLastname(response.data.user[0].last_name);
+        setEmail(response.data.user[0].email_address);
+        setContact(response.data.user[0].phone_no);
+        setAddress(response.data.user[0].address);
+        setCity(response.data.user[0].city);
+        setCountry(response.data.user[0].country);
+      }
+    });
+  }, []); 
 
   const history = useHistory();
 
@@ -19,7 +45,7 @@ export default function PaymentFirst() {
     notify_url: 'http://sample.com/notify',
     order_id: "45896588",
     items: "Just For You Mom Ribbon Cake",
-    amount: "4500", 
+    amount: "4500",  // 20000*10
     currency: 'LKR',
     first_name: 'Saman',
     last_name: 'Perera',
@@ -60,13 +86,18 @@ export default function PaymentFirst() {
           <div className="app-container">
             <div className="row">
               <div className="col">
-                <Item name="Package 1" price="450$" img="logo.jpg" />
+                <Item name="Package 1" price="" img="logo.jpg" />
               </div>
               <div className="col no-gutters">
               <div className="checkout">
               <div className="checkout-container">
-                    <h2>Select your Payment Method</h2>
-                    <br></br><br></br>
+                   
+                    <h5>Full Payment: Rs.200,000</h5>
+                    <br></br>
+                    <h5>Advance: Rs.</h5>
+                    <hr></hr>
+                    <h4>Select your Payment Method</h4>
+                    <br></br>
                     <li><button onClick={Credit}>Credit or Debit Card</button></li>
                     <br></br>
                     <li><button onClick={pay}>Payhere</button></li>
