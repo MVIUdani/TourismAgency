@@ -79,3 +79,20 @@ body{
    }
    
    */
+
+   .Use_button{
+      
+    background-color: #0099CC;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 80%;
+    opacity: 0.9;
+    margin-left: 1cm;
+    border-radius: 12px;
+    margin-top: 0.3cm;
+
+
+}

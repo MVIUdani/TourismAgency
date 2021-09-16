@@ -13,21 +13,21 @@ function Transport_owner_all_details(){
     const [user_id,setUser_id] = useState("");
 
     const ShowDetails = () => {
-        Axios.get('http://localhost:3001/api/show').then( (response) => {
+        Axios.get('http://localhost:5000/api/show').then( (response) => {
     
            setVehicleList(response.data);
         });
     };
 
     const ShowBankAccountDetails = () => {
-        Axios.get('http://localhost:3001/api/showAccount_details').then( (response) => {
+        Axios.get('http://localhost:5000/api/showAccount_details').then( (response) => {
     
            setAccount_detailsList(response.data);
         });
     };
 
     const ShowBookedDateDetails = () => {
-        Axios.get('http://localhost:3001/api/booked_date_details').then( (response) => {
+        Axios.get('http://localhost:5000/api/booked_date_details').then( (response) => {
     
             setBookedDateList(response.data);
         });
@@ -35,14 +35,14 @@ function Transport_owner_all_details(){
 
    
 const updateNow = () => {
-        Axios.put("http://localhost:3001/api/update_date", {bookeddate:bookeddate}).then( (response) => {
+        Axios.put("http://localhost:5000/api/update_date", {bookeddate:bookeddate}).then( (response) => {
     
             alert("Updated");
         });
     };
 
     const deleteNow = (user_id) => {
-        Axios.delete('http://localhost:3001/api/delete_date/3');
+        Axios.delete('http://localhost:5000/api/delete_date/3');
     };
 
    
