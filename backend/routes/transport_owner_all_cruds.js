@@ -1,4 +1,4 @@
-const con = require("../db");
+const db = require("../db");
 
 module.exports = function(app){
 
@@ -14,9 +14,16 @@ app.post("/api/insert_vehicle_details",(req, res)=>{
     const user_id = req.body.user_id;
 
     const sqlInsert = "INSERT INTO vehicle_info (name,seats,color,valid_date,cost,plate_no,other_details,user_id) VALUES (?,?,?,?,?,?,?,3)";
-    db.query(sqlInsert, [name,seats,color,valid_date,cost,plate_no,other_details,user_id] , (err,result) => {
-    console.log(result);
-    res.send(result);
+    db.query(sqlInsert, 
+    [name,seats,color,valid_date,cost,plate_no,other_details,user_id] , 
+    (err,result) => {
+        if(err){
+
+            console.log(err);
+        }else{
+
+            res.send(result);
+        }
 
 });
 

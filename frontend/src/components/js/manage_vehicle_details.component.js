@@ -71,7 +71,7 @@ function Vehicle() {
   const [VehicleList, setVehicleList] = useState([]);
 
   const submitReview = () => {
-      Axios.post('http://localhost:3001/api/insert_vehicle_details', {
+      Axios.post('http://localhost:5000/api/insert_vehicle_details', {
         
       name:name, 
       seats:seats,
@@ -91,14 +91,14 @@ function Vehicle() {
 
 
   const ShowDetails = () => {
-    Axios.get('http://localhost:3001/api/show').then( (response) => {
+    Axios.get('http://localhost:5000/api/show').then( (response) => {
 
        setVehicleList(response.data);
     });
 };
 
 const ShowDelete = () => {
-    Axios.delete('http://localhost:3001/api/delete', name);   
+    Axios.delete('http://localhost:5000/api/delete', name);   
     
 };
   
