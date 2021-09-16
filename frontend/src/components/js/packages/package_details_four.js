@@ -17,7 +17,7 @@ export default function Package_details_four() {
 const addTravel=()=>{
   Axios.post("http://localhost:5000/insertTransport_p4",{
       travel: travel,
-      bus: '17000',
+      bus: '17000', //Select bus in this package
       van: '15000',
       car: '13000',
   }).then((response) => {

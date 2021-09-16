@@ -163,7 +163,7 @@ module.exports = function(app){
           const travel = req.body.travel;
       
           con.query(
-            "INSERT INTO bookings (transport_type,price,packageID) VALUES (?,17000,5)",
+            "INSERT INTO bookings (transport_type,price,packageID) VALUES (?,20000,5)",
           [travel],
           (err,result) => {
         if(err){

@@ -100,7 +100,7 @@ export default function PaymentFirst_P3() {
                     <br></br>
                   <li><button onClick={Credit}>Credit or Debit Card</button></li>
                   <br></br>
-                  <li><button onClick="">Payhere</button></li>
+                  <li><button onClick={pay}>Payhere</button></li>
               </div>
               </div>
             </div>

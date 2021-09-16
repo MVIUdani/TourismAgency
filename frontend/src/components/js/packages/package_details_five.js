@@ -17,7 +17,7 @@ const handleChange=(e)=>{
 const addTravel=()=>{
   Axios.post("http://localhost:5000/insertTransport_p5",{
       travel: travel,
-      bus: '20000',
+      bus: '20000', //Select bus in this package
       van: '18000',
       car: '16000',
   }).then((response) => {
