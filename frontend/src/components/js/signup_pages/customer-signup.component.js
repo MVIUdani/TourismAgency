@@ -57,7 +57,8 @@ const onSubmit = (data) => {
                         <label>First name</label>
                         <Field 
                        // type="textfirst"
-                        //type="text" 
+                        //type="text"
+                        autocomplete="off" 
                         className="form-control"
                         name="firstname"
                         placeholder="Enter your first name" 
@@ -70,7 +71,8 @@ const onSubmit = (data) => {
                         <label>Last name</label>
                         <Field 
                         //type="textfirst"
-                        //type="text"  
+                        //type="text" 
+                        autocomplete="off"  
                         className="form-control" 
                         name="lastname" 
                         placeholder="Enter your last name" 
@@ -84,6 +86,7 @@ const onSubmit = (data) => {
                         <Field 
                         //type="emaila" 
                         //type="email"
+                        autocomplete="off" 
                         className="form-control"
                         name="email" 
                         placeholder="Enter your email address"
@@ -97,6 +100,7 @@ const onSubmit = (data) => {
                         <Field
                         //type="address"
                         //type="text"
+                        autocomplete="off" 
                         className="form-control"
                         name="address"
                         placeholder="Enter your address"
@@ -111,6 +115,7 @@ const onSubmit = (data) => {
                         <Field
                         //type="city"
                         //type="text"
+                        autocomplete="off" 
                         className="form-control"
                         name="city_name"
                         placeholder="Enter your city name"
@@ -125,6 +130,7 @@ const onSubmit = (data) => {
                         <Field
                         //type="country"
                         //type="text"
+                        autocomplete="off" 
                         className="form-control"
                         name="country"
                         placeholder="Enter your country name"
@@ -139,6 +145,7 @@ const onSubmit = (data) => {
                         <Field 
                         //type="textuser" 
                         //type="text"
+                        autocomplete="off" 
                         className="form-control"
                         name="username" 
                         placeholder="Enter your user name" 
@@ -150,7 +157,8 @@ const onSubmit = (data) => {
                     <div className="form-group">
                         <label>Password</label>
                         <Field 
-                       // type="password" 
+                       // type="password"
+                        autocomplete="off"  
                         className="form-control"
                         name="password" 
                         placeholder="Enter your password"
