@@ -18,13 +18,17 @@ const onSubmit = (data) => {
   Axios.post("http://localhost:5000/cus-signup",data, {
       firstname: data.firstname,
       lastname: data.lastname,
-      email: data.email,   
+      email: data.email,
+      address: data.address,
+      city_name: data.city_name,
+      country: data.country,    
       username: data.username,
       password: data.password,
     }).then((response) => {
       console.log(response);
     //  history.push('/home');
     });
+    history.push('/home');
   };
 
   return (
@@ -36,6 +40,9 @@ const onSubmit = (data) => {
                 firstname: '',
                 lastname: '',
                 email: '',
+                address: '',
+                city_name: '',
+                country: '',
                 username: '',
                 password: ''
               }}
@@ -84,6 +91,48 @@ const onSubmit = (data) => {
                         />
                         <ErrorMessage name="email" component="div" style={{color:'red'}} />
                     </div>
+
+                    <div className="form-group">
+                        <label>Address</label>
+                        <Field
+                        //type="address"
+                        //type="text"
+                        className="form-control"
+                        name="address"
+                        placeholder="Enter your address"
+                       
+                        />
+                        <ErrorMessage name="address" component="div" style={{color:'red'}} />
+
+                      </div>
+
+                      <div className="form-group">
+                        <label>City</label>
+                        <Field
+                        //type="city"
+                        //type="text"
+                        className="form-control"
+                        name="city_name"
+                        placeholder="Enter your city name"
+                       
+                        />
+                        <ErrorMessage name="city_name" component="div" style={{color:'red'}} />
+
+                      </div>
+
+                      <div className="form-group">
+                        <label>Country</label>
+                        <Field
+                        //type="country"
+                        //type="text"
+                        className="form-control"
+                        name="country"
+                        placeholder="Enter your country name"
+                        
+                        />
+                        <ErrorMessage name="country" component="div" style={{color:'red'}} />
+
+                      </div>
     
                     <div className="form-group">
                         <label>User name</label>
