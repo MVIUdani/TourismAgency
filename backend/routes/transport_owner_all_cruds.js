@@ -68,6 +68,7 @@ app.get("/api/booked_date_details", (req,res) => {
     });
 });
 
+
 app.put("/api/update_date", (req,res) => {
    
     const bookeddate = req.body.bookeddate;
@@ -87,9 +88,26 @@ app.put("/api/update_date", (req,res) => {
 
 });
 
+
 });
 
+/*
 
+app.put("/api/update_date", (req,res) => {
+   
+    const bookeddate = req.body.bookeddate;
+   
+    const sqlUpdate = "UPDATE vehicle_date SET bookeddate=? WHERE user_id=3";
+
+    db.query(sqlUpdate, [bookeddate],(err, result) => {
+       if(err) console.log(err);
+
+
+    });
+   
+});
+
+*/
 
 app.post("/api/transport_owner_date_insert",(req, res)=>{
 

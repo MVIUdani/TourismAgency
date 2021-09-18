@@ -95,7 +95,6 @@ const updateNow = () => {
             <input type="text" placeholder="You can edit your vehicle details"></input>
 
 
-
                 <label><h6>Valid date for licence: </h6><h4>{val.valid_date}</h4></label>
             <input type="text" placeholder="You can edit your vehicle details"></input>
 
