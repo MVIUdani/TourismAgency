@@ -60,7 +60,7 @@ function Hotel_food(){
        
 <form>
 <div className="Food_de">
-    <center><h1>Hotel's Food Details</h1></center>
+    <center><h1>Hotel's Foods Details</h1></center>
     <p>Please fill  hotel's food details.</p>
     <hr></hr>
 
