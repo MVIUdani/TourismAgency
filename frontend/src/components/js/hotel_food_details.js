@@ -1,8 +1,34 @@
-import React, { Component } from "react";
+import React, { Component,useState } from "react";
 import '../css/hotel_food.css'
+import Axios from 'axios';
+import { Link } from 'react-router-dom';
 
 
 function Hotel_food(){
+
+    const [brekfast,setBrekfast] = useState("");
+    const [lunch,setLunch] = useState("");
+    const [dinner,setDinner] = useState("");
+    const [juice,setJuice] = useState("");
+    const [dessert,setDessert] = useState("");
+    const [user_id,setUser_id] = useState("");
+
+    const foodInsert = () => {
+        Axios.post('http://localhost:5000/api/food_insert', {
+          
+        brekfast:brekfast, 
+        lunch:lunch,
+        dinner:dinner,
+        juice:juice,
+        dessert:dessert,
+        user_id:user_id,
+        
+        }).then( () => {
+  
+            alert("successfull food details added");
+        });
+    };
+  
 
     return(
 
@@ -39,24 +65,43 @@ function Hotel_food(){
     <hr></hr>
 
     <label htmlFor="email"><h6>Breakfast Menue</h6></label>
-    <input type="text" placeholder="Enter your hotel's breaksast menus" name="" id="" required></input>
+    <input type="text" placeholder="Enter your hotel's breaksast menus" name="brekfast" id="" required onChange={(e) => {
+            setBrekfast(e.target.value);
+            
+        }}></input>
     
     <label htmlFor="email"><h6>Lunch Menue</h6></label>
-    <input type="text" placeholder="Enter your hotel's lunch menus" name="" id="" required></input>
+    <input type="text" placeholder="Enter your hotel's lunch menus" name="lunch" id="" required onChange={(e) => {
+            setLunch(e.target.value);
+            
+        }}></input>
 
     <label htmlFor="email"><h6>dinner menue</h6></label>
-    <input type="text" placeholder="Enter your hotel's dionner menus" name="" id="" required></input>
+    <input type="text" placeholder="Enter your hotel's dionner menus" name="dinner" id="" required onChange={(e) => {
+            setDinner(e.target.value);
+            
+        }}></input>
 
     <label htmlFor="email"><h6>juices</h6></label>
-    <input type="text" placeholder="Enter your hotel's breaksast menus" name="" id="" required></input>
+    <input type="text" placeholder="Enter your hotel's breaksast menus" name="juice" id="" required onChange={(e) => {
+            setJuice(e.target.value);
+            
+        }}></input>
 
     <label htmlFor="email"><h6>Dessert Menue</h6></label>
-    <input type="text" placeholder="Enter your hotel's breaksast menus" name="" id="" required></input>
+    <input type="text" placeholder="Enter your hotel's breaksast menus" name="dessert" id="" required onChange={(e) => {
+            setDessert(e.target.value);
+            
+        }}></input>
 
+    <input type="hidden" name="user_id" onChange={(e) => {
+            setUser_id(e.target.value);
+            
+        }}></input>
 
     <hr></hr>
 
-    <button type="submit" className="registerbtn2">Submit</button>
+    <Link to='/hotel_owner_profile'><button onClick={foodInsert} type="submit" className="registerbtn2">Submit</button></Link>
   </div>
 
 </form>

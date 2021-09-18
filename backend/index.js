@@ -53,6 +53,8 @@ require('./routes/favorites')(app);
 
 require('./routes/transport_owner_all_cruds')(app); // for transport owner
 
+require('./routes/hotel_owner_all_cruds')(app); // for hotel owner
+
 //require('./routes/webScraping');
 
 app.listen(5000, () => {
