@@ -1,10 +1,91 @@
 import React, { Component,useState,useEffect } from "react";
 import { Link, useHistory } from "react-router-dom";
+import { Formik, Field, Form, ErrorMessage } from "formik";
 import Axios from "axios";
 //import { toast } from "react-toastify";
 //import Form from "react-validation/build/form";
 //import Input from "react-validation/build/input";
 import '../css/authentication.css';
+import Login_Validation from './login_validation';
+
+export default function Login(){
+
+  const [loginStatus, setLoginStatus] = useState("");
+  const history = useHistory();
+
+  const onSubmit = (data) => {
+    Axios.post("http://localhost:5000/sign-in", data,{
+      email: data.email,
+      password: data.password,
+    }).then((response) => {
+      if (response.data.message) {
+        setLoginStatus(response.data.message);
+      } else {
+        setLoginStatus(response.data[0].email_address);
+      }
+    });
+    history.push('/rolepage');
+  };
+
+  return (
+    <div className="auth-wrapper">
+        <div className="auth-inner">
+          <Formik
+          initialValues={{
+
+          }}
+          onSubmit={onSubmit}
+          validationSchema={Login_Validation}
+          >
+            <Form>
+                <h3>Login</h3>
+
+                <div className="form-group">
+                    <label>Email Address</label>
+                    <Field
+                    //type="emaila" 
+                    //type="email"
+                    autocomplete="off"
+                    className="form-control" 
+                    placeholder="Enter your email address"
+                    name="email"
+                   
+                    />
+                    <ErrorMessage name="email" component="div" style={{color:'red'}} />
+                </div>
+
+                <div className="form-group">
+                    <label>Password</label>
+                    <Field
+                    //type="password" 
+                    autocomplete="off"
+                    className="form-control" 
+                    placeholder="Enter your password"
+                    name="password"
+                   
+                    />
+                    <ErrorMessage name="password" component="div" style={{color:'red'}} />
+                </div>
+
+                <div className="form-group">
+                    <div className="custom-control custom-checkbox">
+                        <input type="checkbox" className="custom-control-input" id="customCheck1" />
+                        <label className="custom-control-label" htmlFor="customCheck1">Remember me</label>
+                    </div>
+                </div>
+<br></br>
+                <button type="submit" className="btn btn-primary btn-block">Submit</button>
+                <p className="forgot-password text-right">
+                Forgot <Link to='/forgot'>password?</Link>
+                </p>
+            </Form>
+            </Formik>
+            </div>
+            </div>
+  ); 
+
+
+}
 
 
 /*const required = value => {
@@ -132,6 +213,7 @@ export default class Login extends Component {
     }
 }*/
 
+/*
 export default function Login(){
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -214,7 +296,7 @@ export default function Login(){
             </div>
   ); 
 
-}
+}*/
 
 /*const Login = ({ setAuth }) => {
   const [inputs, setInputs] = useState({
