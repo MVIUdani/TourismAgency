@@ -121,6 +121,8 @@ import PaymentFirst_P5 from './components/js/packages/payment/payment_five_packa
 import Count_pasenger_five from './components/js/packages/count/count_five_package';
 
 import Payment_Success_Alert from './components/js/customer/payment_success_message';
+import Hotel_owner_editprofile from './components/js/hotelowner/hotel_owner_edit_profile';
+
 
 //toast.configure();
 
@@ -275,7 +277,7 @@ function App() {
            <Route path = "/package_details_five" component = {Package_details_five} />
            <Route path = "/payment-first-Pfive" component = {PaymentFirst_P5}/>
            <Route path = "/count_pasenger_five" component = {Count_pasenger_five}/>
-
+           <Route path = "/hotel_owner_edit_profile" component = {Hotel_owner_editprofile}/>
            <Route path = "/payment_success" component = {Payment_Success_Alert} />
 
           </Switch>

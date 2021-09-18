@@ -38,7 +38,8 @@ export default function Hotel_owner(){
                     <br></br>
                     <br></br>
                     <br></br>
-                    
+
+                    <Link to='/hotel_owner_edit_profile'><h6>Edit profile</h6></Link>
                     <Link to='/hotel_food_details'><h6>Hotel Foods</h6></Link>
                     <Link to='/hotel_room_details'><h6>Hotel Rooms</h6></Link>
                     <Link to='/hotel_charge'><h6>Charge of one day</h6></Link>
