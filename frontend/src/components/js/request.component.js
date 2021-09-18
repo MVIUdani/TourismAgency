@@ -9,10 +9,20 @@ export default function Requests (){
     const [details, setDetails] = useState("");
     const [user_id, setUser_id] = useState("");
 
+    Axios.defaults.withCredentials = true;
+  useEffect(() => {
+  Axios.get("http://localhost:5000/sign-in").then((response) => {
+    if (response.data.loggedIn == true) {
+      setUser_id(response.data.user[0].user_id);
+    }
+  });
+}, []); 
+
     const addRequest=() => {
         Axios.post("http://localhost:5000/createRequest",{
             requested_places: requested_places,
             details: details,
+            user_id: {user_id},
         }).then((response) => {
             console.log(response);
           });
