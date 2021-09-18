@@ -39,16 +39,16 @@ export default function CusEditprofile (){
     <hr></hr>
 
     <label htmlFor="firstname"><h6>First Name</h6></label>
-    <input type="text" placeholder={firstname} name="firstname" id="" required></input>
+    <input type="text" value={firstname} name="firstname" id="" required></input>
 
     <label htmlFor="lastname"><h6>Last Name</h6></label>
-    <input type="text" placeholder={lastname} name="lastname" id="" required></input>
+    <input type="text" value={lastname} name="lastname" id="" required></input>
 
     <label htmlFor="email"><h6>Email</h6></label>
-    <input type="email" placeholder={email} name="email" id="" required></input>
+    <input type="email" value={email} name="email" id="" required></input>
 
     <label htmlFor="phonenumber"><h6>Contact Number</h6></label>
-    <input type="int" placeholder={contact} name="phonenumber" id="" required></input>
+    <input type="int" value={contact} name="phonenumber" id="" required></input>
 
     <hr></hr>
 
