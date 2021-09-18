@@ -40,7 +40,8 @@ export default function PaymentFirst_P5() {
   var payment = {
     sandbox: true, // if the account is sandbox or real
     merchant_id: '1218429', // Replace your Merchant ID
-    return_url: 'http://sample.com/return',
+    //return_url: 'http://sample.com/return',
+    return_url: 'http://localhost:3000/payment_success',
     cancel_url: 'http://sample.com/cancel',
     notify_url: 'http://sample.com/notify',
     order_id: "45896588",
