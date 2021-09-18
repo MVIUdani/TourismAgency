@@ -85,7 +85,7 @@ function Vehicle() {
       
       }).then( () => {
 
-          alert("successfull insert");
+          alert("successfull vehicle details added");
       });
   };
 

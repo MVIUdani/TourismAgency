@@ -54,7 +54,7 @@ function Bookeddate() {
     
     }).then( () => {
 
-        alert("successfull insert");
+        alert("successfull bokking date insert");
     });
 };
 

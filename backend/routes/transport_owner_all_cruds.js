@@ -74,13 +74,21 @@ app.put("/api/update_date", (req,res) => {
    
     const sqlUpdate = "UPDATE vehicle_date SET bookeddate=? WHERE user_id=3";
 
-    db.query(sqlUpdate, [bookeddate],(err, result) => {
-       if(err) console.log(err);
+    db.query(sqlUpdate, [bookeddate],
+        
+        (err,result) => {
+        if(err){
 
+            console.log(err);
+        }else{
 
-    });
-   
+            res.send(result);
+        }
+
 });
+
+});
+
 
 
 app.post("/api/transport_owner_date_insert",(req, res)=>{

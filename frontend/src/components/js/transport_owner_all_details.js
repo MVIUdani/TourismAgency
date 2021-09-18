@@ -74,6 +74,7 @@ const updateNow = () => {
         {VehicleList.map((val,key) => {
 
     return (
+        <div className="Tt">
             <div className="Vehicle_data">
                 <br></br>
                 <h1>My vehicle details</h1>
@@ -81,7 +82,6 @@ const updateNow = () => {
                 <form>
                 <br></br>
                 
-
                 <label><h6>Vehicle type: </h6><h4>{val.name}</h4></label>
             <input type="text"  placeholder="You can edit your vehicle details"></input>
 
@@ -116,7 +116,7 @@ const updateNow = () => {
                 <button  className="Use_button">Delete</button>
                 </form>
             </div>
-           
+           </div>
 
     );
 
