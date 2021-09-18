@@ -6,6 +6,26 @@ import FavoriteIcon from '@material-ui/icons/Favorite';
 
 
 export default function Package_three_location(){
+
+    const [user_id, setUser_id] = useState("");
+
+Axios.defaults.withCredentials = true;
+useEffect(() => {
+  Axios.get("http://localhost:5000/sign-in").then((response) => {
+    if (response.data.loggedIn == true) {
+      setUser_id(response.data.user[0].user_id);
+    }
+  });
+}, []); 
+
+const addFavourite = () =>{
+    Axios.post("http://localhost:5000/addFavouriteP3",{
+        user_id: {user_id},
+    }).then((response) => {
+        console.log(response);
+      });
+} ; 
+
     return ( 
         <div className="Locations">
             <br></br>
@@ -20,7 +40,7 @@ export default function Package_three_location(){
        <img className="Picture" src='Package3/location/Nuwara-Eliya2.jpg' alt="" width="260" height="220"></img>
        <div>
        <IconButton color="secondary" aria-label="add to favorite">
-       <FavoriteIcon />
+       <FavoriteIcon onClick={addFavourite}/>
       </IconButton>
        </div>
 

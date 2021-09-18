@@ -1,11 +1,47 @@
-import React, { Component } from "react";
+import React, { useState,useEffect } from "react";
 import '../css/package-location.css'
 import { Link } from 'react-router-dom';
 import IconButton from '@material-ui/core/IconButton';
 import FavoriteIcon from '@material-ui/icons/Favorite';
-
+/*import Dialog from "@material-ui/core/Dialog";
+import DialogContentText from "@material-ui/core/DialogContentText";
+import DialogTitle from "@material-ui/core/DialogTitle";
+import DialogActions from "@material-ui/core/DialogActions";
+import DialogContent from "@material-ui/core/DialogContent";
+import Button from "@material-ui/core/Button";*/
+import Axios from "axios";
 
 function Packagelocation(){
+
+  /*const [open, setOpen] = React.useState(false);
+  
+  const handleClickToOpen = () => {
+    setOpen(true);
+  };
+  
+  const handleToClose = () => {
+    setOpen(false);
+  };*/
+
+const [user_id, setUser_id] = useState("");
+
+Axios.defaults.withCredentials = true;
+useEffect(() => {
+  Axios.get("http://localhost:5000/sign-in").then((response) => {
+    if (response.data.loggedIn == true) {
+      setUser_id(response.data.user[0].user_id);
+    }
+  });
+}, []); 
+
+const addFavourite = () =>{
+    Axios.post("http://localhost:5000/addFavouriteP1",{
+        user_id: {user_id},
+    }).then((response) => {
+        console.log(response);
+      });
+} ;   
+
 return(
 
     <div className="Locations">
@@ -19,7 +55,7 @@ return(
         <img className="Picture" src='sigiriya.jpg' alt="" width="260" height="220"></img>
         <div>
         <IconButton color="secondary" aria-label="add to favorite">
-        <FavoriteIcon />
+        <FavoriteIcon onClick={addFavourite}/>
        </IconButton>
         </div>
 
@@ -166,3 +202,23 @@ The view of Kurunagela city from the top of the rock is panoramic and a treat to
 
 }
 export default Packagelocation;
+
+/*
+<Dialog open={open} onClose={handleToClose}>
+    
+<DialogContent>
+  <DialogContentText>
+    Are you sure you want to add this place to your favourite list?
+  </DialogContentText>
+</DialogContent>
+<DialogActions>
+  <Button onClick={handleToClose} 
+          color="primary" autoFocus>
+    No
+  </Button>
+  <Button onClick={addFavourite} 
+          color="primary" autoFocus>
+    Yes
+  </Button>
+</DialogActions>
+</Dialog>*/
