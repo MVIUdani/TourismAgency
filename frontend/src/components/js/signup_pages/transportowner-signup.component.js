@@ -3,8 +3,167 @@ import Axios from "axios";
 import '../../css/authentication.css';
 import { Link, useHistory } from "react-router-dom";
 //import { toast } from "react-toastify";
+import { Formik, Field, Form, ErrorMessage } from "formik";
+import * as yup from 'yup';
 
-export default function Guide_signup(){
+export default function Transport_owner_signup(){
+  const history = useHistory();
+
+  Axios.defaults.withCredentials = true;
+
+  const onSubmit = (data) => {
+    Axios.post("http://localhost:5000/transportowner-signup", data,{
+      firstname: data.firstname,
+      lastname: data.lastname,
+      email: data.email,   
+      username: data.username,
+      password: data.password,
+      nic: data.nic,
+      birthday: data.birthday,
+    }).then((response) => {
+      console.log(response);
+    });
+    history.push('/sign-in');
+  };
+
+  return (
+
+    <div className="auth-wrapper">
+            <div className="auth-inner">
+              <Formik
+               initialValues={{
+                firstname: '',
+                lastname: '',
+                email: '',
+                username: '',
+                password: '',
+                nic: '',
+                birthday: ''
+              }}
+              onSubmit={onSubmit}
+              validationSchema={
+                yup.object().shape({
+                  firstname: yup.string().required("Firstname Required"),
+                  lastname: yup.string().required("Lastname Required"),
+                  email: yup.string().email("Invalid email").required("Email Required"),
+                  username:yup.string().required("Username Required"),
+                  password: yup
+                    .string()
+                    .min(2, "Too Short!")
+                    .max(50, "Too Long!")
+                    .required("Password Required"),
+                  nic: yup.string().required("Required"),  
+                  birthday: yup.date().required("Required"),
+                   })
+              }
+              >
+                <Form>
+                    <h3>Sign Up</h3>
+    
+                    <div className="form-group">
+                        <label>First name</label>
+                        <Field
+                        //type="textfirst"
+                        //type="text" 
+                        className="form-control" 
+                        name="firstname"
+                        placeholder="Enter your first name" 
+                       
+                        />
+                        <ErrorMessage name="firstname" component="div" style={{color:'red'}} />
+                    </div>
+    
+                    <div className="form-group">
+                        <label>Last name</label>
+                        <Field
+                        //type="textfirst"
+                        //type="text"  
+                        className="form-control"
+                        name="lastname" 
+                        placeholder="Enter your last name" 
+                       
+                        />
+                        <ErrorMessage name="lastname" component="div" style={{color:'red'}} />
+                    </div>
+    
+                    <div className="form-group">
+                        <label>Email address</label>
+                        <Field 
+                        //type="emaila" 
+                        //type="email"
+                        className="form-control"
+                        name="email" 
+                        placeholder="Enter your email address"
+                       
+                        />
+                        <ErrorMessage name="email" component="div" style={{color:'red'}} />
+                    </div>
+    
+                    <div className="form-group">
+                        <label>User name</label>
+                        <Field
+                        //type="textuser" 
+                        //type="text"
+                        className="form-control"
+                        name="username" 
+                        placeholder="Enter your user name" 
+                     
+                        />
+                        <ErrorMessage name="username" component="div" style={{color:'red'}} />
+                    </div>
+    
+                    <div className="form-group">
+                        <label>Password</label>
+                        <Field
+                        //type="password" 
+                        className="form-control"
+                        name="password" 
+                        placeholder="Enter your password"
+                     
+                        />
+                        <ErrorMessage name="password" component="div" style={{color:'red'}} />
+                    </div>
+
+                    <div className="form-group">
+                            <label>NIC number</label>
+                            <Field 
+                            //type="int" 
+                            //type="text"
+                            className="form-control"
+                            name="nic" 
+                            placeholder="Enter your NIC number"
+                           
+                            />
+                            <ErrorMessage name="nic" component="div" style={{color:'red'}} />
+                        </div>
+        
+                        <div className="form-group">
+                            <label>Birthday</label>
+                            <Field 
+                            //type="date" 
+                            //type="text"
+                            className="form-control"
+                            name="birthday" 
+                            placeholder="Enter your birthday"
+                           
+                            />
+                            <ErrorMessage name="birthday" component="div" style={{color:'red'}} />
+                        </div>
+    
+    <br></br>
+                    <button type="submit" className="btn btn-primary btn-block">Sign Up</button>
+                    <p className="forgot-password text-right">
+                        Already registered <Link to='/sign-in'>login?</Link>
+                    </p>
+                </Form>
+                </Formik>
+                </div>
+                </div>
+     
+        );
+}
+
+/*export default function Guide_signup(){
   const [firstnameReg, setFirstnameReg] = useState("");
   const [lastnameReg, setLastnameReg] = useState("");
   const [emailReg, setEmailReg] = useState("");
@@ -157,7 +316,7 @@ export default function Guide_signup(){
      
         );
 
-}
+}*/
 
 /*const Transport_owner_signup=({setAuth})=>{
 
