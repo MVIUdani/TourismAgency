@@ -128,7 +128,7 @@ import Hotel_owner_editprofile from './components/js/hotelowner/hotel_owner_edit
 
 function App() {
 
-  const checkAuthenticated = async () => {
+  /*const checkAuthenticated = async () => {
     try {
       const res = await fetch("http://localhost:5000/auth/verify", {
         method: "GET",
@@ -151,7 +151,7 @@ function App() {
 
   const setAuth = boolean => {
     setIsAuthenticated(boolean);
-  };
+  };*/
 
 
   return (<Router>
@@ -164,23 +164,10 @@ function App() {
             <Route path="/aboutus" component={Aboutus} />
             <Route path="/packages" component={Packages} />
             <Route path="/before-packages" component={BeforePackage} /> 
-            <Route exact path="/sign-in"  render={props =>
-                !isAuthenticated ? (
-                  <Login {...props} setAuth={setAuth} />
-                ) : (
-                  <Redirect to="/cus-profile" />
-                )
-              } />
+           
             <Route path="/sign-up" component={SignUp} />
-
-            <Route exact path="/cus-signup"  render={props =>
-                !isAuthenticated ? (
-                  <CustomerSignup {...props} setAuth={setAuth} />
-                ) : (
-                  <Redirect to="/sign-in" />
-                )
-              }/>
-              
+            <Route path="/sign-in" component={Login} />
+  
             <Route path="/rolepage" component={RolePage} />
             <Route path="/forgot" component={Forgot} />
 
@@ -287,3 +274,24 @@ function App() {
 }
 
 export default App;
+
+/*
+
+   <Route exact path="/sign-in"  render={props =>
+                !isAuthenticated ? (
+                  <Login {...props} setAuth={setAuth} />
+                ) : (
+                  <Redirect to="/cus-profile" />
+                )
+              } />
+            <Route path="/sign-up" component={SignUp} />
+
+            <Route exact path="/cus-signup"  render={props =>
+                !isAuthenticated ? (
+                  <CustomerSignup {...props} setAuth={setAuth} />
+                ) : (
+                  <Redirect to="/sign-in" />
+                )
+              }/>
+
+              */
