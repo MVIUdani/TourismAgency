@@ -28,7 +28,7 @@ const onSubmit = (data) => {
       console.log(response);
     //  history.push('/home');
     });
-    history.push('/home');
+    history.push('/sign-in');
   };
 
   return (

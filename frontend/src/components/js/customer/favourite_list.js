@@ -4,6 +4,36 @@ import IconButton from '@material-ui/core/IconButton';
 import DeleteIcon from '@material-ui/icons/Delete';
 
 function FavouriteList(){
+  return(
+    <div className='favorite-container'>
+    <br></br>
+    <br></br>
+<h1 style={{fontFamily:"Helvetica Neue"}}>My Favourite Locations in Sri Lanka</h1>
+<br></br>
+<h2 style={{marginLeft:"45px"}}></h2>
+<br></br>
+<div className="Sigiriya">
+
+
+<img className="Picture" src='' alt="" width="" height=""></img>
+<div>
+<IconButton aria-label="delete" hidden>
+<DeleteIcon />
+</IconButton>
+</div>
+
+<div className="Sigiriya-des">
+
+</div>
+
+</div>
+</div>
+  );
+}
+export default FavouriteList;
+
+/*
+function FavouriteList(){
     return(
         <div className='favorite-container'>
             <br></br>
@@ -60,4 +90,4 @@ Currently the new Polonnaruwa is undergoing a major development project known as
     );
 }
 
-export default FavouriteList;
+export default FavouriteList;*/
