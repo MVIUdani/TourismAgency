@@ -44,10 +44,10 @@ export default function Transportowner(){
                     
                     <Link to='/transport_owner_booked_date'><h6>Booked Date Update</h6></Link>
                    
-                    <Link to='/transport_owner_add_account details'><h6>Add account details</h6></Link>
+                    <Link to='/transport_owner_add_account details'><h6>Add bank account details</h6></Link>
                    
                   
-                    <Link to='/transport_owner_all_details'><h6>All my details</h6></Link>
+                    <Link to='/transport_owner_all_details'><h6>All my added details</h6></Link>
                   
             </div>  
            

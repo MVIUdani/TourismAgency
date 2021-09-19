@@ -28,7 +28,7 @@ export default class Editprofile extends Component {
     <hr></hr>
 
 
-    <button type="submit" className="registerbtn">Submit</button>
+    <button type="submit" className="registerbtn">Edit</button>
   </div>
 
 </form>
