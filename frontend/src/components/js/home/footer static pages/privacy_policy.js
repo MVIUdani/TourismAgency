@@ -14,7 +14,7 @@ class Privacy extends Component{
    <p>(3).E-mail Communications: To help us make e-mails more useful and interesting, we often receive a confirmation when you open e-mail from us if your computer supports such capabilities. If you do not want to receive e-mail or other mail from us, you could use the unsubscribe option available in every mail we send.</p><br></br>
    <p>(4).Mobile Communications; We will use the contact numbers provided to ensure the booking process a success. However, the contact details will be used as a mode to communicate certain information which will be beneficial to improve your customer experience.</p><br></br>
    <p>(5).Third-Party Service Providers: We employ other companies and individuals to perform functions on our behalf.Example;processing credit card payments. They have access to personal information needed to perform their functions, but may not use it for other purposes.</p><br></br>   
-    
+   <p>(6).Customers should pay 25% (Advance) of the package amount initially to complete the booking process and the remaining 75% amount should be paid before one week of their trip. If customers cancel the booking with advance payment within 48hours, they’ll be able to receive 75% of their Advance payment. If they cancel later, they’ll receive 25% of their Advance payment only. If customers pay fully and cancel before one week of their trip schedule, they’ll receive 50% of their payment. Customers should accept those policies before making payment.</p> 
     </div>
     </div>
    </div>
