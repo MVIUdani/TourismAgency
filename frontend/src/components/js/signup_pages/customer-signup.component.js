@@ -6,7 +6,7 @@ import Validation from "./UserValidation";
 //import validate from './validateInfo';
 //import useForm from "./useForm";
 import { Link,useHistory } from "react-router-dom";
-//import { toast } from "react-toastify";
+import { toast } from "react-toastify";
 
 export default function CustomerSignup(){
     
@@ -28,6 +28,7 @@ const onSubmit = (data) => {
       console.log(response);
     //  history.push('/home');
     });
+    toast.success("Register Successfully");
     history.push('/sign-in');
   };
 

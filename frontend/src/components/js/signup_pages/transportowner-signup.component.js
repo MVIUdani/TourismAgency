@@ -2,7 +2,7 @@ import React, { Component,useState } from "react";
 import Axios from "axios";
 import '../../css/authentication.css';
 import { Link, useHistory } from "react-router-dom";
-//import { toast } from "react-toastify";
+import { toast } from "react-toastify";
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as yup from 'yup';
 
@@ -23,6 +23,7 @@ export default function Transport_owner_signup(){
     }).then((response) => {
       console.log(response);
     });
+    toast.success("Register Successfully");
     history.push('/sign-in');
   };
 
@@ -65,6 +66,7 @@ export default function Transport_owner_signup(){
                         <Field
                         //type="textfirst"
                         //type="text" 
+                        autocomplete="off" 
                         className="form-control" 
                         name="firstname"
                         placeholder="Enter your first name" 
@@ -77,7 +79,8 @@ export default function Transport_owner_signup(){
                         <label>Last name</label>
                         <Field
                         //type="textfirst"
-                        //type="text"  
+                        //type="text"
+                        autocomplete="off"   
                         className="form-control"
                         name="lastname" 
                         placeholder="Enter your last name" 
@@ -91,6 +94,7 @@ export default function Transport_owner_signup(){
                         <Field 
                         //type="emaila" 
                         //type="email"
+                        autocomplete="off" 
                         className="form-control"
                         name="email" 
                         placeholder="Enter your email address"
@@ -104,6 +108,7 @@ export default function Transport_owner_signup(){
                         <Field
                         //type="textuser" 
                         //type="text"
+                        autocomplete="off" 
                         className="form-control"
                         name="username" 
                         placeholder="Enter your user name" 
@@ -115,7 +120,8 @@ export default function Transport_owner_signup(){
                     <div className="form-group">
                         <label>Password</label>
                         <Field
-                        //type="password" 
+                        //type="password"
+                        autocomplete="off"  
                         className="form-control"
                         name="password" 
                         placeholder="Enter your password"
@@ -129,6 +135,7 @@ export default function Transport_owner_signup(){
                             <Field 
                             //type="int" 
                             //type="text"
+                            autocomplete="off" 
                             className="form-control"
                             name="nic" 
                             placeholder="Enter your NIC number"
@@ -142,6 +149,7 @@ export default function Transport_owner_signup(){
                             <Field 
                             //type="date" 
                             //type="text"
+                            autocomplete="off" 
                             className="form-control"
                             name="birthday" 
                             placeholder="Enter your birthday"

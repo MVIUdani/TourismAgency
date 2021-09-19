@@ -1,9 +1,9 @@
 //import logo from './logo.svg';
 import React,{useEffect,useState } from 'react';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-//import "react-toastify/dist/ReactToastify.css";
+import "react-toastify/dist/ReactToastify.css";
 import './App.css';
-//import { toast } from "react-toastify";
+import { toast } from "react-toastify";
 import { BrowserRouter as Router, Switch, Route, Link,Redirect } from "react-router-dom";
 
 import Navbar from './components/js/home/Navbar';
@@ -125,7 +125,7 @@ import Hotel_owner_editprofile from './components/js/hotelowner/hotel_owner_edit
 import Delete_page from './components/js/delete_page';
 
 
-//toast.configure();
+toast.configure();
 
 function App() {
 

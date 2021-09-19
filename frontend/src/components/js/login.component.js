@@ -2,7 +2,7 @@ import React, { Component,useState,useEffect } from "react";
 import { Link, useHistory } from "react-router-dom";
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import Axios from "axios";
-//import { toast } from "react-toastify";
+import { toast } from "react-toastify";
 //import Form from "react-validation/build/form";
 //import Input from "react-validation/build/input";
 import '../css/authentication.css';
@@ -24,7 +24,9 @@ export default function Login(){
         setLoginStatus(response.data[0].email_address);
       }
     });
+    toast.success("Logged in Successfully");
     history.push('/rolepage');
+  //history.push('/cus-profile');
   };
 
   return (

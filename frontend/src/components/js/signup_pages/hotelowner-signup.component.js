@@ -2,7 +2,7 @@ import React, { Component,useState } from "react";
 import Axios from "axios";
 import '../../css/authentication.css';
 import { Link,useHistory } from "react-router-dom";
-//import { toast } from "react-toastify";
+import { toast } from "react-toastify";
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as yup from 'yup';
 
@@ -24,6 +24,7 @@ export default function HotelOwner_Signup(){
     }).then((response) => {
       console.log(response);
     });
+    toast.success("Register Successfully");
     history.push('/sign-in');
   };
 
@@ -68,7 +69,8 @@ export default function HotelOwner_Signup(){
                         <label>First name</label>
                         <Field
                         //type="textfirst"
-                        //type="text" 
+                        //type="text"
+                        autocomplete="off"  
                         className="form-control" 
                         name="firstname"
                         placeholder="Enter your first name" 
@@ -81,7 +83,8 @@ export default function HotelOwner_Signup(){
                         <label>Last name</label>
                         <Field
                         //type="textfirst"
-                        //type="text"  
+                        //type="text"
+                        autocomplete="off"   
                         className="form-control"
                         name="lastname" 
                         placeholder="Enter your last name" 
@@ -95,6 +98,7 @@ export default function HotelOwner_Signup(){
                         <Field 
                         //type="emaila" 
                         //type="email"
+                        autocomplete="off" 
                         className="form-control"
                         name="email" 
                         placeholder="Enter your email address"
@@ -108,6 +112,7 @@ export default function HotelOwner_Signup(){
                         <Field
                         //type="textuser" 
                         //type="text"
+                        autocomplete="off" 
                         className="form-control"
                         name="username" 
                         placeholder="Enter your user name" 
@@ -119,7 +124,8 @@ export default function HotelOwner_Signup(){
                     <div className="form-group">
                         <label>Password</label>
                         <Field
-                        //type="password" 
+                        //type="password"
+                        autocomplete="off"  
                         className="form-control"
                         name="password" 
                         placeholder="Enter your password"
@@ -133,6 +139,7 @@ export default function HotelOwner_Signup(){
                     <Field
                     //type="texthotel"
                     //type="text"
+                    autocomplete="off" 
                     className="form-control"
                     name="hotel"
                     placeholder="Enter your hotel name"
@@ -146,6 +153,7 @@ export default function HotelOwner_Signup(){
                  <Field
                  //type="bigint"
                  //type="int"
+                 autocomplete="off" 
                  className="form-control"
                  name="hotelcontact"
                  placeholder="Enter your hotel contact number"
@@ -159,6 +167,7 @@ export default function HotelOwner_Signup(){
                     <Field
                     //type="hotelcity"
                     //type="text"
+                    autocomplete="off" 
                     className="form-control"
                     name="address"
                     placeholder="Enter city of your hotel"
