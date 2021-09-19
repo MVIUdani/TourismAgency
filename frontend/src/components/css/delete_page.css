@@ -1,0 +1,28 @@
+body{
+
+
+    background-color: #0099CC;
+}
+
+.Delete{
+
+    background-color: white;
+    width: 11cm;
+    height: 11cm;
+    margin-left: 14.5cm;
+    margin-top: 2.5cm;
+    border-radius: 12px;
+
+}
+
+.Middle{
+
+
+    width: 10cm;
+    height: 10cm;
+    margin-left: 1.2cm;
+    margin-top: 2cm;
+    border-radius: 12px;
+
+}
+

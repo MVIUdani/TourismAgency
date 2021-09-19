@@ -112,7 +112,7 @@ const updateNow = () => {
 
                 <button onClick={updateNow} className="Use_button">Update</button>
                
-                <button  className="Use_button">Delete</button>
+               <Link to='/delete_page'> <button  className="Use_button">Delete</button> </Link>
                 </form>
             </div>
            </div>
