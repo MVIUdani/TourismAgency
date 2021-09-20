@@ -104,7 +104,7 @@ Shangri-La Cares: Our commitment to your well-being in our care
 
 <div className="Hotel">
 
-<div className="Hotel_details">
+<div className="Hotel_details" style={{height:'14.5cm'}}>
   <div className="Day">
     <h1>Day 07 & Day 08</h1>
     <h4>Hotel Name: Trinco Blu by Cinnamon hotel</h4><br></br>

@@ -1,5 +1,6 @@
 import React, { useState,useEffect } from "react";
 import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import { toast } from "react-toastify";
 import '../css/request.css';
 import Axios from "axios";
 
@@ -26,6 +27,7 @@ export default function Requests (){
         }).then((response) => {
             console.log(response);
           });
+          toast.success("Your Request Send Successfully");
     };
 
     Axios.defaults.withCredentials = true;

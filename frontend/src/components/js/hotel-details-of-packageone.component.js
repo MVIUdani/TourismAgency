@@ -39,7 +39,7 @@ function Package_one_hotel_details(){
 
             <div className="Hotel">
 
-        <div className="Hotel_details">
+        <div className="Hotel_details" style={{height:'14.5cm'}}>
           <div className="Day">
             <h1>Day 03 & Day 04 </h1>
             <h4>Hotel Name: EKHO Lake House Polonnaruwa</h4><br></br>
