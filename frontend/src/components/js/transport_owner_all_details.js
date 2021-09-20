@@ -154,7 +154,7 @@ return (
 
 
             <button className="Use_button">Update</button>
-            <button className="Use_button">Delete</button>
+            <Link to='/delete_page'><button className="Use_button">Delete</button></Link>
            
             </form>
         </div>
@@ -195,7 +195,7 @@ return (
 
 
             <button onClick={updateNow} className="Use_button">Update</button>
-            <button  onClick={() => deleteNow(val.user_id)} className="Use_button">Delete</button>
+            <Link to='/delete_page'><button  onClick={() => deleteNow(val.user_id)} className="Use_button">Delete</button></Link>
            
             </form>
         </div>
