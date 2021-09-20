@@ -3,6 +3,7 @@ import "../../../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import '../../../css/footer static pages/feedback.css';
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import Feedback_Validation from "./feedback_Validation";
+import { toast } from "react-toastify";
 import Axios from "axios";
 
 export default function Feedback(){
@@ -16,6 +17,7 @@ export default function Feedback(){
     }).then((response) => {
       console.log(response);
     });
+    toast.success("Your Feedback Send Successfully");
   };
 
 
