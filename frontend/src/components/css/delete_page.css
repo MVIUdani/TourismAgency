@@ -7,22 +7,31 @@ body{
 .Delete{
 
     background-color: white;
-    width: 11cm;
-    height: 11cm;
-    margin-left: 14.5cm;
-    margin-top: 2.5cm;
-    border-radius: 12px;
+    width: 9.5cm;
+    height: 7.5cm;
+    margin-left: 15cm;
+    margin-top: 3cm;
+    border-radius: 20px;
 
 }
 
 .Middle{
 
 
-    width: 10cm;
-    height: 10cm;
-    margin-left: 1.2cm;
+    width: 9cm;
+    height: 7cm;
+    margin-left: 0.8cm;
     margin-top: 2cm;
     border-radius: 12px;
 
+}
+
+.Tags{
+
+    width: 3.2cm;
+    height: 1cm;
+    border-radius: 12px;
+    background-color: #0099CC;
+    margin-left: 0.4cm;
 }
 
