@@ -65,6 +65,7 @@ export default function PaymentFirst_P3() {
   // Called when user completed the payment. It can be a successful payment or failure
   window.payhere.onCompleted = function onCompleted(orderId) {
     console.log("Payment completed. BookingID:" + orderId);
+    history.push('/payment_success');
     //Note: validate the payment and show success or failure page to the customer
   };
 

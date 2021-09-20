@@ -38,6 +38,7 @@ validationSchema={Count_Validation}
     <label htmlFor=""><h5>Number of passengers hope to travel:</h5></label>
     <Field style={{width:'90%',padding:'12px',margin:' 5px 0 22px 0',display:'inline-block',border:' none',background:'#66606069',marginLeft:'0.2cm'}}
     //type="int" 
+    autocomplete="off"
     placeholder="Enter count of passengers" 
     name="count" 
     id="count" 
@@ -47,6 +48,7 @@ validationSchema={Count_Validation}
     <label><h5>Number of rooms that you want:</h5></label>
     <Field style={{width:'90%',padding:'12px',margin:' 5px 0 22px 0',display:'inline-block',border:' none',background:'#66606069',marginLeft:'0.2cm'}}
     //type="int" 
+    autocomplete="off"
     placeholder="Enter count of rooms" 
     name="room_count" 
     id="room_count" 

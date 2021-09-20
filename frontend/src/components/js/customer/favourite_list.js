@@ -1,29 +1,46 @@
-import React from 'react';
+import React,{useState,useEffect} from 'react';
 import '../../css/customer/favourite_list.css';
 import IconButton from '@material-ui/core/IconButton';
 import DeleteIcon from '@material-ui/icons/Delete';
+import Axios from "axios";
 
 function FavouriteList(){
+
+  const [place, setPlace] = useState("");
+  const [description, setDescription] = useState("");
+  const [image, setImage] = useState("");
+
+    useEffect(() => {
+    Axios.get("http://localhost:5000/readFavourites").then((response) => {
+      
+        setPlace(response.data[0].place_name);
+        setDescription(response.data[0].place_description);
+        setImage(response.data[0].place_image);
+       
+    
+    });
+  }, []); 
+
   return(
     <div className='favorite-container'>
     <br></br>
     <br></br>
 <h1 style={{fontFamily:"Helvetica Neue"}}>My Favourite Locations in Sri Lanka</h1>
 <br></br>
-<h2 style={{marginLeft:"45px"}}></h2>
+<h2 style={{marginLeft:"45px"}}>{place}</h2>
 <br></br>
 <div className="Sigiriya">
 
 
-<img className="Picture" src='' alt="" width="" height=""></img>
+<img className="Picture" src={image} alt="" width="" height=""></img>
 <div>
-<IconButton aria-label="delete" hidden>
+<IconButton aria-label="delete">
 <DeleteIcon />
 </IconButton>
 </div>
 
 <div className="Sigiriya-des">
-
+{description}
 </div>
 
 </div>

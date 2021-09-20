@@ -3,6 +3,7 @@ import '../css/package-location.css'
 import { Link } from 'react-router-dom';
 import IconButton from '@material-ui/core/IconButton';
 import FavoriteIcon from '@material-ui/icons/Favorite';
+import { toast } from "react-toastify";
 /*import Dialog from "@material-ui/core/Dialog";
 import DialogContentText from "@material-ui/core/DialogContentText";
 import DialogTitle from "@material-ui/core/DialogTitle";
@@ -40,6 +41,7 @@ const addFavourite = () =>{
     }).then((response) => {
         console.log(response);
       });
+      toast.success("Location Added Your Favourites List Successfully");
 } ;   
 
 return(
