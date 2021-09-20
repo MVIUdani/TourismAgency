@@ -14,7 +14,7 @@ function Delete_page() {
                <h4> Do you want to delete it?</h4>
             <br></br><br></br><br></br>
                 <button className="Tags" type="submit"><b>Yes</b></button>
-                <button className="Tags" type="submit"><b>No</b></button>
+               <Link to='/transport_owner_all_details'> <button className="Tags" type="submit"><b>No</b></button> </Link>
 
             </div>
 
