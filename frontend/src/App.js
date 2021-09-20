@@ -123,6 +123,7 @@ import Count_pasenger_five from './components/js/packages/count/count_five_packa
 import Payment_Success_Alert from './components/js/customer/payment_success_message';
 import Hotel_owner_editprofile from './components/js/hotelowner/hotel_owner_edit_profile';
 import Delete_page from './components/js/delete_page';
+import All_details from './components/js/all_details';
 
 
 toast.configure();
@@ -268,6 +269,7 @@ function App() {
            <Route path = "/hotel_owner_edit_profile" component = {Hotel_owner_editprofile}/>
            <Route path = "/payment_success" component = {Payment_Success_Alert} />
            <Route path = "/delete_page" component = {Delete_page} />
+           <Route path = "/all_details" component = {All_details} />
 
           </Switch>
       
