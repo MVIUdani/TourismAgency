@@ -11,9 +11,9 @@ export default class BeforePackagedetails extends Component {
 
             <div className="Package-details">
 
-            <img className="Image-size" src='sigiriya3.jpg' alt="" width="240" height="210"></img>
+            <img className="Image-size" src='sigiriya3.jpg' alt="" width="230" height="210"></img>
             <img className="Image-size" src='polonnaruwa.jpg' alt="" width="230" height="210"></img>
-            <img className="Image-size" src='hortan.jpg' alt="" width="210" height="225"></img>
+            <img className="Image-size" src='hortan.jpg' alt="" width="210" height="220"></img>
             <img className="Image-size" src='waterfall02.jpg' alt="" width="235" height="215"></img>
             <img className="Image-size" src='atamasthanaya.jpg' alt="" width="230" height="225"></img>
             <img className="Image-size" src='athugala.jpg' alt="" width="200" height="225"></img>
@@ -54,8 +54,8 @@ export default class BeforePackagedetails extends Component {
             <Link to="/hotel-details-of-packageone"><h5>Hotel Facilities</h5></Link>
           
           <br></br>
-          <Link to="/edit_and_request_package"><button className="Btn1" type="button"><h6>Edit & request package</h6></button></Link>
-          <Link to="/request"><button className="Btn1" type="button"><h6>Request new Package</h6></button></Link>
+         
+          <Link to="/request"><button className="Btn1" type="button"><h6>Request New Package</h6></button></Link>
           <Link to="/count_pasenger"><button className="Btn1" type="button"><h6>Book Now</h6></button></Link>
           
 
@@ -67,3 +67,7 @@ export default class BeforePackagedetails extends Component {
     }
 
 }
+
+/*
+ <Link to="/edit_and_request_package"><button className="Btn1" type="button"><h6>Edit & request package</h6></button></Link>
+ */

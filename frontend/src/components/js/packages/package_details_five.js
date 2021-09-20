@@ -31,9 +31,9 @@ const addTravel=()=>{
 
             <div className="Package-details">
 
-            <img className="Image-size" src='Package2/polonnaruwa2.jpg' alt="" width="240" height="210"></img>
+            <img className="Image-size" src='Package2/polonnaruwa2.jpg' alt="" width="230" height="210"></img>
             <img className="Image-size" src='Package2/polonnaruwa.jpg' alt="" width="230" height="210"></img>
-            <img className="Image-size" src='Package2/bopath-ella.jpg' alt="" width="200" height="225"></img>
+            <img className="Image-size" src='Package2/bopath-ella.jpg' alt="" width="200" height="220"></img>
             <img className="Image-size" src='Package2/atamasthanaya.jpg' alt="" width="235" height="215"></img>
             <img className="Image-size" src='Package2/athugala2.jpg' alt="" width="220" height="225"></img>
             <img className="Image-size" src='Package2/nallur.jpg' alt="" width="210" height="225"></img>
@@ -77,8 +77,8 @@ const addTravel=()=>{
             <Link to="/package_two_hotel_details"><h5>Hotel Facilities</h5></Link>
           
           <br></br>
-          <Link to="/edit_and_request_package"><button className="Btn1" type="button"><h6>Edit Package</h6></button></Link>
-          <Link to="/request"><button className="Btn1" type="button"><h6>Request new Package</h6></button></Link>
+        
+          <Link to="/request"><button className="Btn1" type="button"><h6>Request New Package</h6></button></Link>
           <button className="Btn1" type="button" onClick={addTravel}><h6>Book Now</h6></button>
           
 
