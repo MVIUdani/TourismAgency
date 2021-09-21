@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import './guide.css'
+import './hotel_food.css'
 import { Link } from 'react-router-dom';
 
 
@@ -13,7 +14,7 @@ export default class Guide extends Component {
      
             <div className="Impo">
         
-            <img className="Profile" src='./img/profile.jpg' alt="" width="240" height="235"></img>
+            <img className="Profile" src='profile.jpeg' alt="" width="240" height="235"></img>
           
 
                     <div className="Data">
@@ -36,37 +37,44 @@ export default class Guide extends Component {
 
             </div>  
            
-                <div className="Second">
-        
-        
-                 
-                  <img className="Size" src='imgg1.jpeg' alt="" width="280" height="252"></img>
-                
-                  <img className="Size" src='imgg2.jpeg' alt="" width="300" height="245"></img>
-        
-                 
-                  <img className="Size" src='imgg3.jpeg' alt="" width="310" height="242"></img>
-                
-                  <img className="Size" src='imgg4.jpeg' alt="" width="290" height="242"></img>
-                  <img className="Size" src='imgg5.jpeg' alt="" width="300" height="242"></img>
-                  <img className="Size" src='imgg6.jpeg' alt="" width="310" height="242"></img>
-                
-                
-                
-        
-                  
-                
-        
-                  
-        
-                 
-                  </div> 
             
+                  <div className="Hotel_food">  
+
+                              <div className="Food_picture">
+                                    <img className="Pic_size" src='imgg12.jfif' alt="" width="290" height="250"></img>
+
+                                    <img className="Pic_size" src='imgg2.jpg' alt="" width="290" height="250"></img>
+
+                                    <img className="Pic_size" src='imgg3.jpg' alt="" width="290" height="250"></img>
+
+                                    <img className="Pic_size" src='imgg4.jpg' alt="" width="290" height="250"></img>
+
+                                    <img className="Pic_size" src='imgg10.jpg' alt="" width="290" height="250"></img>
+
+                                    <img className="Pic_size" src='imgg6.jfif' alt="" width="290" height="250"></img>
+
+                                    <img className="Pic_size" src='imgg11.jpg' alt="" width="290" height="250"></img>
+
+                                    <img className="Pic_size" src='imgg8.jpg' alt="" width="290" height="250"></img>
+
+                                    <img className="Pic_size" src='imgg9.jpg' alt="" width="290" height="250"></img>
+
+                                    <img className="Pic_size" src='imgg17.jpg' alt="" width="290" height="250"></img>
+
+                                    <img className="Pic_size" src='imgg7.jpg' alt="" width="290" height="250"></img>
+
+                                    <img className="Pic_size" src='imgg1.jpg' alt="" width="290" height="250"></img>
+
+
+
+                                  </div>
+
            
         
             </div>
         
-        
+            </div>
+
         
         
             </body>
