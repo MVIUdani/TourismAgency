@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState,useEffect, useDebugValue} from 'react';
 import { withStyles, makeStyles } from '@material-ui/core/styles';
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
@@ -9,6 +9,9 @@ import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 import Button from '@material-ui/core/Button';
 import { Link } from 'react-router-dom';
+import useUsers from '../../hooks/useUsers';
+import useDeleteUser from '../../hooks/useDeleteUser';
+import AlertDialog from '../alertDialog/alertDialog';
 
 
 const styleButtons = makeStyles((theme) => ({
@@ -37,14 +40,14 @@ const StyledTableRow = withStyles((theme) => ({
   },
 }))(TableRow);
 
-function createData(id, name, email, mobile, address, type, payment, other) {
-  return { id, name, email, mobile, address, type, payment, other };
+function createData(id, name, email, mobile, platenumber, seats, type, color, liecencevalid, payment, other) {
+  return { id, name, email, mobile, platenumber, seats, type, color, liecencevalid, payment, other};
 }
 
 const rows = [
-  createData('1', 'Rajitha Ratna', 'rajitha3@gmail.com', '02175568345', 'reid avenue, Colombo 07', 'van', '2000/hr', 'facilities'),
-  createData('2', 'Anuki Alwis', 'anukial@gmail.com', '0773456271', 'rajarata, wayamba south', 'car', '3500/hr', 'number of passengers'),
-  createData('3', 'Mahesh bala', 'balamahe22@gmail.com', '0773427654', 'Kumara veethy, Inuvil', 'van', '1500/hr' , 'laggages charge'),
+  createData('1', 'Rajitha Ratna', 'rajitha3@gmail.com', '02175568345', '1117','25', 'van', 'white', '2025.06.09', '2000/day', 'facilities'),
+  createData('1', 'Rajitha Ratna', 'rajitha3@gmail.com', '02175568345', '1117','25', 'van', 'white', '2025.06.09', '2000/day', 'facilities'),
+  createData('1', 'Rajitha Ratna', 'rajitha3@gmail.com', '02175568345', '1117','25', 'van', 'white', '2025.06.09', '2000/day', 'facilities'),
 ];
 
 
@@ -54,79 +57,84 @@ const styleTables = makeStyles({
   },
 });
 
-export default function TransportTables() {
+ const TransportTables=()=> {
   const tableClass = styleTables();
   const buttonClass = styleButtons();
+  const [bookingData, setBookingData] = useState([]);
+  const {data: transportData} = useUsers({role:'transport owner'});
+  const [openAlert, setOpenAlert] = useState(false);
+  const [id, setId] = useState('');
+  const { mutateAsync: userDeleter } = useDeleteUser(id);
+
+  const handleAlertClose=()=>{
+    setOpenAlert(false);
+  }
+
+  const handleOkAccept = async()=>{
+    try{  
+      await userDeleter();
+      window.location.reload();
+      handleAlertClose();
+    }catch(e){
+      console.log(e);
+    }
+  }
+
+  useEffect(()=>{
+    if(transportData){
+      setBookingData([...transportData])
+    }
+  },[transportData])
  
   return (
     <TableContainer component={Paper} width="100%">
     <TableRow align = "left">
     <h1>View Transport Details</h1>
 
-    <StyledTableCell align="left"></StyledTableCell>
-    <StyledTableCell align="left" margin="100px"></StyledTableCell>
-    <StyledTableCell align="left"></StyledTableCell>
-    <StyledTableCell align="left"></StyledTableCell>
-    <StyledTableCell align="left"></StyledTableCell>
-    <StyledTableCell align="left"></StyledTableCell>
-    <StyledTableCell align="left"></StyledTableCell>
-    <StyledTableCell align="left"></StyledTableCell>
-    <StyledTableCell align="left"></StyledTableCell>
-    <StyledTableCell align="left"></StyledTableCell>
-    <StyledTableCell align="left"></StyledTableCell>
-    <StyledTableCell align="left"></StyledTableCell>
-    <StyledTableCell align="left"></StyledTableCell>
-    <StyledTableCell align="left"></StyledTableCell>
-    <StyledTableCell align="right"></StyledTableCell>
-    <StyledTableCell align="right"></StyledTableCell>
-    <StyledTableCell align="right"></StyledTableCell>
-    <StyledTableCell align="right"></StyledTableCell>
-    <StyledTableCell align="right"></StyledTableCell>
-    <StyledTableCell align="right"></StyledTableCell>
-    <StyledTableCell align="right"></StyledTableCell>
-    <StyledTableCell align="right"></StyledTableCell>
-    <StyledTableCell align="right"></StyledTableCell>
-    <StyledTableCell align="right"></StyledTableCell>
-    <StyledTableCell align="right"></StyledTableCell>
 
-
-    <Link to='/manageuser/add_admin'>
-    <StyledTableCell align="left"><div className={buttonClass.root}><Button variant="contained" color="primary" align="left">ADD USER</Button></div></StyledTableCell>
-    </Link>    </TableRow>
+    </TableRow>
       <Table className={tableClass.table} aria-label="customized table">
         <TableHead>
           <TableRow>
-            <StyledTableCell>UserID</StyledTableCell>
+            <StyledTableCell>ID</StyledTableCell>
             <StyledTableCell align="left">Name</StyledTableCell>
             <StyledTableCell align="left">Email</StyledTableCell>
             <StyledTableCell align="left">Mobile</StyledTableCell>
-            <StyledTableCell align="left">Address</StyledTableCell>
+            <StyledTableCell align="left">Plate Number</StyledTableCell>
+            <StyledTableCell align="left">No of Seats</StyledTableCell>
             <StyledTableCell align="left">TransportType</StyledTableCell>
+            <StyledTableCell align="left">Color</StyledTableCell>
+            <StyledTableCell align="left">Liecence Valid until</StyledTableCell>
             <StyledTableCell align="left">Payment</StyledTableCell>
             <StyledTableCell align="left">Other Details</StyledTableCell>
-            <StyledTableCell align="left">Edit</StyledTableCell>
             <StyledTableCell align="left">Delete</StyledTableCell>
           </TableRow>
         </TableHead>
         <TableBody>
-          {rows.map((row) => (
+          {bookingData.map((row) => (
             <StyledTableRow key={row.id}>
               <StyledTableCell component="th" scope="row">
-                {row.id}
+                {row.user_id}
               </StyledTableCell>
-              <StyledTableCell align="left">{row.name}</StyledTableCell>
-              <StyledTableCell align="left">{row.email}</StyledTableCell>
-              <StyledTableCell align="left">{row.mobile}</StyledTableCell>
-              <StyledTableCell align="left">{row.address}</StyledTableCell>
+              <StyledTableCell align="left">{row.first_name+' '+row.last_name}</StyledTableCell>
+              <StyledTableCell align="left">{row.email_address}</StyledTableCell>
+              <StyledTableCell align="left">{row.phone_no}</StyledTableCell>
+              <StyledTableCell align="left">{row.platenumber}</StyledTableCell>
+              <StyledTableCell align="left">{row.seats}</StyledTableCell>
               <StyledTableCell align="left">{row.type}</StyledTableCell>
+              <StyledTableCell align="left">{row.color}</StyledTableCell>
+              <StyledTableCell align="left">{row.liecencevalid}</StyledTableCell>
               <StyledTableCell align="left">{row.payment}</StyledTableCell>
               <StyledTableCell align="left">{row.other}</StyledTableCell>
-              <StyledTableCell align="left"><Link to='/manageuser/edit_admin'><div className={buttonClass.root}><Button variant="contained" color="primary">Edit</Button></div></Link></StyledTableCell>
-              <StyledTableCell align="left"><div className={buttonClass.root}><Button variant="contained" color="secondary">Delete</Button></div></StyledTableCell>
+
+              <StyledTableCell align="left"><div className={buttonClass.root}><Button variant="contained" onClick={()=>{setId(row.user_id); setOpenAlert(true);}} color="secondary">Delete</Button></div></StyledTableCell>
             </StyledTableRow>
           ))}
         </TableBody>
       </Table>
+      <AlertDialog open={openAlert} title='Do you want to delete this user?' handleClose={handleAlertClose} handleOk={handleOkAccept}/>
     </TableContainer>
   );
 }
+
+export default TransportTables;
