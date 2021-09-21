@@ -15,6 +15,21 @@ const EditAdmin = ({ submitForm }) => {
             <form onSubmit={handleSubmit} noValidate>
                 <h3>EDIT USER</h3>
 
+
+                <div className="form-group">
+                <label>NIC</label> <br></br>
+                <input 
+                type="text" 
+                className="form-control" 
+                name="nic"
+                placeholder="Enter your NIC Number" 
+                value={values.nic}
+                onChange={handleChange}
+                />
+                {errors.nic && <p>{errors.nic}</p>}
+            </div>
+
+            
                 <div className="form-group">
                     <label>First name</label>
                     <input 
