@@ -1,187 +1,166 @@
-import React, { Component }from "react";
+import React, { useState,useEffect }from "react";
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './updateuserinfo.css';
-import { useState } from "react";
 
-import clsx from 'clsx';
-import { makeStyles, useTheme } from '@material-ui/core/styles';
-import Input from '@material-ui/core/Input';
-import InputLabel from '@material-ui/core/InputLabel';
-import MenuItem from '@material-ui/core/MenuItem';
-import FormControl from '@material-ui/core/FormControl';
-import ListItemText from '@material-ui/core/ListItemText';
-import Select from '@material-ui/core/Select';
-import Checkbox from '@material-ui/core/Checkbox';
-import Chip from '@material-ui/core/Chip';
+import useCreateGuideDetails from "../hooks/useCreateGuideDetails"
+import { useSnackbar } from 'notistack';
+import Table from '@material-ui/core/Table';
+import TableBody from '@material-ui/core/TableBody';
+import TableCell from '@material-ui/core/TableCell';
+import TableContainer from '@material-ui/core/TableContainer';
+import TableHead from '@material-ui/core/TableHead';
+import TableRow from '@material-ui/core/TableRow';
+import Paper from '@material-ui/core/Paper';
+import Button from '@material-ui/core/Button';
+import { withStyles, makeStyles } from '@material-ui/core/styles';
+import useMessages from "../hooks/useMessages";
+import AlertDialog from './alertDialog';
+import useDeleteMessage from "../hooks/useDeleteMessage";
+import useGuides from "../hooks/useGuides";
+import useDeleteAvailability from "../hooks/useDeleteAvailability";
+import useGuideDetails from "../hooks/useGuideDetails";
+import useDeleteSkill from "../hooks/useDeleteSkill";
 
-import MultiSelect from "react-multi-select-component";
-/*
-const Languages = () => {
-    const options = [
-    
-      { label: "English", value: "English" },
-      { label: "Sinhala ", value: "Sinhala"},
-      { label: "Mandarin ", value: "Mandarin" },
-      { label: "Hindi ", value: "Hindi" },      
-      { label: "Bengali ", value: "Bengali" },
-      { label: "Urudu ", value: "Urudu" },
-      { label: "Arabic ", value: "Arabic" },
-      { label: "Tamil", value: "Tamil" },
-    ]
-};
-  
-    const [selected, setSelected] = useState([]); Languages = () => {
-        const options = [
-          { label: "English ", value: "English" },
-          { label: "Sinhala ", value: "Sinhala"},
-          { label: "Mandarin ", value: "Mandarin"},
-          { label: "Hindi ", value: "Hindi" },          
-          { label: "Bengali ", value: "Bengali" },
-          { label: "Urudu ", value: "Urudu" },
-          { label: "Arabic ", value: "Arabic" },
-          { label: "Tamil ", value: "Tamil" },
+const StyledTableCell = withStyles((theme) => ({
+  head: {
+    backgroundColor: theme.palette.common.black,
+    color: theme.palette.common.white,
+  },
+  body: {
+    fontSize: 14,
+  },
+}))(TableCell);
 
-        ];
-    }*/
-/*      
-        const [selected, setSelected] = useState([]);
-const useStyles = makeStyles((theme) => ({
-    formControl: {
-      margin: theme.spacing(1),
-      minWidth: 120,
-      maxWidth: 300,
+const StyledTableRow = withStyles((theme) => ({
+  root: {
+    '&:nth-of-type(odd)': {
+      backgroundColor: theme.palette.action.hover,
     },
-    chips: {
-      display: 'flex',
-      flexWrap: 'wrap',
-    },
-    chip: {
-      margin: 2,
-    },
-    noLabel: {
-      marginTop: theme.spacing(3),
-    },
-  }));
+  },
+}))(TableRow);
 
-const ITEM_HEIGHT = 48;
-const ITEM_PADDING_TOP = 8;
-const MenuProps = {
-PaperProps: {
-style: {
-maxHeight: ITEM_HEIGHT * 4.5 + ITEM_PADDING_TOP,
-width: 250,
-},
-},
-};
+function createData(GuideId,Message, Response ) {
+  return {GuideId, Message, Response};
+}
 
-const names = [
-'English',
-'Sinhala',
-'Russian',
-'Mandarin',
-'Hindi',
-'Bengali',
-'Urudu',
-'Arabic',
-'Tamil',
-
+const rows = [
+  createData('1', 'test', 'repsonse'),
+  createData('2', 'message', 'repsonse'),
+  createData('3', 'Please', 'repsonse'),
 ];
 
+const styleTables = makeStyles({
+  table: {
+    //maxWidth: 520,
+  },
+});
 
-function getStyles(name, personName, theme) {
-return {
-fontWeight:
-personName.indexOf(name) === -1
-? theme.typography.fontWeightRegular
-: theme.typography.fontWeightMedium,
-};
-}
+const styleButtons = makeStyles((theme) => ({
+  root: {
+    '& > *': {
+      margin: theme.spacing(1),
+    },
+  },
+}));
 
-function MultipleSelect()
-{
-    const classes = useStyles();
-    const theme = useTheme();
-    const [personName, setPersonName] = React.useState([]);
+const UpdateGuideinfo =()=> {
+  const tableClass = styleTables();
+  const buttonClass = styleButtons();
+  const [details,setDetails]=useState('');
+  const { enqueueSnackbar } = useSnackbar();
+  const [bookingData, setBookingData] = useState([]);
 
-const handleChange = (event) => {
-setPersonName(event.target.value);
-};
+  const { mutateAsync: detailsCreater } = useCreateGuideDetails();
+  const [openAlert, setOpenAlert] = useState(false);
+  const [id, setId] = useState('');
+  const { mutateAsync: userDeleter } = useDeleteSkill(id);
 
-const handleChangeMultiple = (event) => {
-const { options } = event.target;
-const value = [];
-for (let i = 0, l = options.length; i < l; i += 1) {
-if (options[i].selected) {
-  value.push(options[i].value);
-}
-}
-setPersonName(value);
-};
+  const {data: MessageData} = useGuideDetails();
 
-}
-*/
-export default class UpdateGuideinfo extends Component{
-    render(){
-/*
-        const classes = useStyles();
-        const theme = useTheme();
-        const [personName, setPersonName] = React.useState([]);
+  useEffect(()=>{
+    if(MessageData){
+      setBookingData([...MessageData])
+    }
+  },[MessageData])
 
-const handleChange = (event) => {
-  setPersonName(event.target.value);
-};
+  const handleAlertClose=()=>{
+    setOpenAlert(false);
+  }
 
-const handleChangeMultiple = (event) => {
-  const { options } = event.target;
-  const value = [];
-  for (let i = 0, l = options.length; i < l; i += 1) {
-    if (options[i].selected) {
-      value.push(options[i].value);
+  const handleOkAccept = async()=>{
+    try{  
+      await userDeleter();
+      window.location.reload();
+      handleAlertClose();
+    }catch(e){
+      console.log(e);
     }
   }
-  setPersonName(value);
-};
-*/
-        // const multipleselect = this.MultipleSelect();
+
+  const handleAddGuideDetails = async () => {
+    const newMessage={
+      skills:details
+    }
+    try{
+      await detailsCreater(newMessage);
+        setDetails('')
+        window.location.reload();
+        enqueueSnackbar('Details updated successfully', {
+          variant: 'success',
+          autoHideDuration: 3000,
+        })
+      
+    }catch(e){
+      enqueueSnackbar('Details update failed', {
+        variant: 'error',
+        autoHideDuration: 3000,
+      })
+    }
+  }
+
         return(
          <div className="request-wrapper">
-         <div className="request-inner">
-           <form>
-             <h2>Update Guide Details</h2> 
-             <div className="form-group">
-                     <label>Language Preferences</label>
-                     <textarea className="form-control" placeholder="Add preferred languages here" />
-    
-                 </div>
-                 <br/>
+          <div className="request-inner"> 
+              <h2>Update Guide Details</h2> 
+              <div className="form-group">
+                      <label>Language Preferences</label>
+                      <textarea className="form-control" value={details} placeholder="Add preferred languages here" onChange={(e)=>{setDetails(e.target.value)}}/>
+      
+              </div>
+              <br/>
 
-      <br></br>
-             <button type="submit" className="btn btn-primary btn-block">Submit</button>
- 
-           </form>
-           </div>
-           </div>
+               <br></br>
+              <button className="btn btn-primary btn-block" onClick={handleAddGuideDetails}>Submit</button>
+  
+          </div>
+          <div style={{padding:"0px 200px"}}>
+                <TableContainer component={Paper} style={{width:"",marginTop:"120px"}}>
+                  <h1>Skills</h1>
+                    <Table className={tableClass.table} aria-label="customized table">
+                      <TableHead>
+                        <TableRow>
+                        <StyledTableCell>Title</StyledTableCell>
+                          <StyledTableCell>Message</StyledTableCell>
+                          <StyledTableCell align="left">Manage</StyledTableCell>
+                        </TableRow>
+                      </TableHead>
+                      <TableBody>
+                        {bookingData.map((row,index) => (
+                          <StyledTableRow key={index}>
+                            <StyledTableCell component="th" scope="row">
+                              {row.guide_id}
+                            </StyledTableCell>
+                            <StyledTableCell align="left">{row.skills}</StyledTableCell>
+                            <StyledTableCell align="left"><div className={buttonClass.root}><Button variant="contained" color="secondary" onClick={()=>{setId(row.guide_id); setOpenAlert(true);}} >Delete</Button></div></StyledTableCell>
+                          </StyledTableRow>
+                        ))}
+                      </TableBody>
+                    </Table>
+                  </TableContainer>
+                  <AlertDialog open={openAlert} title="Do you want to delete this ?" handleClose={handleAlertClose} handleOk={handleOkAccept}/>
+                  </div>
+        </div>
         );
-    } 
 }
 
-/*
-
-
-                 
-                 <div className="form-group">
-                     <label>Payment</label>
-                     <textarea className="form-control" placeholder="Agreed Payment per day" />
-                 </div>
-                 <br/>
-                 <br/>
-                 <div className="form-group">
-                     <label>Futher Details</label>
-                     <textarea className="form-control" placeholder="Optionally add more details here..." />
-                 </div>
-                 <br/>
-
-
-
-               
-*/
+export default UpdateGuideinfo;
