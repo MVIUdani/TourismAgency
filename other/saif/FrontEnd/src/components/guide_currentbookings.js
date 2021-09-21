@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect, useState} from  'react';
 import { withStyles, makeStyles } from '@material-ui/core/styles';
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
@@ -15,6 +15,12 @@ import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
+import useBookings from '../hooks/useBookings';
+import { selectPackageId } from '../state/packageId/selector';
+import usePackageHotel from '../hooks/usePackageHotel';
+import usePackageLocation from '../hooks/usePackageLocation';
+import usePackageTranspost from '../hooks/usePackageTransport';
+
 
 
 const StyledTableCell = withStyles((theme) => ({
@@ -64,17 +70,55 @@ const styleButtons = makeStyles((theme) => ({
 export default function GuideCurrentBookings() {
   const tableClass = styleTables();
   const buttonClass = styleButtons();
-
+  const [bookingData, setBookingData] = useState([]);
+  const [projectId, setProjectId] = useState('');
+  const [hotelData, setHotelData] = useState([]);
+  const [locationData, setLocationData] = useState([]);
+  const [transportData, setTransportData] = useState([]);
   
   const [open, setOpen] = React.useState(false);
   const handleClickOpen = () => {
     setOpen(true);
   };
 
+  const {data: bookData} = useBookings({id:2,status:'accepted'});
+  const {data: packageHotelData} = usePackageHotel({id:projectId})
+  const {data: packageLocationData} = usePackageLocation({id:projectId})
+  const {data: packageTransportData} = usePackageTranspost({id:projectId})
+
+  useEffect(()=>{
+    if(bookData){
+      setBookingData([...bookData])
+    }
+  },[bookData])
+
+  useEffect(()=>{
+    if(packageLocationData){
+      setLocationData([...packageLocationData])
+    }
+  },[packageLocationData])
+
+  useEffect(()=>{
+    if(packageHotelData){
+      setHotelData([...packageHotelData])
+    }
+  },[packageHotelData])
+
+  useEffect(()=>{
+    if(packageTransportData){
+      setTransportData([...packageTransportData])
+    }
+  },[packageTransportData])
+
   const handleClose = () => {
     setOpen(false);
   };
 
+  const handleReset=()=>{
+    setHotelData([]);
+    setLocationData([]);
+    setTransportData([]);
+  }
 
   // <h1>View Customer Details</h1>
   return (
@@ -95,17 +139,17 @@ export default function GuideCurrentBookings() {
           </TableRow>
         </TableHead>
         <TableBody>
-          {rows.map((row) => (
-            <StyledTableRow key={row.BookingID}>
+          { bookingData.map((row) => (
+            <StyledTableRow key={row.bookingID}>
               <StyledTableCell component="th" scope="row">
-                {row.BookingID}
+                {row.bookingID}
               </StyledTableCell>
-              <StyledTableCell align="left">{row.CustomerID}</StyledTableCell>
-              <StyledTableCell align="left">{row.name}</StyledTableCell>
-              <StyledTableCell align="left">{row.email}</StyledTableCell>
-              <StyledTableCell align="left">{row.mobile}</StyledTableCell>
+              <StyledTableCell align="left">{row.customerID}</StyledTableCell>
+              <StyledTableCell align="left">{row.first_name +' '+ row.last_name}</StyledTableCell>
+              <StyledTableCell align="left">{row.email_address}</StyledTableCell>
+              <StyledTableCell align="left">{row.phone_no}</StyledTableCell>
               <StyledTableCell align="left">{row.duration}</StyledTableCell>
-              <Button onClick={handleClickOpen}><StyledTableCell align="left">{row.packageName}</StyledTableCell></Button>
+              <Button onClick={()=>{if(row.packageID!==projectId) handleReset(); setProjectId(row.packageID); handleClickOpen();}}><StyledTableCell align="left">View details</StyledTableCell></Button>
               <Dialog
               open={open}
               onClose={handleClose}
@@ -116,11 +160,11 @@ export default function GuideCurrentBookings() {
               <DialogContent>
                 <DialogContentText id="alert-dialog-description">
                  Package Name: <br></br>
-                 Places: <br></br>
-                 Amount: <br></br>
-                 .................. <br></br>
-                 Hotels: <br></br>
-                 Transport owner: <br></br>
+                 Places: {locationData.map(location=>{ return <div>- {location.place_name}</div>})} <br></br>
+                Amount: <br></br>
+                .................. <br></br>
+                Hotels: {hotelData.map(hotel=>{ return <div>- {hotel.hotel_name}</div>})}<br></br>
+                Transport owner: {transportData.map(({first_name,last_name})=>{ return <div>- {first_name+' '+last_name}</div>})}<br></br>
                 </DialogContentText>
               </DialogContent>
               <DialogActions>
