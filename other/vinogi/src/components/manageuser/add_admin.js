@@ -1,20 +1,110 @@
-import React, { Component } from "react";
+import React, { useState,Component,useEffect } from "react";
 import './authentication.css';
-import validate from './validateInfo';
-import useForm from "./useForm";
-import { Link } from "react-router-dom";
+import useCreateUser from "../../hooks/useCreateUser";
+import { useSnackbar } from 'notistack';
+import {useHistory } from 'react-router-dom';
+import useUpdateUser from "../../hooks/useUpdateUser";
+import useUser from "../../hooks/useUser";
 
-const AddAdmin = ({ submitForm }) => {
-    const { handleChange, handleSubmit, values, errors } = useForm(
-      submitForm,
-      validate
-    ); 
+const AddAdmin = ({location: {
+    state: {
+      data,
+    },
+  }}) => {
+    const history = useHistory();
+    const { enqueueSnackbar } = useSnackbar();
+    const [nic,setNic]=useState("");
+    const [fname,setFname]=useState("");
+    const [lname,setLname]=useState("");
+    const [email,setEmail]=useState("");
+    const [mobile,setMobile]=useState("");
+    const [address,setAddress]=useState("");
+    const {data: userData} = useUser({id:data})
+    const { mutateAsync: messageCreater,isError } = useCreateUser();
+    const { mutateAsync: userUpdater,isError:isUpdateError } = useUpdateUser(data)
+
+    useEffect(()=>{
+        if(userData){
+          setNic(userData?.nic);
+          setFname(userData?.first_name);
+          setLname(userData?.last_name);
+          setEmail(userData?.email_address);
+          setMobile(userData?.phone_no);
+          setAddress(userData?.city)
+        }
+      },[userData])
+
+    const handleSubmit = async ()=>{
+        const newUser={
+            user_name : "admin",
+            user_password : "admin",
+            first_name: fname,
+            last_name : lname,
+            email_address : email,
+            phone_no : mobile,
+            nic : nic,
+            user_status:"pending",
+            city : address,
+            role_id : 2,
+        }
+        try{
+            if(data){
+                await userUpdater(newUser);
+                if(!isUpdateError){
+                  enqueueSnackbar('User updated successfully', {
+                    variant: 'success',
+                    autoHideDuration: 3000,
+                  })
+                }
+            }else{
+                await messageCreater(newUser);
+                if(!isError){
+                  setNic('')
+                  setFname('')
+                  setLname('')
+                  setEmail('')
+                  setMobile('')
+                  setAddress('')
+                  enqueueSnackbar('User created successfully', {
+                    variant: 'success',
+                    autoHideDuration: 3000,
+                  })
+                  history.push({
+                      state: {
+                        
+                      },
+                      pathname: `/manageuser/view_admin`,
+                    });
+                }
+            }
+
+        }catch(e){
+          console.log(e);
+        }
+      }
+
         return (
         
         <div className="auth-wrapper">
         <div className="auth-inner">
-            <form onSubmit={handleSubmit} noValidate>
+         
                 <h3>ADD USER</h3>
+
+
+                <div className="form-group">
+                    <label>NIC</label> <br></br>
+                    <input 
+                    type="text" 
+                    className="form-control" 
+                    name="nic"
+                    placeholder="Enter your NIC Number" 
+                    value={nic}
+                    onChange={(e)=>{
+                        setNic(e.target.value)
+                    }}
+                    />
+                </div>
+
 
                 <div className="form-group">
                     <label>First name</label>
@@ -23,10 +113,11 @@ const AddAdmin = ({ submitForm }) => {
                     className="form-control" 
                     name="firstname"
                     placeholder="Enter your first name" 
-                    value={values.firstname}
-                    onChange={handleChange}
+                    value={fname}
+                    onChange={(e)=>{
+                        setFname(e.target.value)
+                    }}
                     />
-                    {errors.firstname && <p>{errors.firstname}</p>}
                 </div>
 
                 <div className="form-group">
@@ -35,10 +126,11 @@ const AddAdmin = ({ submitForm }) => {
                     className="form-control"
                     name="lastname" 
                     placeholder="Enter your last name" 
-                    value={values.lastname}
-                    onChange={handleChange}
+                    value={lname}
+                    onChange={(e)=>{
+                        setLname(e.target.value)
+                    }}
                     />
-                    {errors.lastname && <p>{errors.lastname}</p>}
                 </div>
 
                 <div className="form-group">
@@ -47,10 +139,11 @@ const AddAdmin = ({ submitForm }) => {
                     className="form-control"
                     name="email" 
                     placeholder="Enter your email address"
-                    value={values.email}
-                    onChange={handleChange} 
+                    value={email}
+                    onChange={(e)=>{
+                        setEmail(e.target.value)
+                    }}
                     />
-                    {errors.email && <p>{errors.email}</p>}
                 </div>
 
                 <div className="form-group">
@@ -59,10 +152,11 @@ const AddAdmin = ({ submitForm }) => {
                     className="form-control"
                     name="mobille" 
                     placeholder="Enter your mobile number"
-                    value={values.mobile}
-                    onChange={handleChange} 
+                    value={mobile}
+                    onChange={(e)=>{
+                        setMobile(e.target.value)
+                    }} 
                     />
-                    {errors.mobile && <p>{errors.mobile}</p>}
                 </div>
 
                 <div className="form-group">
@@ -71,19 +165,20 @@ const AddAdmin = ({ submitForm }) => {
                     className="form-control"
                     name="address" 
                     placeholder="Enter your home address"
-                    value={values.address}
-                    onChange={handleChange} 
+                    value={address}
+                    onChange={(e)=>{
+                        setAddress(e.target.value)
+                    }}
                     />
-                    {errors.address && <p>{errors.address}</p>}
                 </div>
 
             
                
 <br></br>
-                <Link to='/manageuser/view_admin'>
-                <button type="submit" className="btn btn-primary btn-block">ADD</button>
-              </Link>
-            </form>
+                
+                <button className="btn btn-primary btn-block" onClick={handleSubmit}>ADD</button>
+              
+            
             </div>
             </div>
         );
@@ -91,43 +186,3 @@ const AddAdmin = ({ submitForm }) => {
 }
 
 export default AddAdmin;
-
-/* 
- <div className="form-group">
-                    <label>User name</label>
-                    <input type="text" 
-                    className="form-control"
-                    name="username" 
-                    placeholder="Enter your user name" 
-                    value={values.username}
-                    onChange={handleChange}
-                    />
-                    {errors.username && <p>{errors.username}</p>}
-                </div>
-
-                <div className="form-group">
-                    <label>Password</label>
-                    <input 
-                    type="password" 
-                    className="form-control"
-                    name="password" 
-                    placeholder="Enter your password"
-                    value={values.password}
-                    onChange={handleChange} 
-                    />
-                    {errors.password && <p>{errors.password}</p>}
-                </div>
-
-                <div className="form-group">
-                    <label>Confirm Password</label>
-                    <input 
-                    type="confirmpassword" 
-                    className="form-control"
-                    name="confirmpassword" 
-                    placeholder="Confirm your password"
-                    value={values.confirmpassword}
-                    onChange={handleChange} 
-                    />
-                    {errors.confirmpassword && <p>{errors.confirmpassword}</p>}
-                </div>
-                */
