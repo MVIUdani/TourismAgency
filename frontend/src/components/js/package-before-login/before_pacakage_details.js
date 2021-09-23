@@ -1,10 +1,16 @@
-import React, { Component } from "react";
+import React, { useState,useEffect } from "react";
 import '../../css/package-details.css';
 import { Link } from 'react-router-dom';
 import SimpleRating from "../customer/rating";
 
-export default class BeforePackagedetails extends Component {
-    render() {
+export default function BeforePackagedetails() {
+
+  const [travel,setTravel] = useState('');
+
+  const handleChange=(e)=>{
+    setTravel(e.target.value);
+  }
+    
         return (    
      
     <div className="Start">
@@ -34,29 +40,31 @@ export default class BeforePackagedetails extends Component {
             </div>
             <h5>Day Duration: 12 Days</h5>
             <h5>Select your transport type:</h5>
-            <div class="form-check">
-  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked/>
-  <label class="form-check-label" for="flexRadioDefault1">
-  Travelling Bus 
-  </label> 
-  </div> 
-
-  <div class="form-check">
-  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"/>
-  <label class="form-check-label" for="flexRadioDefault2">
-   Travelling Van
-  </label>
-  </div>
+            <div style={{marginLeft:"30px"}}>
+  <form>
+             <input type="radio" value="bus" id="bus" 
+               onChange={handleChange} name="travel" />
+             <label for="bus">Travelling Bus</label>
+<br></br>
+            <input type="radio" value="van" id="van"
+              onChange={handleChange} name="travel"/>
+            <label for="van">Travelling Van</label>
+ <br></br>  
+            <input type="radio" value="car" id="car"
+              onChange={handleChange} name="travel"/>
+            <label for="car">Travelling Car</label>
+  </form>
+</div>
   
 
-            <h5>Price for one passenger: 450$</h5>
+            <h5>Price for one passenger: {travel == "bus" ? 'Rs.20,000' : '' || travel == "van" ? 'Rs.18,000' : '' || travel == "car" ? 'Rs.16,000' : ''}</h5>
             <Link to="/location-of-package"><h5>Locations</h5></Link>
             <Link to="/hotel-details-of-packageone"><h5>Hotel Facilities</h5></Link>
           
           <br></br>
          
-          <Link to="/request"><button className="Btn1" type="button"><h6>Request New Package</h6></button></Link>
-          <Link to="/count_pasenger"><button className="Btn1" type="button"><h6>Book Now</h6></button></Link>
+          <Link to="#"><button className="Btn1" type="button"><h6>Request New Package</h6></button></Link>
+          <Link to="#"><button className="Btn1" type="button"><h6>Book Now</h6></button></Link>
           
 
             </div>
@@ -64,7 +72,7 @@ export default class BeforePackagedetails extends Component {
             </div>
    
          );
-    }
+    
 
 }
 
