@@ -81,7 +81,7 @@ function Navbar() {
               && !isCurrentURL('/package_map_two') && !isCurrentURL('/package_map_three') && !isCurrentURL('/package_map_four') && !isCurrentURL('/package_four_hotel_details')
               && !isCurrentURL('/count_pasenger_two') && !isCurrentURL('/count_pasenger_three') && !isCurrentURL('/count_pasenger_four') && !isCurrentURL('/count_pasenger_five') 
               && !isCurrentURL('/payment-first-Ptwo') && !isCurrentURL('/payment-first-Pthree') && !isCurrentURL('/payment-first-Pfour') && !isCurrentURL('/payment-first-Pfive')
-              && !isCurrentURL('/payment_success') ?
+              && !isCurrentURL('/payment_success') && !isCurrentURL('/hotel_charge') ?
               <Link
                 to='/sign-up'
                 className='nav-links'
@@ -114,7 +114,7 @@ function Navbar() {
               && !isCurrentURL('/package_map_two') && !isCurrentURL('/package_map_three') && !isCurrentURL('/package_map_four') && !isCurrentURL('/package_four_hotel_details')
               && !isCurrentURL('/count_pasenger_two') && !isCurrentURL('/count_pasenger_three') && !isCurrentURL('/count_pasenger_four') && !isCurrentURL('/count_pasenger_five') 
               && !isCurrentURL('/payment-first-Ptwo') && !isCurrentURL('/payment-first-Pthree') && !isCurrentURL('/payment-first-Pfour') && !isCurrentURL('/payment-first-Pfive')
-              && !isCurrentURL('/payment_success') ?
+              && !isCurrentURL('/payment_success') && !isCurrentURL('/hotel_charge') ?
               <Link
                 to='/sign-in'
                 className='nav-links'

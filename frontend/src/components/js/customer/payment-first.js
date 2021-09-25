@@ -46,7 +46,7 @@ export default function PaymentFirst() {
     notify_url: 'http://sample.com/notify',
     order_id: "45896585",
     items: "Package 01",
-    amount: "5000",  // 20000*10
+    amount: "50000",  // 20000*10
     currency: 'LKR',
     first_name: {firstname},
     last_name: {lastname},
